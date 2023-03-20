@@ -1,6 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Navbar from '@/src/components/Navbar'
+import Header from '@/src/components/Header'
+import Description from '@/src/components/Description'
+import Services from '@/src/components/Services'
+import Operations from '@/src/components/Operations'
+import Footer from '@/src/components/Footer'
 
 
 export default function Home() {
@@ -13,7 +19,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-       <h1 className='text-4xl'>Hello Innovotio</h1>
+        <Navbar/>
+        <Header/>
+        <Description/>
+        <Services/>
+        <Operations/>
+        <Footer/>
       </main>
     </>
   )
