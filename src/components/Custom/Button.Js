@@ -1,12 +1,11 @@
 import React from 'react';
 
 const Button = ({ text, className, onClick }) => {
-  const btnClass =
-    `font-medium bg-red text-xl py-3 w-full border rounded-xl ${className}`
+  //const btnClass = `  ${className}`
   
 
   return (
-    <button className={btnClass} onClick={onClick}>
+    <button  classNmae={className} onClick={onClick}>
       {text}
     </button>
   );

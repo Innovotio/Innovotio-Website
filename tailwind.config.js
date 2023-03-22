@@ -11,7 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{background: "#444444",
-    primaryYellow:"#FFCC00"}
+    primaryYellow:"#FFCC00",
+    btnDefaultBlack:"#2E2E2E",
+    btnHoverBlack:" #182222",
+    btnHoverYellow:"#FBCD59",
+    white:" #FFFFFF",
+    headerGrey:"#A3A3A3"}
     },
   },
   plugins: [],
