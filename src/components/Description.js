@@ -1,4 +1,10 @@
 import React from "react";
+import Image from "next/image";
+import Quotation from "./../assets/Quotation.png"
+import Client from "./../assets/ClientPicture.png"
+import Adiva from "./../assets/ADIVA.png"
+import Afit from "./../assets/AFIT.png"
+import Carbon from "./../assets/Carbon.png"
 
 const Description = () => {
   return (
@@ -51,10 +57,26 @@ const Description = () => {
           </div>
         </div>
         <div className="lg:px-64">
-          <div></div>
+          <div className="lg:flex lg:flex-row lg:justify-center pb-8 ">
+            <Image alt='quotation mark' src={Quotation}/>
+          </div>
           <p className="lg:font-normal lg:text-3xl lg:text-center lg:leading-10 text-white">
           We partnered with Innovotio to build out our core engineering team and we couldn't be more thrilled! Innovotio's pool of high-quality, motivated and entrepreneurial engineers was a game-changer during the critical phases of launching our startup. We are excited to work closely with Innovotio to keep on expanding our team and growing together!
-          </p>
+          </p> 
+          <div className="h-14 flex flex-row justify-center lg:space-x-3 lg:mt-12">
+            <div className="">
+            <Image alt='client' src={Client}/>
+            </div>
+            <div>
+              <p className="lg:font-normal lg:text-base lg:text-white">Stella Damacus</p>
+              <div className="lg:flex lg:flex-row lg:space-x-3 lg:font-normal lg:text-base lg:text-headerGrey">
+              <p>Editor-in-chief</p>
+              <p>Adiva networks</p>
+              </div>
+              
+            </div>
+
+          </div>
         </div>
       </div>
     </>

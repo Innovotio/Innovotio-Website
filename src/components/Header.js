@@ -1,5 +1,13 @@
 import React from "react";
 import Button from "./Custom/Button";
+import Image from "next/image";
+import Apple from "./../assets/AppleDesc.png"
+import Facebook from "./../assets/FacebookDesc.png"
+import Linkedin from "./../assets/LinkedinDesc.png"
+import Podigy from "./../assets/PodigyDesc.png"
+import Google from "./../assets/GoogleDesc.png"
+import Netflix from "./../assets/NetflixDesc.png"
+
 const Header = () => {
   return (
     <>
@@ -28,8 +36,25 @@ const Header = () => {
           <div className="lg:mt-36">
             <div className="lg:my-6">
               <p className="lg:font-normal lg:text-center lg-text-white lg:text-3xl lg:leading-10 lg:my-8 text-white ">Trusted by fast-moving brands& agencies worldwide</p>
-              <div>
-
+              <div className="lg:flex lg:flex-row lg:space-x-12">
+                <div>
+                  <Image alt='apple' src={Apple}/>
+                </div>
+                <div>
+                  <Image alt='facebook' src={Facebook}/>
+                </div>
+                <div>
+                  <Image alt='linkedin' src={Linkedin}/>
+                </div>
+                <div>
+                  <Image alt='podigy' src={Podigy}/>
+                </div>
+                <div>
+                  <Image alt='google' src={Google}/>
+                </div>
+                <div>
+                  <Image alt='netflix' src={Netflix}/>
+                </div>
               </div>
             </div>
           </div>
