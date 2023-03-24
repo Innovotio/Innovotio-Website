@@ -8,7 +8,7 @@ import Twitter from "../assets/footer/Twitter.svg";
 
 function Footer() {
   return (
-    <footer className="container mx-auto font-font pt-40 lg:px-0 px-4">
+    <footer className="container mx-auto font-font pt-40">
       <h1 className="lg:w-7/12 w-12/12 lg:text-5xl md:text-4xl text-4xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to
@@ -19,15 +19,15 @@ function Footer() {
             <Image src={Logo} alt="Logo" width={200} height={200} />
           </figure>
           <div className="pb-3">
-          <button className="h-12 rounded-md text-xl w-44  border-black border bg-white text-black">
-            Hire a talent
-          </button>
+            <button className="h-12 rounded-md text-xl w-44  border-black border bg-white text-black">
+              Hire a talent
+            </button>
           </div>
-       
+
           <figure className="flex justify-between w-64">
             <Image src={Facebook} alt="Logo" width={50} height={50} />
             <Image src={LinkedIn} alt="Logo" width={50} height={50} />
-            <Image src={Instagram} alt="Logo" width={50} height={50}/>
+            <Image src={Instagram} alt="Logo" width={50} height={50} />
             <Image src={Twitter} alt="Logo" width={50} height={50} />
           </figure>
         </div>
@@ -80,6 +80,13 @@ function Footer() {
               <Link href="">Drop a message</Link>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className="flex justify-between pt-10 pb-10">
+        <p>© Copyright 2023 Innovotio. All Rights Reserved.</p>
+        <div className="flex justify-between w-64">
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
         </div>
       </section>
     </footer>
