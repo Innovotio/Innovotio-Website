@@ -53,7 +53,6 @@ const Description = () => {
                 <p>Proper vetting of numerous applications to find the finest talent for our clients</p>
               </div>
             </div>
-
           </div>
         </div>
         <div className="lg:px-64">
