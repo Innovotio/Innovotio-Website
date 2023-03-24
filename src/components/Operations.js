@@ -1,4 +1,6 @@
+import BlackBtn from "./Custom/BlackBtn";
 import Button from "./Custom/Button";
+import YellowBtn from "./Custom/yellowBtn";
 
 function Operations() {
   return (
@@ -11,8 +13,8 @@ function Operations() {
         creative dream team today?
       </p>
       <div className="flex justify-between w-96">
-        <button className="bg-btnDefaultBlack text-white h-10 w-44 rounded-md font-medium text-lg" >Join Innovotio</button>
-        <button className="bg-primaryYellow h-10 text-black font-medium w-44 rounded-md text-lg">Hire a talent</button>
+        <BlackBtn text="Join Innovotio" />
+        <YellowBtn text="Hire a talent" />
       </div>
     </section>
   );
