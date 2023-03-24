@@ -1,7 +1,7 @@
 
 function Description() {
   return (
-    <div>Description</div>
+    <div className="text-3xl">Description</div>
   )
 }
 
