@@ -9,7 +9,7 @@ import vector8 from "../assets/services/Vector (8).svg";
 
 function Services() {
   return (
-    <section className="container mx-auto pt-40 font-font">
+    <section className="container mx-auto pt-32 font-font">
       <div className="text-center">
         <h1 className="lg:text-5xl text-4xl font-medium">Our Services</h1>
         <div className=" flex justify-center">

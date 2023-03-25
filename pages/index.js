@@ -7,6 +7,7 @@ import Description from '@/src/components/Description'
 import Services from '@/src/components/Services'
 import Operations from '@/src/components/Operations'
 import Footer from '@/src/components/Footer'
+import Testimonial from '@/src/components/Testimonial'
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Navbar/>
         <Header/>
         <Description/>
+        <Testimonial/>
         <Services/>
         <Operations/>
         <Footer/>

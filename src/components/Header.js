@@ -11,49 +11,49 @@ import Netflix from "./../assets/header/NetflixDesc.png"
 const Header = () => {
   return (
     <>
-      <div className="bg-black">
-        <div className="lg:mx-auto lg:px-20 lg:py-24">
-          <div className="lg:px-44">
-          <h1 className="lg:text-6xl lg:leading-10 lg:text-center lg:mb-5 text-white">
+      <div className="cursor-pointer">
+        <div className="mx-auto container lg:pt-20 pt-10">
+          <div className="flex justify-center items-center flex-col text-center">
+          <h1 className="lg:text-5xl text-3xl font-medium w-12/12 lg:w-8/12 text-white">
             Build and ship scalable products with on-demand engineering teams.
           </h1>
-          <p className=" lg:text-center lg:text-xl lg:font-normal lg:mb-8 text-headerGrey">
+          <p className=" lg:text-xl text-lg lg:font-normal w-12/12 lg:w-9/12 py-8 text-headerGrey">
             Innovotio helps you set the stage for user-centric products by
             implementing the right strategies through a combination of market
             research, agile sprints, and wide-ranging expertise.
           </p>
           </div>
 
-          <div className=" lg:flex lg:flex-row lg:justify-center lg:gap-6">
-            <button className="lg:font-medum lg:text-xl lg:leading-6 lg:text-right lg:px-7 lg:py-4 lg:rounded-xl bg-btnDefaultBlack text-white hover:bg-btnHoverBlack">
-              Join Innovotio's Family
+          <div className="flex flex-row lg:justify-center gap-6">
+            <button className="lg:font-medum lg:text-lg h-12 w-56 font-medium rounded-md bg-btnDefaultBlack text-white hover:bg-btnHoverBlack">
+              Join Innovotio's family
             </button>
-            <button className="lg:font-medum lg:text-xl lg:leading-6 lg:text-right lg:px-7 lg:py-4 lg:rounded-xl bg-primaryYellow text-black hover:bg-btnHoverYellow">
+            <button className="lg:font-medum lg:text-md rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
               Find your next talent
             </button>
           </div>
 
-          <div className="lg:mt-36">
-            <div className="lg:my-6">
-              <p className="lg:font-normal lg:text-center lg-text-white lg:text-3xl lg:leading-10 lg:my-8 text-white ">Trusted by fast-moving brands& agencies worldwide</p>
-              <div className="lg:flex lg:flex-row lg:space-x-12">
+          <div className="lg:pt-20 pt-14">
+            <div className="flex justify-center text-center items-center flex-col ">
+              <p className="lg:font-normal lg:text-2xl text-2xl lg:leading-10 py-6 text-white ">Trusted by fast-moving brands & agencies worldwide</p>
+              <div className="lg:flex lg:flex-row grid grid-cols-2 gap-10 pt-10  lg:space-x-12">
                 <div>
-                  <Image alt='apple' src={Apple}/>
+                  <Image alt='apple' src={Apple} width={120}/>
                 </div>
                 <div>
-                  <Image alt='facebook' src={Facebook}/>
+                  <Image alt='facebook' src={Facebook} width={120}/>
                 </div>
                 <div>
-                  <Image alt='linkedin' src={Linkedin}/>
+                  <Image alt='linkedin' src={Linkedin} width={120}/>
                 </div>
                 <div>
-                  <Image alt='podigy' src={Podigy}/>
+                  <Image alt='podigy' src={Podigy} width={120}/>
                 </div>
                 <div>
-                  <Image alt='google' src={Google}/>
+                  <Image alt='google' src={Google} width={120}/>
                 </div>
                 <div>
-                  <Image alt='netflix' src={Netflix}/>
+                  <Image alt='netflix' src={Netflix} width={120}/>
                 </div>
               </div>
             </div>
