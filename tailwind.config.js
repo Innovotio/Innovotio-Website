@@ -13,6 +13,7 @@ module.exports = {
     colors:{
     background: "#444444",
     primaryYellow:"#FFCC00",
+    text:"#A3A3A3",
     yellow: "#FFCC00",
     btnDefaultBlack:"#2E2E2E",
     btnHoverBlack:" #182222",
