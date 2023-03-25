@@ -33,27 +33,27 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="lg:pt-20 pt-14">
+          <div className="lg:pt-12 pt-12">
             <div className="flex justify-center text-center items-center flex-col ">
               <p className="lg:font-normal lg:text-2xl text-2xl lg:leading-10 py-6 text-white ">Trusted by fast-moving brands & agencies worldwide</p>
-              <div className="lg:flex lg:flex-row grid grid-cols-2 gap-10 pt-10  lg:space-x-12">
+              <div className="lg:flex lg:flex-row grid grid-cols-2 gap-10 pt-6 lg:space-x-12">
                 <div>
-                  <Image alt='apple' src={Apple} width={120}/>
+                  <Image alt='apple' src={Apple} width={115}/>
                 </div>
                 <div>
-                  <Image alt='facebook' src={Facebook} width={120}/>
+                  <Image alt='facebook' src={Facebook} width={115}/>
                 </div>
                 <div>
-                  <Image alt='linkedin' src={Linkedin} width={120}/>
+                  <Image alt='linkedin' src={Linkedin} width={115}/>
                 </div>
                 <div>
-                  <Image alt='podigy' src={Podigy} width={120}/>
+                  <Image alt='podigy' src={Podigy} width={115}/>
                 </div>
                 <div>
-                  <Image alt='google' src={Google} width={120}/>
+                  <Image alt='google' src={Google} width={115}/>
                 </div>
                 <div>
-                  <Image alt='netflix' src={Netflix} width={120}/>
+                  <Image alt='netflix' src={Netflix} width={115}/>
                 </div>
               </div>
             </div>

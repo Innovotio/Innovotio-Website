@@ -20,7 +20,7 @@ const Testimonial = () => {
       </div>
       <div  className="flex lg:items-start flex-col">
         <p className="lg:font-normal lg:text-base lg:text-white">Stella Damacus</p>
-        <div className="lg:flex lg:flex-row flex justify-between lg:space-x-3 lg:font-normal lg:text-base lg:text-headerGrey">
+        <div className="flex lg:flex-row w-64 justify-between lg:space-x-3 lg:font-normal lg:text-base lg:text-headerGrey">
         <p>Editor-in-chief</p>
         <p>Adiva networks</p>
         </div>
