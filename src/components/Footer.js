@@ -8,7 +8,7 @@ import Twitter from "../assets/footer/Twitter.svg";
 
 function Footer() {
   return (
-    <footer className="container mx-auto font-font pt-40">
+    <footer className="container mx-auto font-font pt-32 cursor-pointer">
       <h1 className="lg:w-7/12 w-12/12 lg:text-5xl md:text-4xl text-4xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to

@@ -4,7 +4,7 @@ import YellowBtn from "./Custom/yellowBtn";
 
 function Operations() {
   return (
-    <section className="pt-40 flex flex-col items-center text-center justify-center">
+    <section className="pt-32 flex flex-col items-center text-center justify-center">
       <h1 className="text-4xl font-medium w-12/12 lg:w-9/12 lg:text-5xl tracking-wide">
         Scale Your Design & Dev Operations Without The Complexity
       </h1>
