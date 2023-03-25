@@ -9,9 +9,9 @@ import vector8 from "../assets/services/Vector (8).svg";
 
 function Services() {
   return (
-    <section className="container mx-auto pt-32 font-font">
+    <section className="container mx-auto lg:pt-32 pt-28  font-font">
       <div className="text-center">
-        <h1 className="lg:text-5xl text-4xl font-medium">Our Services</h1>
+        <h1 className="lg:text-5xl text-3xl font-medium">Our Services</h1>
         <div className=" flex justify-center">
           <p className="lg:w-5/12 w-12/12 py-6 text-lg tracking-normal text-text">
             Innovotio provides more than just the plumbing for your revenue. As

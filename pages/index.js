@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='container mx-auto px-5'>
+      <main className='container mx-auto lg:px-5 px-8'>
         <Navbar/>
         <Header/>
         <Description/>
