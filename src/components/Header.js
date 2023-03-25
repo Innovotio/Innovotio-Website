@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "./Custom/Button";
 import Image from "next/image";
-import Apple from "./../assets/AppleDesc.png"
-import Facebook from "./../assets/FacebookDesc.png"
-import Linkedin from "./../assets/LinkedinDesc.png"
-import Podigy from "./../assets/PodigyDesc.png"
-import Google from "./../assets/GoogleDesc.png"
-import Netflix from "./../assets/NetflixDesc.png"
+import Apple from "./../assets/header/AppleDesc.png"
+import Facebook from "./../assets/header/FacebookDesc.png"
+import Linkedin from "./../assets/header/LinkedinDesc.png"
+import Podigy from "./../assets/header/PodigyDesc.png"
+import Google from "./../assets/header/GoogleDesc.png"
+import Netflix from "./../assets/header/NetflixDesc.png"
 
 const Header = () => {
   return (
