@@ -1,4 +1,4 @@
-import Card from "./Custom/Card";
+// import Card from "./Custom/Card";
 import vector from "../assets/services/Vector (2).svg";
 import vector4 from "../assets/services/Vector (4).svg";
 import vector3 from "../assets/services/Vector (3).svg";
@@ -18,7 +18,7 @@ function Services() {
             a merchant of record, we do it for you:
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 grid-col gap-6 place-items-center pt-4 cursor-pointer">
+        {/* <div className="grid lg:grid-cols-2 grid-col gap-6 place-items-center pt-4 cursor-pointer">
         <Card
           image={vector5}
           heading="Recruitment"
@@ -49,7 +49,7 @@ function Services() {
           heading="Community"
           service="We work as an extension of your in-house team and assemble the right team members for every task and project.F"
         />
-        </div>
+        </div> */}
       </div>
     </section>
   );
