@@ -1,5 +1,5 @@
 import BlackBtn from "./Custom/BlackBtn";
-import YellowBtn from "./Custom/yellowBtn";
+import YellowBtn from "./Custom/YellowBtn";
 
 function Operations() {
   return (

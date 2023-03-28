@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../assets/footer/Vector.svg";
 import BlackBtn from "./Custom/BlackBtn";
-import YellowBtn from "./Custom/yellowBtn";
+import YellowBtn from "./Custom/YellowBtn";
 function Navbar() {
   return (
     <nav className="flex container mx-auto justify-between h-20 items-center py-8">
