@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Apple from "./../assets/header/AppleDesc.png"
 import Facebook from "./../assets/header/FacebookDesc.png"
