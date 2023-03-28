@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../assets/footer/Vector.svg";
-// import BlackBtn from "./Custom/BlackBtn";
-// import YellowBtn from "./Custom/yellowBtn";
+import BlackBtn from "./Custom/BlackBtn";
+import YellowBtn from "./Custom/yellowBtn";
 function Navbar() {
   return (
     <nav className="flex container mx-auto justify-between h-20 items-center py-8">
@@ -23,10 +23,10 @@ function Navbar() {
           <Link href="#footer">Contact Us</Link>
         </li>
       </ul>
-      {/* <div className="lg:flex hidden justify-between w-96">
+      <div className="lg:flex hidden justify-between w-96">
         <BlackBtn text="Join Innovotio" />
         <YellowBtn text="Hire a talent" />
-      </div> */}
+      </div>
     </nav>
   );
 }

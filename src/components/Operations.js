@@ -1,5 +1,5 @@
-// import BlackBtn from "./Custom/BlackBtn";
-// import YellowBtn from "./Custom/yellowBtn";
+import BlackBtn from "./Custom/BlackBtn";
+import YellowBtn from "./Custom/yellowBtn";
 
 function Operations() {
   return (
@@ -11,10 +11,10 @@ function Operations() {
         Why would you chase random freelancers if you could have your own
         creative dream team today?
       </p>
-      {/* <div className="flex justify-between w-96 ">
+      <div className="flex justify-between w-96 ">
         <BlackBtn text="Join Innovotio" />
         <YellowBtn text="Hire a talent" />
-      </div> */}
+      </div>
     </section>
   );
 }
