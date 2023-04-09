@@ -8,7 +8,7 @@ import vector7 from "../assets/services/Vector (7).svg";
 
 function Services() {
   return (
-    <section className="container mx-auto lg:pt-32 pt-28  font-font">
+    <section className=" lg:pt-32 pt-28  font-font">
       <div className="text-center">
         <h1 className="lg:text-5xl text-3xl font-medium">Our Services</h1>
         <div className=" flex justify-center">
@@ -17,7 +17,7 @@ function Services() {
             a merchant of record, we do it for you:
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 grid-col gap-6 place-items-center pt-4 cursor-pointer">
+        <div className="grid xl:grid-cols-2 grid-col gap-6 place-items-center pt-4 cursor-pointer">
         <Card
           image={vector5}
           heading="Recruitment"

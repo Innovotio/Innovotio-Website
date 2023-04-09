@@ -5,10 +5,11 @@ import Facebook from "../assets/footer/Facebook.svg";
 import Instagram from "../assets/footer/Instagram.svg";
 import LinkedIn from "../assets/footer/LinkedIn.svg";
 import Twitter from "../assets/footer/Twitter.svg";
+import Copyright from "./Copyright";
 
 function Footer() {
   return (
-    <footer className="container mx-auto font-font pt-32 cursor-pointer">
+    <footer className="font-font pt-32 cursor-pointer">
       <h1 className="lg:w-7/12 w-12/12 lg:text-5xl md:text-4xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to
@@ -82,12 +83,8 @@ function Footer() {
           </ul>
         </div>
       </section>
-      <section className="flex lg:flex-row flex-col justify-between py-0 lg:py-4 pb-10">
-        <p className="pb-6 lg:pb-0">© Copyright 2023 Innovotio. All Rights Reserved.</p>
-        <div className="flex justify-between w-64">
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-        </div>
+      <section>
+        <Copyright/>
       </section>
     </footer>
   );

@@ -14,7 +14,7 @@ const Description = () => {
   return (
     <>
       <div className="">
-        <div className="mx-auto container pt-28 lg:pt-36 flex lg:flex-row justify-center lg:items-center lg:justify-between text-center flex-col">
+        <div className="pt-28 lg:pt-36 flex lg:flex-row justify-center lg:items-center lg:justify-between text-center flex-col">
           <div className="flex flex-col lg:w-4/12">
               <p className="font-medium lg:text-5xl text-3xl text-white">
                 How is Innovotio Talent Unique?

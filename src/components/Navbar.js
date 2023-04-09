@@ -5,7 +5,7 @@ import BlackBtn from "./Custom/BlackBtn";
 import YellowBtn from "./Custom/YellowBtn";
 function Navbar() {
   return (
-    <nav className="flex container mx-auto justify-between h-20 items-center py-8">
+    <nav className="flex justify-between h-20 items-center py-8">
       <figure className="">
         <Image src={Logo} alt="Logo" width={120} height={1} className="-mt-3" />
       </figure>
