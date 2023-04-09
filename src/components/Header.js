@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div className="cursor-pointer">
-        <div className="mx-auto container lg:pt-20 pt-10">
+        <div className="lg:pt-24 pt-10">
           <div className="flex justify-center items-center flex-col text-center">
           <h1 className="lg:text-5xl text-3xl font-medium w-12/12 lg:w-8/12 text-white">
             Build and ship scalable products with on-demand engineering teams.
