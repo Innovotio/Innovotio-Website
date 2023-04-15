@@ -14,6 +14,7 @@ module.exports = {
         background: "#444444",
         primaryYellow: "#FFCC00",
         text: "#A3A3A3",
+        nav: "#AAAAAA",
         side: "#182222",
         gray: "#DDDDDD",
         form: "#F5F5F5",
