@@ -9,32 +9,32 @@ import Copyright from "./Copyright";
 
 function Footer() {
   return (
-    <footer className="font-font pt-32 cursor-pointer">
-      <h1 className="lg:w-7/12 w-12/12 lg:text-5xl md:text-4xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
+    <footer className="font-font px-8 pt-44 cursor-pointer">
+      <h1 className="lg:w-7/12 w-12/12 leading-tight lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to
       </h1>
-      <section className="w-12/12 flex lg:flex-row flex-col lg:py-14 py-14">
-        <div className="lg:w-5/12 w-12/12 h-56 max-h-64 justify-between flex flex-col">
+      <section className="w-12/12 flex lg:flex-row flex-col-reverse lg:py-14 py-14">
+        <div className="lg:w-5/12 lg:mt-0 mt-10 w-12/12 flex flex-col">
           <figure>
-            <Image src={Logo} alt="Logo" width={180} height={180} />
+            <Image src={Logo} alt="Logo" width={140} height={140} />
           </figure>
           <div className="">
-            <button className="h-12 rounded-md text-xl w-44  border-black border bg-white text-black">
+            <button className="h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
               Hire a talent
             </button>
           </div>
 
-          <figure className="flex justify-between w-56">
+          <figure className="flex justify-between w-56 md:w-80 mt-7">
             <Image src={Facebook} alt="Logo" width={40} height={40} />
-            <Image src={LinkedIn} alt="Logo" width={40} height={40} />
             <Image src={Instagram} alt="Logo" width={40} height={40} />
+            <Image src={LinkedIn} alt="Logo" width={40} height={40} />
             <Image src={Twitter} alt="Logo" width={40} height={40} />
           </figure>
         </div>
-        <div className="grid grid-col-1 gap-10 lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-10">
-          <ul className="leading-10">
-          <li className="lg:text-lg text-xl  pb-3">
+        <div className="grid md:grid-cols-2 grid-col-1 gap-16 text-base lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
+          <ul className="leading-10 w-12/12">
+          <li className="lg:text-lg text-lg text-gray pb-3">
               <Link href="">Services</Link>
             </li>
             <li className="pb-3">
@@ -54,7 +54,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10">
-            <li className="lg:text-lg text-xl  pb-3">
+            <li className="lg:text-lg text-lg text-gray  pb-3">
               <Link href="">Company</Link>
             </li>
             <li className="pb-3">
@@ -67,8 +67,8 @@ function Footer() {
               <Link href="">Blogs</Link>
             </li>
           </ul>
-          <ul className="leading-10">
-          <li className="lg:text-lg text-xl  pb-3">
+          <ul className="leading-10 w-96">
+          <li className="lg:text-lg text-lg w-96 text-gray pb-3">
               <Link href="">Contact Us</Link>
             </li>
             <li className="pb-3">
