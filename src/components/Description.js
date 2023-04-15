@@ -15,11 +15,11 @@ const Description = () => {
     <>
       <div className="">
         <div className="pt-28 lg:pt-44 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
-          <div className="flex flex-col xl:w-4/12 lg:w-5/12">
+          <div className="flex flex-col xl:w-5/12 lg:w-5/12">
             <p className="font-medium lg:text-5xl text-3xl lg:w-full  text-white">
               How is Innovotio Talent Unique?
             </p>
-            <p className=" lg:text-lg md:text-lg text-base font-light lg:text-headerGrey lg:pb-8 py-8">
+            <p className=" lg:text-lg md:text-lg text-base w-96 font-light lg:text-headerGrey lg:pb-8 py-8">
               Innovotio goes beyond connecting qualified tech talents and
               organizations.
             </p>
@@ -30,7 +30,7 @@ const Description = () => {
               </div>
             </div>
           </div>
-          <div className= " xl:w-7/12  justify-between pt-14">
+          <div className= " xl:w-7/12 justify-between pt-14">
             <div className="lg:font-normal grid lg:grid-cols-2 gap-10 grid-col-1 leading-10 lg:text-base lg:text-white lg:text-left ">
               <Talent
                 image={Resume}
