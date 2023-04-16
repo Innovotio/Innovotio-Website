@@ -16,7 +16,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between lg:px-8 px-0 items-center h-20 py-12">
+    <nav className="flex  mx-auto container text-white justify-between lg:px-8 px-0 items-center h-20 py-12">
+     <Link href="/">
       <figure className="px-8 lg:px-0">
         <Image
           src={Logo}
@@ -33,6 +34,7 @@ function Navbar() {
           className="block lg:hidden"
         />
       </figure>
+      </Link>
       <ul className=" justify-between w-5/12 text-base lg:flex hidden">
         <li>
           <Link className="flex items-center" href="#talent">For Business <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
@@ -41,7 +43,7 @@ function Navbar() {
           <Link className="flex items-center" href="#talent">For Talents <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
         </li>
         <li>
-          <Link className="flex items-center" href="#description">About Us <span className="ml-2"><Image src={arrow} width={20} height={20} alt="arrow"/></span></Link>
+          <Link className="flex items-center" href="/aboutUs">About Us <span className="ml-2"><Image src={arrow} width={20} height={20} alt="arrow"/></span></Link>
         </li>
       </ul>
       <div
@@ -69,14 +71,16 @@ function Navbar() {
         <div className="mb-14">
           <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
           <ul>
-            <li className="mb-5 text-xl">Who We Are</li>
+            <li className="mb-5 text-xl"><Link href="/aboutUs">Who We Are</Link></li>
             <li className="mb-5 text-xl">Careers</li>
             <li className="mb-5 text-xl">Blogs</li>
           </ul>
         </div>
-        <div className="flex mb-10">
+        <div className="flex flex-wrap lg:mb-0 mb-20">
+          <div className="mb-5 mr-10">
           <BlackBtn text="Join Innovotio" />
-          <div className="ml-10">
+          </div>
+          <div className="">
             <YellowBtn text="Hire a talent" />
           </div>
         </div>
