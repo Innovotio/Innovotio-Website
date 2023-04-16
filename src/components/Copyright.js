@@ -8,7 +8,7 @@ const Copyright = () => {
       <p className='font-light text-gray ml-5'> | </p>
       <p className='ml-5'>Privacy Policy</p>
     </div>
-    <p className="pb-6 md:pb-0 text-sm md:text-start  md:mt-0 mb-3 mt-4 md:text-lg">© Copyright 2023 Innovotio. All Rights Reserved.</p>
+    <p className="pb-6 md:pb-0 text-sm md:text-start  md:mt-0 mb-3 mt-4 md:text-lg">©Copyright 2023 Innovotio. All Rights Reserved.</p>
   </section>  )
 }
 

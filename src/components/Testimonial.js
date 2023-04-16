@@ -32,7 +32,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex lg:flex-row gap-8 lg:justify-center pt-20 flex justify-between">
+      <div className="lg:flex lg:flex-row gap-10 lg:justify-center lg:pt-20 pt-12 flex justify-between">
         <Image src={Adiva} alt="adiva" width={70} height={70} />
         <Image src={Afit} alt="afit" width={70} height={70} />
         <Image src={Carbon} alt="carbon" width={70} height={70} />

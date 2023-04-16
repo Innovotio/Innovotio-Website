@@ -7,7 +7,7 @@ import bullion from "./../assets/header/bullion.svg";
 
 const AboutHeader = () => {
   return (
-    <section className="lg:pt-44 pt-24 px-8  mx-auto container">
+    <section className="xl:pt-64  lg:pt-44 pt-20 px-8  mx-auto container">
 
     <div className="text-white flex lg:flex-row flex-col lg:items-center justify-between">
       <div className="lg:w-4/12 w-full">
@@ -16,7 +16,7 @@ const AboutHeader = () => {
           organizations.
         </h2>
       </div>
-      <div className="lg:w-5/12 lg:mt-0 mt-5 w-full leading-8 lg:text-lg md:text-base text-sm text-headerGrey">
+      <div className="lg:w-5/12 lg:mt-0 mt-5 w-full leading-8 lg:text-lg md:text-base text-base text-headerGrey">
         <p>
           Innovotio offers up-to-date training programs for tech skills for
           beginners or young tech talents looking to upskill. For our training
