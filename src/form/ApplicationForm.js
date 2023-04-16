@@ -48,40 +48,40 @@ const ApplicationForm = () => {
             Become the next Innovative talent
           </h1>
           <form className="">
-            <div className="grid lg:grid-cols-2 grid-col-1">
+            <div className="grid xl:grid-cols-2 grid-col-1">
               <input
                 type="text"
                 placeholder="First Name *"
                 required
-                className="w-9/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-12/12 md:w-12/12 lg:w-11/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Last Name *"
                 required
-                className="w-9/12  md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-12/12  md:w-12/12 lg:w-11/12 rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Email Address *"
                 required
-                className="w-9/12 md:w-10/12 rounded-md  mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-12/12 md:w-12/12 lg:w-11/12 rounded-md  mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
-                placeholder="Phone Number *"
+                placeholder="Role *"
                 required
-                className="w-9/12 md:w-10/12  rounded-md  mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-12/12 md:w-12/12 lg:w-11/12  rounded-md  mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Years of experience (years) *"
                 required
-                className="w-9/12  md:w-10/12  rounded-md  mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-12/12  md:w-12/12 lg:w-11/12  rounded-md  mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <label
                 for="file-upload"
-                className="flex md:w-10/12  items-center justify-between inline-block bg-white text-slate-400 w-9/12 h-14 mb-4 lg:h-12 py-2 px-4 rounded-md cursor-pointer"
+                className="flex  md:w-12/12 lg:w-11/12  items-center justify-between inline-block bg-white text-slate-400 xl:w-10/12 h-14 mb-4 lg:h-12 py-2 px-4 rounded-md cursor-pointer"
               >
                 CV/Resume
                 <Image src={Add} alt="" width={100} height={40} />

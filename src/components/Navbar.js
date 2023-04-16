@@ -37,10 +37,10 @@ function Navbar() {
       </Link>
       <ul className=" justify-between w-5/12 text-base lg:flex hidden">
         <li>
-          <Link className="flex items-center" href="#talent">For Business <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
+          <Link className="flex items-center" href="/business">For Business <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
         </li>
         <li>
-          <Link className="flex items-center" href="#talent">For Talents <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
+          <Link className="flex items-center" href="/jobapplication">For Talents <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
         </li>
         <li>
           <Link className="flex items-center" href="/aboutUs">About Us <span className="ml-2"><Image src={arrow} width={20} height={20} alt="arrow"/></span></Link>
@@ -54,10 +54,10 @@ function Navbar() {
         <div className="mb-14 mt-8">
           <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
           <ul>
-            <li className="mb-5 text-xl">Recuitment</li>
-            <li className="mb-5 text-xl">Tech Event Organization</li>
-            <li className="mb-5 text-xl">Merchandising</li>
-            <li className="mb-5 text-xl">Consultancy</li>
+            <li className="mb-5 text-xl"><Link href="/jobapplication">Recuitment</Link></li>
+            <li className="mb-5 text-xl"><Link href="/business">Tech Event Organization</Link></li>
+            <li className="mb-5 text-xl"><Link href="/business">Merchandising</Link></li>
+            <li className="mb-5 text-xl"><Link href="/business">Consultancy</Link></li>
           </ul>
         </div>
         <div className="mb-14">

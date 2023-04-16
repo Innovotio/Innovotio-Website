@@ -1,10 +1,10 @@
 import ClientForm from '@/src/form/ClientForm'
 import React from 'react'
 
-const Client = () => {
+const Business = () => {
   return (
     <ClientForm/>
   )
 }
 
-export default Client
+export default Business

@@ -3,7 +3,7 @@ import YellowBtn from "./Custom/YellowBtn";
 
 function Operations() {
   return (
-    <section className=" mx-auto container text-white lg:pt-44 pt-16 leading-tight px-8 flex flex-col items-center text-center justify-center">
+    <section className=" mx-auto container text-white lg:pt-44 pt-24 leading-tight px-8 flex flex-col items-center text-center justify-center">
       <h1 className=" text-3xl font-medium w-12/12 md:w-10/12 lg:w-9/12 lg:text-5xl tracking-wide">
         Scale Your Design & Dev Operations Without The Complexity
       </h1>
