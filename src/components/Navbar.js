@@ -9,76 +9,257 @@ import menu from "../assets/Navbar/Menu (1).svg";
 import BlackBtn from "./Custom/BlackBtn";
 import YellowBtn from "./Custom/YellowBtn";
 
+export const Tal = () => {
+  return (
+    <nav className="w-5/6 right-28  z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 justify-between flex border border-opacity-50">
+      <div className="w-3/6">
+        <a href="/jobapplication" >
+          <>
+            <h3 className="text-xl mb-2">Join Innovotio</h3>
+            <p className="text-sm w-11/12 text-headerGrey">
+              We work as an extension of your in-house team and assemble the
+              right team members for every task and project.
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-3/6">
+        <a href="/community" >
+          <>
+            <h3 className="text-xl mb-2">Community</h3>
+            <p className="text-sm w-11/12 text-headerGrey">
+              Innovotio has an active community to provide support for
+              recuiters, organizations and provode tech talent management.
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-3/6">
+        <a href="/community" >
+          <>
+            <h3 className="text-xl mb-2">Programs Training</h3>
+            <p className="text-sm w-11/12 text-headerGrey">
+              Get started with a tech skill using our one month introductory
+              training program. Get introduced to all the basics necessary to
+              start a career in tech.
+            </p>
+          </>
+        </a>
+      </div>
+    </nav>
+  );
+};
+
+export const Abt = () => {
+  return (
+    <nav className="w-5/6 right-28  z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 justify-between flex border border-opacity-50">
+      <div className="w-3/6">
+        <a href="/aboutUs" >
+          <>
+            <h3 className="text-xl mb-2">Who We Are</h3>
+            <p className="text-sm w-11/12  text-headerGrey">
+              We go beyond connecting tech talents to businesses and offer
+              additional services for businesses and our talent pool.
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-3/6">
+        <a href="/jobapplication" >
+          <>
+            <h3 className="text-xl mb-2">Careers</h3>
+            <p className="text-sm w-11/12  text-headerGrey">
+              Put your best foot forward and fast track landing a new tech job
+              with innovotio
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-3/6">
+        <a href="/aboutUs" >
+          <>
+            <h3 className="text-xl mb-2">Blogs</h3>
+            <p className="text-sm w-11/12 text-headerGrey">
+              Read the articles on community building, talents testimonials and
+              get business tips too on our blog.
+            </p>
+          </>
+        </a>
+      </div>
+    </nav>
+  );
+};
+
+export const Business = () => {
+  return (
+    <nav className=" w-7/12 left-20 cursor-pointer h-96 py-10 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 grid grid-cols-2 border border-opacity-50">
+      <div className="w-11/12">
+        <a href="/jobapplication" >
+          <>
+            <h3 className="text-xl mb-2">Recruitment</h3>
+            <p className="text-sm text-headerGrey">
+              Ease your recuitment process with our human resource team designed
+              to vet and provide the best fit from our tech talents.
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-11/12">
+        <a href="/business" >
+          <>
+            <h3 className="text-xl mb-2">Tech Event Organization</h3>
+            <p className="text-sm text-headerGrey">
+              We train, assess and maintain the quality of our talent pool
+              regularly to ensure satisfaction both for busniesses and talents.
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-11/12">
+        <a href="/business" >
+          <>
+            <h3 className="text-xl mb-2">Consultancy</h3>
+            <p className="text-sm text-headerGrey">
+              We offer one month of free business consultancy to small
+              businesses and startups. We assist in the launch process & early
+              stages of the business to establish business structure.
+            </p>
+          </>
+        </a>
+      </div>
+      <div className="w-11/12">
+        <a href="/business" >
+          <>
+            <h3 className="text-xl mb-2">Merchandising</h3>
+            <p className="text-sm text-headerGrey">
+              As tech event organizers, we also create branded merchandise for
+              tech organizations and communities for events and merch stores.
+            </p>
+          </>
+        </a>
+      </div>
+    </nav>
+  );
+};
+
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const [clickTal, setClickTal] = useState(false);
+  const [clickBus, setClickBus] = useState(false);
+  const [clickAbout, setClickAbout] = useState(false);
+
+  const handleTalClick = () => {
+    setClickTal(!clickTal);
+    setClickBus(false);
+    setClickAbout(false);
+  };
+  const handleAboutClick = () => {
+    setClickAbout(!clickAbout);
+    setClickBus(false);
+    setClickTal(false);
+  };
+
+  const handleBusClick = () => {
+    setClickBus(!clickBus);
+    setClickTal(false);
+    setClickAbout(false);
+  };
+
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <nav className="flex  mx-auto container text-white justify-between lg:px-8 px-0 items-center h-20 py-12">
-     <Link href="/">
-      <figure className="px-8 lg:px-0">
-        <Image
-          src={Logo}
-          alt="innovotio's logo"
-          width={120}
-          height={1}
-          className="-mt-3 hidden lg:block"
-        />
-        <Image
-          src={mobileLogo}
-          alt="innovotio's logo"
-          width={24}
-          height={24}
-          className="block lg:hidden"
-        />
-      </figure>
+  <nav className="container 2xl:mx-auto">
+
+    <section className="flex 2xl:static w-12/12 fixed h-20 z-50 bg-black  text-white justify-between w-full lg:px-8  px-0 items-center py-12">
+      <Link href="/">
+        <figure className="px-8 lg:px-0">
+          <Image
+            src={Logo}
+            alt="innovotio's logo"
+            width={120}
+            height={1}
+            className="-mt-3 hidden lg:block"
+          />
+          <Image
+            src={mobileLogo}
+            alt="innovotio's logo"
+            width={24}
+            height={24}
+            className="block lg:hidden"
+          />
+        </figure>
       </Link>
       <ul className=" justify-between w-5/12 text-base lg:flex hidden">
-        <li>
-          <Link className="flex items-center" href="/business">For Business <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
+        <li className="flex items-center" onClick={handleBusClick}>
+          For Business
+          <span className="ml-2">
+            <Image src={arrow} width={20} height={20} alt="arrow" />
+          </span>
+          {clickBus && <Business />}
         </li>
-        <li>
-          <Link className="flex items-center" href="/jobapplication">For Talents <span className="ml-2"><Image src={arrow}  width={20} height={20} alt="arrow"/></span></Link>
+        <li
+          onClick={handleTalClick}
+          className="flex items-center cursor-pointer"
+        >
+          For Talents
+          <span className="ml-2">
+            <Image src={arrow} width={20} height={20} alt="arrow" />
+          </span>
+          {clickTal && <Tal />}
         </li>
-        <li>
-          <Link className="flex items-center" href="/aboutUs">About Us <span className="ml-2"><Image src={arrow} width={20} height={20} alt="arrow"/></span></Link>
+        <li className="flex items-center" onClick={handleAboutClick}>
+          About Us
+          <span className="ml-2">
+            <Image src={arrow} width={20} height={20} alt="arrow" />
+          </span>
+          {clickAbout && <Abt />}
         </li>
       </ul>
       <div
         className={` ${
           nav ? "block" : "hidden"
-        } justify-between z-50 text-base  tracking-wide lg:hidden top-28 absolute px-6 bg-black w-full cursor-pointer `}
+        } justify-between z-50 text-base  tracking-wide lg:hidden top-24 absolute px-6 bg-black w-full cursor-pointer `}
       >
         <div className="mb-14 mt-8">
           <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
           <ul>
-            <li className="mb-5 text-xl"><Link href="/jobapplication">Recuitment</Link></li>
-            <li className="mb-5 text-xl"><Link href="/business">Tech Event Organization</Link></li>
-            <li className="mb-5 text-xl"><Link href="/business">Merchandising</Link></li>
-            <li className="mb-5 text-xl"><Link href="/business">Consultancy</Link></li>
+            <li className="mb-5 text-xl">
+              <Link href="/jobapplication">Recuitment</Link>
+            </li>
+            <li className="mb-5 text-xl">
+              <Link href="/business">Tech Event Organization</Link>
+            </li>
+            <li className="mb-5 text-xl">
+              <Link href="/business">Merchandising</Link>
+            </li>
+            <li className="mb-5 text-xl">
+              <Link href="/business">Consultancy</Link>
+            </li>
           </ul>
         </div>
         <div className="mb-14">
           <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
           <ul>
-            <li className="mb-5 text-xl">Join Innovotio</li>
-            <li className="mb-5 text-xl">Community</li>
-            <li className="mb-5 text-xl">Programs Training</li>
+            <li className="mb-5 text-xl"><Link href="/jobapplication">Join Innovotio</Link></li>
+            <li className="mb-5 text-xl"><Link href="/community">Community</Link></li>
+            <li className="mb-5 text-xl"><Link href="/community">Programs Training</Link></li>
           </ul>
         </div>
         <div className="mb-14">
           <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
           <ul>
-            <li className="mb-5 text-xl"><Link href="/aboutUs">Who We Are</Link></li>
-            <li className="mb-5 text-xl">Careers</li>
-            <li className="mb-5 text-xl">Blogs</li>
+            <li className="mb-5 text-xl">
+              <Link href="/aboutUs">Who We Are</Link>
+            </li>
+            <li className="mb-5 text-xl"><Link href="/aboutUs">Careers</Link></li>
+            <li className="mb-5 text-xl"><Link href="/aboutUs">Blog</Link>Blogs</li>
           </ul>
         </div>
         <div className="flex flex-wrap lg:mb-0 mb-20">
           <div className="mb-5 mr-10">
-          <BlackBtn text="Join Innovotio" />
+            <BlackBtn text="Join Innovotio" />
           </div>
           <div className="">
             <YellowBtn text="Hire a talent" />
@@ -109,6 +290,7 @@ function Navbar() {
           />
         )}
       </div>
+      </section>
     </nav>
   );
 }

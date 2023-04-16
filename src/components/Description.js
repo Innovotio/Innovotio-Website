@@ -17,7 +17,7 @@ const Description = () => {
             <p className="font-medium lg:text-5xl text-3xl lg:w-full  text-white">
               How is Innovotio Talent Unique?
             </p>
-            <p className=" lg:text-lg md:text-lg text-base w-96 font-light lg:text-headerGrey lg:pb-8 py-8">
+            <p className=" lg:text-lg md:text-lg text-base w-full md:w-96 font-light lg:text-headerGrey lg:pb-8 py-8">
               Innovotio goes beyond connecting qualified tech talents and
               organizations.
             </p>

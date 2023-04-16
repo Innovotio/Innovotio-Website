@@ -12,7 +12,7 @@ function Services() {
       <div className="">
         <h1 className="lg:text-4xl text-center text-3xl font-medium">Our Services</h1>
         <div className=" flex justify-center">
-          <p className="xl:w-5/12 md:w-8/12 text-center w-12/12 py-6 text-lg tracking-normal text-text">
+          <p className="xl:w-5/12 md:w-8/12 text-center w-12/12 py-6 text-base lg:text-lg tracking-normal text-text">
             Innovotio provides more than just the plumbing for your revenue. As
             a merchant of record, we do it for you:
           </p>

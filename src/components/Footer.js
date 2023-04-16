@@ -34,7 +34,7 @@ function Footer() {
         </div>
         <div className="grid md:grid-cols-2 grid-col-1 gap-16 text-base lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
           <ul className="leading-10 w-12/12">
-          <li className="lg:text-lg text-lg text-gray pb-3">
+          <li className=" text-xl text-gray pb-3">
               <Link href="">Services</Link>
             </li>
             <li className="pb-3">
@@ -54,7 +54,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10">
-            <li className="lg:text-lg text-lg text-gray  pb-3">
+            <li className="text-xl text-gray  pb-3">
               <Link href="">Company</Link>
             </li>
             <li className="pb-3">
@@ -68,7 +68,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10 w-96">
-          <li className="lg:text-lg text-lg w-96 text-gray pb-3">
+          <li className="text-xl w-96 text-gray pb-3">
               <Link href="">Contact Us</Link>
             </li>
             <li className="pb-3">
