@@ -7,7 +7,7 @@ import bullion from "./../assets/header/bullion.svg";
 
 const AboutHeader = () => {
   return (
-    <section className="xl:pt-64  lg:pt-44 pt-20 px-8  mx-auto container">
+    <section className="xl:pt-64  lg:pt-44 pt-14 px-8  mx-auto container">
 
     <div className="text-white flex lg:flex-row flex-col lg:items-center justify-between">
       <div className="lg:w-4/12 w-full">

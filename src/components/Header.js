@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <div className="cursor-pointer">
-        <div className="xl:pt-64  lg:pt-44 pt-20 px-8">
+        <div className="xl:pt-64  lg:pt-44 pt-14 px-8">
           <div className="flex justify-center items-center px-4 flex-col text-center w-full">
             <h1 className="lg:text-5xl md:text-5xl text-4xl lg:tracking-wide tracking-wide leading-tight font-medium w-11/12 md:w-8/12 lg:w-8/12 text-white">
               Build a reliable team of efficient tech talents.
