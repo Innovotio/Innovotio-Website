@@ -11,7 +11,7 @@ import Talent from "./Custom/Talent";
 const Community = () => {
   return (
     <div>
-      <div className="pt-16 lg:pt-44 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
+      <div className=" mx-auto container pt-16 lg:pt-44 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
         <div className="flex flex-col xl:w-5/12 lg:w-5/12">
           <p className="font-medium lg:text-4xl text-3xl lg:w-full  text-white">
             Join Our Community

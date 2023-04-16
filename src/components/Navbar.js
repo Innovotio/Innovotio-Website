@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex text-white justify-between lg:px-8 px-0 items-center h-20 py-12">
+    <nav className="flex  mx-auto container text-white justify-between lg:px-8 px-0 items-center h-20 py-12">
       <figure className="px-8 lg:px-0">
         <Image
           src={Logo}
