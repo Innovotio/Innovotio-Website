@@ -9,12 +9,12 @@ import Copyright from "./Copyright";
 
 function Footer() {
   return (
-    <footer className="font-font px-8 pt-44 cursor-pointer">
-      <h1 className="lg:w-7/12 w-12/12 leading-tight lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
+    <footer className="font-font text-white px-8 pt-16 lg:pt-44 cursor-pointer">
+      <h1 className="lg:w-7/12 md:w-8/12 w-12/12 leading-tight lg:text-5xl text-2xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to
       </h1>
-      <section className="w-12/12 flex lg:flex-row flex-col-reverse lg:py-14 py-14">
+      <section className="w-12/12 flex lg:flex-row flex-col-reverse lg:py-14 py-14 border-b border-headerGrey border-opacity-20">
         <div className="lg:w-5/12 lg:mt-0 mt-10 w-12/12 flex flex-col">
           <figure>
             <Image src={Logo} alt="Logo" width={140} height={140} />
@@ -83,7 +83,7 @@ function Footer() {
           </ul>
         </div>
       </section>
-      <section>
+      <section className="py-5">
         <Copyright/>
       </section>
     </footer>

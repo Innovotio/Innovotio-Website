@@ -1,5 +1,3 @@
-import React from "react";
-import Image from "next/image";
 import Resume from "./../assets/description/Resume.png";
 import Innovation from "./../assets/description/Innovation.png";
 import DollarCoin from "./../assets/description/DollarCoin.png";
@@ -13,8 +11,8 @@ import Talent from "./Custom/Talent";
 const Description = () => {
   return (
     <>
-      <div className="">
-        <div className="pt-28 lg:pt-44 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
+      <div>
+        <div className="pt-16 lg:pt-44 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
           <div className="flex flex-col xl:w-5/12 lg:w-5/12">
             <p className="font-medium lg:text-5xl text-3xl lg:w-full  text-white">
               How is Innovotio Talent Unique?

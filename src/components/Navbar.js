@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between lg:px-8 px-0 items-center h-20 py-12">
+    <nav className="flex text-white justify-between lg:px-8 px-0 items-center h-20 py-12">
       <figure className="px-8 lg:px-0">
         <Image
           src={Logo}
@@ -74,9 +74,11 @@ function Navbar() {
             <li className="mb-5 text-xl">Blogs</li>
           </ul>
         </div>
-        <div className="flex mb-10">
+        <div className="flex flex-wrap lg:mb-0 mb-20">
+          <div className="mb-5 mr-10">
           <BlackBtn text="Join Innovotio" />
-          <div className="ml-10">
+          </div>
+          <div className="">
             <YellowBtn text="Hire a talent" />
           </div>
         </div>
