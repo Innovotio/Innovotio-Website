@@ -1,10 +1,10 @@
 import ApplicationForm from '@/src/form/ApplicationForm'
 import React from 'react'
 
-const application = () => {
+const jobApplication = () => {
   return (
     <ApplicationForm/>
   )
 }
 
-export default application
+export default jobApplication

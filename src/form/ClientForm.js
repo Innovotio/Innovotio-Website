@@ -51,41 +51,41 @@ const ClientForm = () => {
           </h1>
           <form className="">
           
-            <div className="grid lg:grid-cols-2">
+            <div className="grid xl:grid-cols-2">
               <input
                 type="text"
                 placeholder="First Name *"
                 required
-                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Last Name *"
                 required
-                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Email Address *"
                 required
-                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Phone Number *"
                 required
-                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
               <input
                 type="text"
                 placeholder="Current Job Role *"
                 required
-                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 lg:w-80"
+                className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
               />
 
               <select
                 required
-                className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-80"
+                className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
                 defaultValue="default"
               >
                 <option value="default" disabled hidden>
@@ -96,10 +96,11 @@ const ClientForm = () => {
                 <option>Pitch Deck Designs</option>
                 <option>Consultancy</option>
               </select>
-
-              <select
+            </div>
+            <div className="flex flex-col">
+            <select
                 required
-                className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-80"
+                className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
                 defaultValue="default"
               >
                 <option value="default" disabled hidden>
@@ -121,7 +122,7 @@ const ClientForm = () => {
 
               <select
                 required
-                className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-80"
+                className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
                 defaultValue="default"
               >
                 <option value="default" disabled hidden>
