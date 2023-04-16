@@ -2,6 +2,7 @@ import Logo from "../assets/footer/Vector.svg";
 import Arrow from "../assets/form/arrow.svg";
 import formImage from "../assets/form/Account.svg";
 import Add from "../assets/form/Add File.svg";
+import Link from "next/link";
 
 import Image from "next/image";
 
@@ -34,6 +35,7 @@ const ApplicationForm = () => {
         <Image src={Logo} alt="Logo" width={140} height={120} className="" />
         </nav>
         <div className=" py-2 lg:px-10 px-4 md:px-4">
+          <Link href="/">
           <div className="flex  items-center pt-8 ">
             <Image
               src={Arrow}
@@ -44,6 +46,7 @@ const ApplicationForm = () => {
             />
             <p className="ml-4 text-lg">Go back</p>
           </div>
+          </Link>
           <h1 className="lg:text-2xl text-lg pb-8 pt-5 lg:w-full w-full ">
             Become the next Innovative talent
           </h1>

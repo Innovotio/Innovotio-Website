@@ -34,24 +34,24 @@ const AboutHeader = () => {
     </div>
     <div className="lg:pt-32 pt-16 flex flex-col justify-center items-center ">
             <div className="flex justify-center text-center items-center flex-col ">
-              <div className=" md:grid-cols-5 gap-16 grid grid-cols-5 px-10  place-items-center items-center pt-6" style={{ animation: "scrolling 25s linear infinite"}}>
+            <div className="md:grid-cols-5 gap-10 grid grid-cols-3 px-10 place-items-center items-center pt-6">
                 <div>
-                  <Image alt="akaneex" src={akaneex} width={150} height={150} className="w-96 h-96 md:w-auto md:h-auto" />
+                  <Image alt="akaneex" src={akaneex} width={140} height={140} />
                 </div>
                 <div>
-                  <Image alt="task" src={task}width={150} height={150} priority/>
+                  <Image alt="task" src={task} width={160} height={160}/>
                 </div>
                 <div>
-                  <Image alt="GDG" src={GDG} width={200} height={200} />
+                  <Image alt="GDG" src={GDG} width={220} height={220} />
                 </div>
                 <div>
                   <Image alt="bullion" src={bullion} width={100} height={100}/>
                 </div>
                 <div>
-                  <Image alt="gdgajah" src={gdgajah}width={200} height={200} />
+                  <Image alt="gdgajah" src={gdgajah}width={220} height={220} />
                 </div>
               </div>
-            </div>
+              </div>
           </div>
     </section>
   );

@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='lg:px-5 w-12/12 overflow-hidden  text-white bg-black'>
+      <main className='overflow-hidden  text-white bg-black'>
         <Navbar/>
         <Header/>
         <Description/>

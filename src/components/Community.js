@@ -4,8 +4,6 @@ import DollarCoin from "./../assets/description/DollarCoin.png";
 import People from "./../assets/description/People.png";
 import Lawyer from "./../assets/description/Lawyer.png";
 import UserShield from "./../assets/description/UserShield.png";
-import BlackBtn from "./Custom/BlackBtn";
-import YellowBtn from "./Custom/YellowBtn";
 import Talent from "./Custom/Talent";
 
 const Community = () => {

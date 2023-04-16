@@ -2,6 +2,7 @@ import Logo from "../assets/footer/Vector.svg";
 import Arrow from "../assets/form/arrow.svg";
 import formImage from "../assets/form/Account.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const ClientForm = () => {
   return (
@@ -36,6 +37,8 @@ const ClientForm = () => {
               />
             </nav>
             <div className=" py-2 lg:px-10 px-4 md:px-4">
+            <Link href="/">
+
           <div className="flex items-center pt-8 ">
             <Image
               src={Arrow}
@@ -46,6 +49,7 @@ const ClientForm = () => {
             />
             <p className="ml-4 text-lg">Go back</p>
           </div>
+          </Link>
           <h1 className="text-lg lg:text-2xl pb-8 pt-5 lg:w-full md:w-96 w-full ">
             Ready to take a chance at growth?
           </h1>
