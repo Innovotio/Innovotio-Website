@@ -52,7 +52,7 @@ export const Tal = () => {
 
 export const Abt = () => {
   return (
-    <nav className="w-5/6 right-28  z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 justify-between flex border border-opacity-50">
+    <nav className="w-5/6 right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 justify-between flex border border-opacity-50">
       <div className="w-3/6">
         <a href="/aboutUs" >
           <>
@@ -170,11 +170,11 @@ function Navbar() {
   };
 
   return (
-  <nav className="container 2xl:mx-auto">
+  <nav className="2xl:container 2xl:mx-auto">
 
-    <section className="flex 2xl:static w-12/12 fixed h-20 z-50 bg-black  text-white justify-between w-full lg:px-8  px-0 items-center py-12">
+    <section className="flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-8  px-0 items-center py-2">
       <Link href="/">
-        <figure className="px-8 lg:px-0">
+        <figure className="px-5 lg:px-0">
           <Image
             src={Logo}
             alt="innovotio's logo"
@@ -220,44 +220,44 @@ function Navbar() {
       <div
         className={` ${
           nav ? "block" : "hidden"
-        } justify-between z-50 text-base  tracking-wide lg:hidden top-24 absolute px-6 bg-black w-full cursor-pointer `}
+        } justify-between z-50 text-base tracking-wide lg:hidden top-16 absolute px-6 bg-black w-full cursor-pointer `}
       >
-        <div className="mb-14 mt-8">
+        <div className="mb-8 mt-4">
           <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
           <ul>
-            <li className="mb-5 text-xl">
+            <li className="mb-5">
               <Link href="/jobapplication">Recuitment</Link>
             </li>
-            <li className="mb-5 text-xl">
+            <li className="mb-5">
               <Link href="/business">Tech Event Organization</Link>
             </li>
-            <li className="mb-5 text-xl">
+            <li className="mb-5">
               <Link href="/business">Merchandising</Link>
             </li>
-            <li className="mb-5 text-xl">
+            <li className="mb-5">
               <Link href="/business">Consultancy</Link>
             </li>
           </ul>
         </div>
-        <div className="mb-14">
+        <div className="mb-8">
           <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
           <ul>
-            <li className="mb-5 text-xl"><Link href="/jobapplication">Join Innovotio</Link></li>
-            <li className="mb-5 text-xl"><Link href="/community">Community</Link></li>
-            <li className="mb-5 text-xl"><Link href="/community">Programs Training</Link></li>
+            <li className="mb-5"><Link href="/jobapplication">Join Innovotio</Link></li>
+            <li className="mb-5"><Link href="/community">Community</Link></li>
+            <li className="mb-5"><Link href="/community">Programs Training</Link></li>
           </ul>
         </div>
-        <div className="mb-14">
+        <div className="mb-8">
           <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
           <ul>
-            <li className="mb-5 text-xl">
+            <li className="mb-5">
               <Link href="/aboutUs">Who We Are</Link>
             </li>
-            <li className="mb-5 text-xl"><Link href="/aboutUs">Careers</Link></li>
-            <li className="mb-5 text-xl"><Link href="/aboutUs">Blog</Link>Blogs</li>
+            <li className="mb-5"><Link href="/aboutUs">Careers</Link></li>
+            <li className="mb-5"><Link href="/aboutUs">Blog</Link>Blogs</li>
           </ul>
         </div>
-        <div className="flex flex-wrap lg:mb-0 mb-20">
+        <div className="flex flex-wrap h-28 lg:mb-0 mb-20">
           <div className="mb-5 mr-10">
             <BlackBtn text="Join Innovotio" />
           </div>
@@ -271,7 +271,7 @@ function Navbar() {
         <BlackBtn text="Join Innovotio" />
         <YellowBtn text="Hire a talent" />
       </div>
-      <div className="lg:hidden block cursor-pointer mr-8" onClick={handleNav}>
+      <div className="lg:hidden block cursor-pointer mr-5" onClick={handleNav}>
         {nav ? (
           <Image
             src={cancel}
