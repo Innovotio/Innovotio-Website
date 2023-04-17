@@ -15,7 +15,7 @@ const AboutHeader = () => {
           organizations.
         </h2>
       </div>
-      <div className="lg:w-5/12 lg:mt-0 mt-5 w-full leading-8 lg:text-lg md:text-base text-base text-headerGrey">
+      <div className="lg:w-5/12 lg:mt-0 mt-5 font-light w-full leading-8 lg:text-lg md:text-base text-base text-headerGrey">
         <p>
           Innovotio offers up-to-date training programs for tech skills for
           beginners or young tech talents looking to upskill. For our training

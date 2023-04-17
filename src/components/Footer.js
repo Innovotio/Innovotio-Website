@@ -20,7 +20,7 @@ function Footer() {
             <Image src={Logo} alt="Logo" width={140} height={140} />
           </figure>
           <div className="">
-            <button className="h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
+            <button className="hover:bg-btnHoverYellow h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
               Hire a talent
             </button>
           </div>
