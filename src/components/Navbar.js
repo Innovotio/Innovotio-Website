@@ -11,8 +11,8 @@ import YellowBtn from "./Custom/YellowBtn";
 
 export const Tal = () => {
   return (
-    <nav className="w-5/6 right-28  z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 justify-between flex border border-opacity-50">
-      <div className="w-3/6">
+    <nav className="w-5/6 right-28  z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 justify-between flex border border-opacity-30">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
         <a href="/jobapplication" >
           <>
             <h3 className="text-xl mb-2">Join Innovotio</h3>
@@ -23,7 +23,7 @@ export const Tal = () => {
           </>
         </a>
       </div>
-      <div className="w-3/6">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
         <a href="/community" >
           <>
             <h3 className="text-xl mb-2">Community</h3>
@@ -34,7 +34,7 @@ export const Tal = () => {
           </>
         </a>
       </div>
-      <div className="w-3/6">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
         <a href="/community" >
           <>
             <h3 className="text-xl mb-2">Programs Training</h3>
@@ -52,8 +52,8 @@ export const Tal = () => {
 
 export const Abt = () => {
   return (
-    <nav className="w-5/6 right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 justify-between flex border border-opacity-50">
-      <div className="w-3/6">
+    <nav className="w-5/6 right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 justify-between flex border border-opacity-30">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
         <a href="/aboutUs" >
           <>
             <h3 className="text-xl mb-2">Who We Are</h3>
@@ -64,7 +64,7 @@ export const Abt = () => {
           </>
         </a>
       </div>
-      <div className="w-3/6">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
         <a href="/jobapplication" >
           <>
             <h3 className="text-xl mb-2">Careers</h3>
@@ -75,7 +75,7 @@ export const Abt = () => {
           </>
         </a>
       </div>
-      <div className="w-3/6">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10 h-full py-10">
         <a href="/aboutUs" >
           <>
             <h3 className="text-xl mb-2">Blogs</h3>
@@ -92,8 +92,8 @@ export const Abt = () => {
 
 export const Business = () => {
   return (
-    <nav className=" w-7/12 left-20 cursor-pointer h-96 py-10 bg-black items-center rounded-xl border-headerGrey absolute top-24 px-6 grid grid-cols-2 border border-opacity-50">
-      <div className="w-11/12">
+    <nav className=" w-7/12 left-20 cursor-pointer h-96  bg-black items-center rounded-xl border-headerGrey absolute top-24 grid grid-cols-2 border border-opacity-30">
+      <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-6">
         <a href="/jobapplication" >
           <>
             <h3 className="text-xl mb-2">Recruitment</h3>
@@ -104,7 +104,7 @@ export const Business = () => {
           </>
         </a>
       </div>
-      <div className="w-11/12">
+      <div className=" hover:bg-btnHoverBlack  h-full py-10 w-full px-10">
         <a href="/business" >
           <>
             <h3 className="text-xl mb-2">Tech Event Organization</h3>
@@ -115,7 +115,7 @@ export const Business = () => {
           </>
         </a>
       </div>
-      <div className="w-11/12">
+      <div className=" hover:bg-btnHoverBlack  h-full overflow-hidden py-10 w-11/12 px-10">
         <a href="/business" >
           <>
             <h3 className="text-xl mb-2">Consultancy</h3>
@@ -127,7 +127,7 @@ export const Business = () => {
           </>
         </a>
       </div>
-      <div className="w-11/12">
+      <div className=" hover:bg-btnHoverBlack overflow-hidden  h-full py-10 w-full px-10">
         <a href="/business" >
           <>
             <h3 className="text-xl mb-2">Merchandising</h3>

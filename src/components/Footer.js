@@ -25,7 +25,7 @@ function Footer() {
             </button>
           </div>
 
-          <figure className="flex justify-between w-56 md:w-80 mt-7">
+          <figure className="flex justify-between w-52 md:w-64 mt-7">
             <Image src={Facebook} alt="Logo" width={40} height={40} />
             <Image src={Instagram} alt="Logo" width={40} height={40} />
             <Image src={LinkedIn} alt="Logo" width={40} height={40} />
