@@ -13,7 +13,7 @@ export const Tal = () => {
   return (
     <nav className="w-5/6 right-28  z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 justify-between flex border border-opacity-30">
       <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/jobapplication" >
+        <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9" >
           <>
             <h3 className="text-xl mb-2">Join Innovotio</h3>
             <p className="text-sm w-11/12 text-headerGrey">
@@ -24,7 +24,7 @@ export const Tal = () => {
         </a>
       </div>
       <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/community" >
+        <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9" >
           <>
             <h3 className="text-xl mb-2">Community</h3>
             <p className="text-sm w-11/12 text-headerGrey">
@@ -35,7 +35,7 @@ export const Tal = () => {
         </a>
       </div>
       <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/community" >
+        <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9" >
           <>
             <h3 className="text-xl mb-2">Programs Training</h3>
             <p className="text-sm w-11/12 text-headerGrey">

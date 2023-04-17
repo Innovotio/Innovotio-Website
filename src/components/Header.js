@@ -1,15 +1,10 @@
 import Image from "next/image";
-import akaneex from "./../assets/header/akaneex.svg";
-import task from "./../assets/header/task.svg";
-import GDG from "./../assets/header/GDG.svg";
-import gdgajah from "./../assets/header/gdgajah.svg";
-import bullion from "./../assets/header/bullion.svg";
 import akraneex from "./../assets/header/akranex.png";
 import traderx from "./../assets/header/traderx.png";
 import gdg1 from "./../assets/header/gdg.png";
 import gdgajah2 from "./../assets/header/gdgajah.png";
 import bullion2 from "./../assets/header/bullion.png";
-
+import Link from "next/link";
 const Header = () => {
   return (
     <>
@@ -25,9 +20,13 @@ const Header = () => {
               operation.
             </p>
             <div className="flex lg:flex-row flex-col lg:justify-center gap-4">
+              <Link href="/jobapplication" legacyBehavior>
+                <a target="_blank">
               <button className="lg:font-medum lg:text-lg h-12 w-56 font-medium rounded-md  bg-btnDefaultBlack text-white hover:bg-zinc-700 ">
                 Join Innovotio
               </button>
+                </a>
+              </Link>
               <button className="lg:font-medum lg:text-md mt-4 lg:mt-0 rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
                 Hire Tech Talent
               </button>
