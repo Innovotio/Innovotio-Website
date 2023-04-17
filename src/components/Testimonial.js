@@ -11,7 +11,7 @@ const Testimonial = () => {
       <div className="lg:flex pb-8 ">
         <Image alt="quotation mark" src={Quotation} width={60} />
       </div>
-      <p className="lg:font-normal lg:text-2xl md:text-xl md:w-10/12 lg:w-6/12 w-12/12 text-base text-white">
+      <p className="font-light lg:text-2xl md:text-xl md:w-10/12 lg:w-6/12 w-12/12 text-base text-white">
         We partnered with Innovotio to build out our core engineering team and
         we couldn't be more thrilled! Innovotio's pool of high-quality,
         motivated and entrepreneurial engineers was a game-changer during the

@@ -7,7 +7,7 @@ function Operations() {
       <h1 className=" text-3xl font-medium w-12/12 md:w-10/12 lg:w-9/12 lg:text-5xl tracking-wide">
         Scale Your Design & Dev Operations Without The Complexity
       </h1>
-      <p className="text-base lg:text-lg md:w-8/12 lg:w-5/12 w-full py-8 tracking-normal leading-7">
+      <p className="text-base lg:text-lg md:w-8/12 lg:w-5/12 font-light w-full py-8 tracking-normal leading-7">
         Why would you chase random freelancers if you could have your own
         creative dream team today?
       </p>

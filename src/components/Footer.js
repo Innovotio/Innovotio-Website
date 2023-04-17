@@ -20,12 +20,16 @@ function Footer() {
             <Image src={Logo} alt="Logo" width={140} height={140} />
           </figure>
           <div className="">
-            <button className="h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
-              Hire a talent
-            </button>
+            <Link href="/business" legacyBehavior>
+              <a target="_blank">
+                <button className="hover:bg-btnHoverYellow h-11 font-medium rounded-xl text-lg mt-7  w-40 border-black border  bg-white text-black">
+                  Hire a talent
+                </button>
+              </a>
+            </Link>
           </div>
 
-          <figure className="flex justify-between w-56 md:w-80 mt-7">
+          <figure className="flex justify-between w-52 md:w-64 mt-7">
             <Image src={Facebook} alt="Logo" width={40} height={40} />
             <Image src={Instagram} alt="Logo" width={40} height={40} />
             <Image src={LinkedIn} alt="Logo" width={40} height={40} />
@@ -34,7 +38,7 @@ function Footer() {
         </div>
         <div className="grid md:grid-cols-2 grid-col-1 gap-16 text-base lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
           <ul className="leading-10 w-12/12">
-          <li className=" text-xl text-gray pb-3">
+            <li className=" text-xl text-headerGrey pb-3">
               <Link href="">Services</Link>
             </li>
             <li className="pb-3">
@@ -54,7 +58,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10">
-            <li className="text-xl text-gray  pb-3">
+            <li className="text-xl text-headerGrey  pb-3">
               <Link href="">Company</Link>
             </li>
             <li className="pb-3">
@@ -68,7 +72,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10 w-96">
-          <li className="text-xl w-96 text-gray pb-3">
+            <li className="text-xl w-96 text-headerGrey pb-3">
               <Link href="">Contact Us</Link>
             </li>
             <li className="pb-3">
@@ -84,7 +88,7 @@ function Footer() {
         </div>
       </section>
       <section className="py-5">
-        <Copyright/>
+        <Copyright />
       </section>
     </footer>
   );

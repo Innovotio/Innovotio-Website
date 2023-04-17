@@ -99,6 +99,7 @@ const ClientForm = () => {
                 <option>Tech Event Planning</option>
                 <option>Pitch Deck Designs</option>
                 <option>Consultancy</option>
+                <option>Merchandise </option>
               </select>
             </div>
             <div className="flex flex-col">
