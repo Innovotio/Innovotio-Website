@@ -1,9 +1,9 @@
 import Image from "next/image";
-import akraneex from "./../assets/header/akranex.png";
-import traderx from "./../assets/header/traderx.png";
-import gdg1 from "./../assets/header/gdg.png";
-import gdgajah2 from "./../assets/header/gdgajah.png";
-import bullion2 from "./../assets/header/bullion.png";
+import akraneex from "./../assets/header/akaneex.svg";
+import traderx from "./../assets/header/task.svg";
+import gdg1 from "./../assets/header/GDG.svg";
+import gdgajah2 from "./../assets/header/gdgajah.svg";
+import bullion2 from "./../assets/header/bullion.svg";
 import Link from "next/link";
 const Header = () => {
   return (

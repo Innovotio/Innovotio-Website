@@ -33,7 +33,7 @@ const AboutHeader = () => {
     </div>
     <div className="lg:pt-32 pt-16 flex flex-col justify-center items-center ">
             <div className="flex justify-center text-center items-center flex-col ">
-            <div className="md:grid-cols-5 gap-10 grid grid-cols-3 px-10 place-items-center items-center pt-6">
+            <div className="md:grid-cols-5 gap-14 lg:grid hidden grid-cols-3 px-10 place-items-center items-center pt-6">
                 <div>
                   <Image alt="akaneex" src={akaneex} width={140} height={140} />
                 </div>
