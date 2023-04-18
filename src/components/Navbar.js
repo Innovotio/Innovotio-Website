@@ -273,16 +273,12 @@ function Navbar() {
           <div className="flex flex-wrap h-44 lg:mb-0 mb-20">
             <div className="mb-5 mr-10">
               <Link href="/jobapplication" legacyBehavior>
-                <a>
                   <BlackBtn text="Join Innovotio" />
-                </a>
               </Link>
             </div>
             <div className="">
             <Link href="/business" legacyBehavior>
-                <a>
                 <YellowBtn text="Hire a talent" />
-                </a>
               </Link>
             </div>
           </div>

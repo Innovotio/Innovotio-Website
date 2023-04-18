@@ -36,7 +36,7 @@ function Footer() {
             <Image src={Twitter} alt="Logo" width={40} height={40} />
           </figure>
         </div>
-        <div className="grid md:grid-cols-2 grid-col-1 gap-16 text-base lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
+        <div className="grid md:grid-cols-2  grid-col-1 gap-16 text-base lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
           <ul className="leading-10 w-12/12">
             <li className=" text-xl text-headerGrey pb-3">
               <Link href="">Services</Link>
