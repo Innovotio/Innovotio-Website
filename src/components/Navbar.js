@@ -245,13 +245,17 @@ function Navbar() {
                 <Link href="/jobapplication">Join Innovotio</Link>
               </li>
               <li className="mb-5">
-                <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9">
+                <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9" legacyBehavior>
+                  <a target="_blank">
                   Community
+                  </a>
                 </Link>
               </li>
               <li className="mb-5">
-                <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9">
+                <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9" legacyBehavior>
+                <a target="_blank">
                   Programs Training
+                  </a>
                 </Link>
               </li>
             </ul>
