@@ -270,7 +270,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-wrap h-44 lg:mb-0 mb-20">
+          <div className="flex flex-wrap h-44 lg:mb-0 mb-36">
             <div className="mb-5 mr-10">
               <Link href="/jobapplication" legacyBehavior>
                   <BlackBtn text="Join Innovotio" />
