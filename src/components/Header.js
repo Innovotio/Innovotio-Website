@@ -22,14 +22,18 @@ const Header = () => {
             <div className="flex lg:flex-row flex-col lg:justify-center gap-4">
               <Link href="/jobapplication" legacyBehavior>
                 <a target="_blank">
-              <button className="lg:font-medum lg:text-lg h-12 w-56 font-medium rounded-md  bg-btnDefaultBlack text-white hover:bg-zinc-700 ">
+              <button className="lg:font-medium lg:text-lg h-12 w-56 font-medium rounded-md  bg-btnDefaultBlack text-white hover:bg-zinc-700 ">
                 Join Innovotio
               </button>
                 </a>
               </Link>
-              <button className="lg:font-medum lg:text-md mt-4 lg:mt-0 rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">
+              <button className="lg:font-medium lg:text-lg text-base mt-4 lg:mt-0 rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
                 Hire Tech Talent
               </button>
+                </a>
+              </Link>
             </div>
           </div>
 
