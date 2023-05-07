@@ -7,7 +7,7 @@ import Carbon from "./../assets/description/Carbon.png";
 
 const Testimonial = () => {
   return (
-    <div className=" mx-auto container lg:pt-40 md:pt-32 pt-14 flex text-center lg:px-0 px-8 justify-center items-center flex-col">
+    <div className=" mx-auto container lg:pt-40 md:pt-32 pt-20 flex text-center lg:px-0 px-8 justify-center items-center flex-col">
       <div className="lg:flex pb-8 ">
         <Image alt="quotation mark" src={Quotation} width={60} />
       </div>
@@ -33,7 +33,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex lg:flex-row gap-10 lg:justify-center lg:pt-20 pt-12 flex justify-between">
+      <div className="lg:flex md:flex-row flex-col  gap-10 lg:justify-center lg:pt-20 pt-12 flex justify-between">
         <Image src={Adiva} alt="adiva" width={106} height={62} />
         <Image src={Afit} alt="afit" width={119} height={24} />
         <Image src={Carbon} alt="carbon" width={100} height={25} />

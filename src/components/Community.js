@@ -10,14 +10,14 @@ import Link from "next/link";
 const Community = () => {
   return (
     <div>
-      <div className=" mx-auto container pt-8 lg:pt-44 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
-        <div className="flex flex-col xl:w-5/12 lg:w-5/12">
-          <p className="font-medium lg:text-4xl text-3xl lg:w-full  text-white">
+      <div className=" mx-auto container lg:pt-44 md:pt-32 pt-20 flex flex-col lg:justify-center items-start justify-start lg:items-center px-8 ">
+        <div className="flex flex-col lg:text-center">
+          <p className="font-medium lg:text-5xl text-3xl  text-white">
             Join Our Community
           </p>
-          <p className=" lg:text-lg md:text-lg text-base lg:w-96 w-full font-light text-headerGrey lg:pb-8 py-8">
-            Innovotio goes beyond connecting qualified tech talents and
-            organizations.
+          <p className=" md:text-xl max-w-2xl text-base font-light text-headerGrey py-8">
+            Innovotio has an active community to provide support for recruiters,
+            organizations and provide tech talent management.
           </p>{" "}
           <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9" legacyBehavior>
             <a target="_blank">
@@ -27,8 +27,8 @@ const Community = () => {
             </a>
           </Link>
         </div>
-        <div className=" xl:w-7/12 justify-between pt-14">
-          <div className="lg:font-normal grid lg:grid-cols-2 gap-2 grid-col-1 leading-10 lg:text-base lg:text-white lg:text-left ">
+        <div className=" justify-between pt-14">
+          <div className="lg:font-normal grid lg:grid-cols-3 gap-4 grid-col-1 leading-10 lg:text-base lg:text-white lg:text-left ">
             <Talent
               image={Resume}
               text="Unrestricted access to a wide range of specific tech talents"
