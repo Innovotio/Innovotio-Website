@@ -170,10 +170,10 @@ function Navbar() {
   };
 
   return (
-    <nav className=" overflow-x-hidden px-10 bg-black ">
-      <section className="cursor-pointer container mx-auto  flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-5  items-center py-2">
+    <nav className=" overflow-x-hidden  bg-black ">
+      <section className="cursor-pointer 2xl:container 2xl:mx-auto   flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-5  items-center py-2">
         <Link href="/">
-          <figure className="px-7 md:px-10 lg:px-0">
+          <figure className="px-6 md:px-10 lg:px-0">
             <Image
               src={Logo}
               alt="innovotio's logo"
@@ -219,7 +219,7 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between text-base  overflow-x-hidden px-5 tracking-wide lg:hidden top-16 absolute h-max z-50 bg-black w-full cursor-pointer `}
+          } justify-between text-base px-6 overflow-x-hidden  tracking-wide lg:hidden top-16 absolute h-max z-50 bg-black w-full cursor-pointer `}
         >
           <div className="mb-8 mt-4">
             <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
@@ -276,7 +276,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-wrap mb-40 lg:mb-0">
+          <div className="flex flex-wrap mb-48 lg:mb-0">
             <div className="mb-3  mr-10">
               <Link href="/jobapplication" legacyBehavior>
                 <BlackBtn text="Join Innovotio" />
@@ -298,7 +298,7 @@ function Navbar() {
         </div>
 
         <div
-          className="lg:hidden block cursor-pointer pr-8"
+          className="lg:hidden block cursor-pointer pr-6"
           onClick={handleNav}
         >
           {nav ? (
