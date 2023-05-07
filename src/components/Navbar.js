@@ -122,7 +122,7 @@ function Navbar() {
               </li>
               <li className="mb-5">
                 <Link
-                  href="/https://forms.gle/WPHUWJbAEGuT5KBA9"
+                  href="/http://bit.ly/Innovotio"
                   legacyBehavior
                 >
                   <a target="_blank">Community</a>
@@ -130,7 +130,7 @@ function Navbar() {
               </li>
               <li className="mb-5">
                 <Link
-                  href="/https://forms.gle/WPHUWJbAEGuT5KBA9"
+                  href="/programsTraining"
                   legacyBehavior
                 >
                   <a target="_blank">Programs Training</a>
@@ -145,7 +145,7 @@ function Navbar() {
                 <Link href="/aboutUs">Who We Are</Link>
               </li>
               <li className="mb-5">
-                <Link href="/aboutUs">Careers</Link>
+                <Link href="/jobapplication">Careers</Link>
               </li>
               <li className="mb-5">
                 <Link href="/aboutUs">Blog</Link>
