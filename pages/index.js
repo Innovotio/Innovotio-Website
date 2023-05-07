@@ -38,10 +38,7 @@ export default function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:domain"
-          content="innovotio.vercel.app"
-        />
+        <meta property="twitter:domain" content="innovotio.vercel.app" />
         <meta
           property="twitter:url"
           content="/https://innovotio-website.vercel.app/"
@@ -59,6 +56,7 @@ export default function Home() {
         />
       </Head>
       <main className="overflow-hidden  text-white bg-black">
+        <Navbar />
         <Header />
         <Description />
         <Testimonial />

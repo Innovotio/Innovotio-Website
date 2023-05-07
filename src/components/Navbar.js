@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Logo from "../assets/footer/Vector.svg";
 import mobileLogo from "../assets/Navbar/logo.svg";
@@ -8,139 +8,9 @@ import arrow from "../assets/Navbar/arrow.png";
 import menu from "../assets/Navbar/Menu (1).svg";
 import BlackBtn from "./Custom/BlackBtn";
 import YellowBtn from "./Custom/YellowBtn";
-
-export const Tal = () => {
-  return (
-    <nav className="w-5/6 right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 justify-between flex border border-opacity-30">
-      <div className="w-3/6  hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9">
-          <>
-            <h3 className="text-xl mb-2">Join Innovotio</h3>
-            <p className="text-sm w-11/12 text-headerGrey">
-              We work as an extension of your in-house team and assemble the
-              right team members for every task and project.
-            </p>
-          </>
-        </a>
-      </div>
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9">
-          <>
-            <h3 className="text-xl mb-2">Community</h3>
-            <p className="text-sm w-11/12 text-headerGrey">
-              Innovotio has an active community to provide support for
-              recuiters, organizations and provode tech talent management.
-            </p>
-          </>
-        </a>
-      </div>
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9">
-          <>
-            <h3 className="text-xl mb-2">Programs Training</h3>
-            <p className="text-sm w-11/12 text-headerGrey">
-              Get started with a tech skill using our one month introductory
-              training program. Get introduced to all the basics necessary to
-              start a career in tech.
-            </p>
-          </>
-        </a>
-      </div>
-    </nav>
-  );
-};
-
-export const Abt = () => {
-  return (
-    <nav className="w-5/6 right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 justify-between flex border border-opacity-30">
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/aboutUs">
-          <>
-            <h3 className="text-xl mb-2">Who We Are</h3>
-            <p className="text-sm w-11/12  text-headerGrey">
-              We go beyond connecting tech talents to businesses and offer
-              additional services for businesses and our talent pool.
-            </p>
-          </>
-        </a>
-      </div>
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a href="/jobapplication">
-          <>
-            <h3 className="text-xl mb-2">Careers</h3>
-            <p className="text-sm w-11/12  text-headerGrey">
-              Put your best foot forward and fast track landing a new tech job
-              with innovotio
-            </p>
-          </>
-        </a>
-      </div>
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10 h-full py-10">
-        <a href="/aboutUs">
-          <>
-            <h3 className="text-xl mb-2">Blogs</h3>
-            <p className="text-sm w-11/12 text-headerGrey">
-              Read the articles on community building, talents testimonials and
-              get business tips too on our blog.
-            </p>
-          </>
-        </a>
-      </div>
-    </nav>
-  );
-};
-
-export const Business = () => {
-  return (
-    <nav className=" w-7/12 left-20 cursor-pointer h-96 bg-black items-center rounded-xl border-headerGrey absolute top-24 grid grid-cols-2 border border-opacity-30">
-      <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-5">
-        <a href="/jobapplication">
-          <>
-            <h3 className="text-xl mb-2">Recruitment</h3>
-            <p className="text-sm text-headerGrey">
-              Ease your recuitment process with our human resource team designed
-              to vet and provide the best fit from our tech talents.
-            </p>
-          </>
-        </a>
-      </div>
-      <div className=" hover:bg-btnHoverBlack  h-full py-10 w-full px-10">
-        <a href="/business">
-          <>
-            <h3 className="text-xl mb-2">Tech Event Organization</h3>
-            <p className="text-sm text-headerGrey">
-              We train, assess and maintain the quality of our talent pool
-              regularly to ensure satisfaction both for busniesses and talents.
-            </p>
-          </>
-        </a>
-      </div>
-      <div className=" hover:bg-btnHoverBlack  h-full overflow-hidden py-10 w-11/12 px-10">
-        <a href="/business">
-          <>
-            <h3 className="text-xl mb-2">Consultancy</h3>
-            <p className="text-sm text-headerGrey">
-              We offer one month of free business consultancy to small
-              businesses and startups. We assist in the launch process & early
-              stages of the business to establish business structure.
-            </p>
-          </>
-        </a>
-      </div>
-      <div className=" hover:bg-btnHoverBlack overflow-hidden  h-full py-10 w-full px-10">
-        <a href="/business">
-          <>
-            <h3 className="text-xl mb-2">Merchandising</h3>
-            <p className="text-sm text-headerGrey">
-              As tech event organizers, we also create branded merchandise for
-              tech organizations and communities for events and merch stores.
-            </p>
-          </>
-        </a>
-      </div>
-    </nav>
-  );
-};
+import Abt from "./Nav/Abt";
+import Tal from "./Nav/Tal";
+import Business from "./Nav/Business";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -169,11 +39,16 @@ function Navbar() {
     setNav(!nav);
   };
 
+
+  const handleClickOutside = () => {
+    setNav(!nav);
+  };
+
   return (
-    <nav className=" overflow-x-hidden  bg-black ">
-      <section className="cursor-pointer 2xl:container 2xl:mx-auto   flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-5  items-center py-2">
+    <nav className=" overflow-x-hidden bg-black ">
+      <section onClick={handleClickOutside} className="cursor-pointer 2xl:container 2xl:mx-auto flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-10 px-5  items-center py-2">
         <Link href="/">
-          <figure className="px-6 md:px-10 lg:px-0">
+          <figure className="">
             <Image
               src={Logo}
               alt="innovotio's logo"
@@ -219,8 +94,9 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between text-base px-6 overflow-x-hidden  tracking-wide lg:hidden top-16 absolute h-max z-50 bg-black w-full cursor-pointer `}
+          } justify-between text-base overflow-x-hidden lg:hidden top-16 absolute left-0 w-full h-max z-50 bg-black cursor-pointer `}
         >
+          <div className="px-5">
           <div className="mb-8 mt-4">
             <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
             <ul className="text-lg">
@@ -276,8 +152,8 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-wrap mb-48 lg:mb-0">
-            <div className="mb-3  mr-10">
+          <div className="flex flex-wrap mb-5 lg:mb-0">
+            <div className="mb-3 ">
               <Link href="/jobapplication" legacyBehavior>
                 <BlackBtn text="Join Innovotio" />
               </Link>
@@ -289,6 +165,7 @@ function Navbar() {
             </div>
           </div>
         </div>
+        </div>
 
         <div className="lg:flex hidden justify-between">
           <BlackBtn text="Join Innovotio" />
@@ -298,7 +175,7 @@ function Navbar() {
         </div>
 
         <div
-          className="lg:hidden block cursor-pointer pr-6"
+          className="lg:hidden block cursor-pointer"
           onClick={handleNav}
         >
           {nav ? (
