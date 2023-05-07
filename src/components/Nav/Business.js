@@ -4,7 +4,7 @@ const Business = () => {
   return (
     <nav className="2xl:mx-auto 2xl:right-20 2xl:container w-7/12 left-20 cursor-pointer h-96 bg-black items-center rounded-xl border-headerGrey absolute top-20 grid grid-cols-2 border border-opacity-30">
     <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-5">
-      <a href="/jobapplication">
+    <a target='_blank' href="/jobapplication">
         <>
           <h3 className="text-xl mb-2">Recruitment</h3>
           <p className="text-sm text-headerGrey">
@@ -15,7 +15,7 @@ const Business = () => {
       </a>
     </div>
     <div className=" hover:bg-btnHoverBlack  h-full py-10 w-full px-10">
-      <a href="/business">
+    <a target='_blank' href="/business">
         <>
           <h3 className="text-xl mb-2">Tech Event Organization</h3>
           <p className="text-sm text-headerGrey">
@@ -26,7 +26,7 @@ const Business = () => {
       </a>
     </div>
     <div className=" hover:bg-btnHoverBlack  h-full overflow-hidden py-10 w-11/12 px-10">
-      <a href="/business">
+    <a target='_blank' href="/business">
         <>
           <h3 className="text-xl mb-2">Consultancy</h3>
           <p className="text-sm text-headerGrey">
@@ -38,7 +38,7 @@ const Business = () => {
       </a>
     </div>
     <div className=" hover:bg-btnHoverBlack overflow-hidden  h-full py-10 w-full px-10">
-      <a href="/business">
+      <a target='_blank' href="/business">
         <>
           <h3 className="text-xl mb-2">Merchandising</h3>
           <p className="text-sm text-headerGrey">
