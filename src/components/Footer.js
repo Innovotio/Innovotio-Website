@@ -30,42 +30,80 @@ function Footer() {
           </div>
 
           <figure className="flex justify-between w-52 md:w-64 mt-10">
-            <Image src={Facebook} alt="Logo" width={40} height={40} />
-            <Image src={Instagram} alt="Logo" width={40} height={40} />
-            <Image src={LinkedIn} alt="Logo" width={40} height={40} />
-            <Image src={Twitter} alt="Logo" width={40} height={40} />
+            <Link
+              href="https://web.facebook.com/people/Innovotio/100087403136156/?mibextid=ZbWKwL"
+              legacyBehavior
+            >
+              <a target="_blank">
+                <Image src={Facebook} alt="Logo" width={40} height={40} />
+              </a>
+            </Link>
+
+            <Link href="https://www.instagram.com/innovotio/" legacyBehavior>
+              <a target="_blank">
+                <Image src={Instagram} alt="Logo" width={40} height={40} />
+              </a>
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/company/innovotio-limited/"
+              legacyBehavior
+            >
+              <a target="_blank">
+                <Image src={LinkedIn} alt="Logo" width={40} height={40} />
+              </a>
+            </Link>
+            <Link href="https://twitter.com/Innovotio" legacyBehavior>
+              <a target="_blank">
+                <Image src={Twitter} alt="Logo" width={40} height={40} />
+              </a>
+            </Link>
           </figure>
         </div>
         <div className="grid md:grid-cols-2  grid-col-1 gap-16 text-lg lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
           <ul className="leading-10 w-12/12">
             <li className=" pb-3">
-              <Link href="">Services</Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">Services</a>
+              </Link>
             </li>
             <li className="pb-3">
-              <Link href="">Outsourcing</Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">Outsourcing</a>
+              </Link>
             </li>
             <li className="pb-3">
-              <Link href="">Events Organizations</Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">Events Organizations</a>
+              </Link>
             </li>
             <li className="pb-3">
-              <Link href="">Consultancy</Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">Consultancy </a>
+              </Link>
             </li>
             <li className="pb-3">
-              <Link href="">Merchandising</Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">Merchandising </a>
+              </Link>
             </li>
             <li>
-              <Link href="">Community</Link>
+              <Link href="http://bit.ly/Innovotio" legacyBehavior>
+                <a target="_blank">Community</a>
+              </Link>
             </li>
           </ul>
           <ul className="leading-10">
             <li className=" pb-3">
-              <Link href="">Company</Link>
+              <Link href="/aboutUs">Company</Link>
             </li>
             <li className="pb-3">
-              <Link href="/">Who we are</Link>
+              <Link href="/aboutUs">Who we are</Link>
             </li>
             <li className="pb-3">
-              <Link href="">Careers</Link>
+              <Link href="http://bit.ly/Innovotio" legacyBehavior>
+                <a target="_blank">Careers</a>
+              </Link>
             </li>
             <li className="">
               <Link href="">Blogs</Link>
@@ -73,16 +111,20 @@ function Footer() {
           </ul>
           <ul className="leading-10 w-96">
             <li className="w-96 pb-3">
-              <Link href="">Contact Us</Link>
+              <Link href="http://bit.ly/Innovotio" legacyBehavior>
+                <a target="_blank">Contact Us</a>
+              </Link>
             </li>
             <li className="pb-3">
-              <Link href="">talents@innovotio.com</Link>
+              <Link href=""> talents@innovotio.com</Link>
             </li>
             <li className="pb-3">
               <Link href="">+234 901 32456</Link>
             </li>
             <li>
-              <Link href="">Drop a message</Link>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdwnoNoc6hcbi_CfYO2xgtYj5BTrheSfUvDiO2ijQuxIFS4nA/viewform?usp=pp_url">
+                Drop a message
+              </Link>
             </li>
           </ul>
         </div>
