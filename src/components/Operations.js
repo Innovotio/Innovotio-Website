@@ -3,7 +3,7 @@ import YellowBtn from "./Custom/YellowBtn";
 
 function Operations() {
   return (
-    <section className="flex-col lg:flex-row lg:items-center lg:justify-evenly border-t border-b mx-auto container text-white lg:mt-40 md:mt-24 mt-14 py-14 border-btnDefaultBlack leading-tight px-5 flex ">
+    <section className="flex-col lg:flex-row lg:items-center lg:justify-evenly border-t border-b mx-auto container text-white lg:mt-32 md:mt-24 mt-14 py-12 border-btnDefaultBlack leading-tight px-5 flex ">
       <div>
       <h1 className=" text-3xl font-medium max-w-lg lg:max-w-xl lg:text-5xl tracking-wide">
       Get swift and efficient career and business support      </h1>

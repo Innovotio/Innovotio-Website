@@ -59,7 +59,6 @@ export default function Home() {
         />
       </Head>
       <main className="overflow-hidden  text-white bg-black">
-        <Navbar />
         <Header />
         <Description />
         <Testimonial />

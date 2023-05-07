@@ -12,7 +12,7 @@ import YellowBtn from "./Custom/YellowBtn";
 export const Tal = () => {
   return (
     <nav className="w-5/6 right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-24 justify-between flex border border-opacity-30">
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
+      <div className="w-3/6  hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
         <a href="/https://forms.gle/WPHUWJbAEGuT5KBA9">
           <>
             <h3 className="text-xl mb-2">Join Innovotio</h3>
@@ -170,8 +170,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="container xl:mx-2 mx-auto">
-      <section className="cursor-pointer flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-5  px-0 items-center py-2">
+    <nav className=" overflow-x-hidden px-10 bg-black ">
+      <section className="cursor-pointer container mx-auto  flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-5  items-center py-2">
         <Link href="/">
           <figure className="px-7 md:px-10 lg:px-0">
             <Image
@@ -219,11 +219,11 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between z-50 text-base tracking-wide lg:hidden top-16 absolute px-5 bg-black w-full cursor-pointer `}
+          } justify-between text-base  overflow-x-hidden px-5 tracking-wide lg:hidden top-16 absolute h-max z-50 bg-black w-full cursor-pointer `}
         >
           <div className="mb-8 mt-4">
             <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
-            <ul>
+            <ul className="text-lg">
               <li className="mb-5">
                 <Link href="/jobapplication">Recuitment</Link>
               </li>
@@ -240,29 +240,31 @@ function Navbar() {
           </div>
           <div className="mb-8">
             <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
-            <ul>
+            <ul className="text-lg">
               <li className="mb-5">
                 <Link href="/jobapplication">Join Innovotio</Link>
               </li>
               <li className="mb-5">
-                <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9" legacyBehavior>
-                  <a target="_blank">
-                  Community
-                  </a>
+                <Link
+                  href="/https://forms.gle/WPHUWJbAEGuT5KBA9"
+                  legacyBehavior
+                >
+                  <a target="_blank">Community</a>
                 </Link>
               </li>
               <li className="mb-5">
-                <Link href="/https://forms.gle/WPHUWJbAEGuT5KBA9" legacyBehavior>
-                <a target="_blank">
-                  Programs Training
-                  </a>
+                <Link
+                  href="/https://forms.gle/WPHUWJbAEGuT5KBA9"
+                  legacyBehavior
+                >
+                  <a target="_blank">Programs Training</a>
                 </Link>
               </li>
             </ul>
           </div>
           <div className="mb-8">
             <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
-            <ul>
+            <ul className="text-lg">
               <li className="mb-5">
                 <Link href="/aboutUs">Who We Are</Link>
               </li>
@@ -274,26 +276,29 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-wrap h-44 lg:mb-0 mb-36">
-            <div className="mb-5 mr-10">
+          <div className="flex flex-wrap mb-40 lg:mb-0">
+            <div className="mb-3  mr-10">
               <Link href="/jobapplication" legacyBehavior>
-                  <BlackBtn text="Join Innovotio" />
+                <BlackBtn text="Join Innovotio" />
               </Link>
             </div>
             <div className="">
-            <Link href="/business" legacyBehavior>
+              <Link href="/business" legacyBehavior>
                 <YellowBtn text="Hire a talent" />
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="lg:flex hidden justify-between w-96">
+        <div className="lg:flex hidden justify-between">
           <BlackBtn text="Join Innovotio" />
-          <YellowBtn text="Hire a talent" />
+          <div className="md:ml-4">
+            <YellowBtn text="Hire a talent" />
+          </div>
         </div>
+
         <div
-          className="lg:hidden block cursor-pointer mr-7 md:mr-10 lg:mr-0"
+          className="lg:hidden block cursor-pointer pr-8"
           onClick={handleNav}
         >
           {nav ? (

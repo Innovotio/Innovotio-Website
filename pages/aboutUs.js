@@ -58,7 +58,6 @@ const about = () => {
         />
     </Head>
     <section className=' bg-black overflow-x-hidden'>
-        <Navbar/>
         <AboutHero/>
         <AboutHeader/>
         <Community/>
