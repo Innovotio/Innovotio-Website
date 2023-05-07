@@ -170,7 +170,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="2xl:container 2xl:mx-auto">
+    <nav className="container xl:mx-2 mx-auto">
       <section className="cursor-pointer flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-8  px-0 items-center py-2">
         <Link href="/">
           <figure className="px-7 md:px-10 lg:px-0">

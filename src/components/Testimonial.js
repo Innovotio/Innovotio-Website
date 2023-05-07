@@ -7,11 +7,11 @@ import Carbon from "./../assets/description/Carbon.png";
 
 const Testimonial = () => {
   return (
-    <div className=" mx-auto container pt-24 lg:pt-44 flex text-center lg:px-0 px-8 justify-center items-center flex-col">
+    <div className=" mx-auto container lg:pt-40 md:pt-32 pt-14 flex text-center lg:px-0 px-8 justify-center items-center flex-col">
       <div className="lg:flex pb-8 ">
         <Image alt="quotation mark" src={Quotation} width={60} />
       </div>
-      <p className="font-light lg:text-2xl md:text-xl md:w-10/12 lg:w-6/12 w-12/12 text-base text-white">
+      <p className="font-light lg:text-2xl md:text-xl max-w-2xl text-base text-white">
         We partnered with Innovotio to build out our core engineering team and
         we couldn't be more thrilled! Innovotio's pool of high-quality,
         motivated and entrepreneurial engineers was a game-changer during the
@@ -26,16 +26,17 @@ const Testimonial = () => {
           <p className="lg:font-normal lg:text-base lg:text-white">
             Stella Damacus
           </p>
-          <div className="flex lg:flex-row w-64 justify-between lg:space-x-3 lg:font-normal lg:text-base lg:text-headerGrey">
+          <div className="flex flex-row lg:max-w-md max-w-full justify-between lg:space-x-3 lg:font-normal lg:text-base text-sm text-headerGrey">
             <p>Editor-in-chief</p>
+            <div className="font-light lg:mx-0 mx-2">|</div>
             <p>Adiva networks</p>
           </div>
         </div>
       </div>
       <div className="lg:flex lg:flex-row gap-10 lg:justify-center lg:pt-20 pt-12 flex justify-between">
-        <Image src={Adiva} alt="adiva" width={70} height={70} />
-        <Image src={Afit} alt="afit" width={70} height={70} />
-        <Image src={Carbon} alt="carbon" width={70} height={70} />
+        <Image src={Adiva} alt="adiva" width={106} height={62} />
+        <Image src={Afit} alt="afit" width={119} height={24} />
+        <Image src={Carbon} alt="carbon" width={100} height={25} />
       </div>
     </div>
   );

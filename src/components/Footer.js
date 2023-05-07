@@ -9,8 +9,8 @@ import Copyright from "./Copyright";
 
 function Footer() {
   return (
-    <footer className=" mx-auto container font-font text-white px-8 pt-24 lg:pt-44 cursor-pointer">
-      <h1 className="lg:w-7/12 md:w-8/12 w-12/12 leading-tight lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
+    <footer className=" mx-auto container font-font text-white px-8  lg:pt-40 md:pt-32 pt-14 cursor-pointer">
+      <h1 className="lg:max-w-3xl md:max-w-xl max-w-md lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to
       </h1>
@@ -29,16 +29,16 @@ function Footer() {
             </Link>
           </div>
 
-          <figure className="flex justify-between w-52 md:w-64 mt-7">
+          <figure className="flex justify-between w-52 md:w-64 mt-10">
             <Image src={Facebook} alt="Logo" width={40} height={40} />
             <Image src={Instagram} alt="Logo" width={40} height={40} />
             <Image src={LinkedIn} alt="Logo" width={40} height={40} />
             <Image src={Twitter} alt="Logo" width={40} height={40} />
           </figure>
         </div>
-        <div className="grid md:grid-cols-2  grid-col-1 gap-16 text-base lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
+        <div className="grid md:grid-cols-2  grid-col-1 gap-16 text-lg lg:gap-0 lg:grid-cols-3 lg:w-7/12 w-11/12 lg:pt-0 pt-0">
           <ul className="leading-10 w-12/12">
-            <li className=" text-xl text-headerGrey pb-3">
+            <li className=" pb-3">
               <Link href="">Services</Link>
             </li>
             <li className="pb-3">
@@ -58,7 +58,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10">
-            <li className="text-xl text-headerGrey  pb-3">
+            <li className=" pb-3">
               <Link href="">Company</Link>
             </li>
             <li className="pb-3">
@@ -72,7 +72,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="leading-10 w-96">
-            <li className="text-xl w-96 text-headerGrey pb-3">
+            <li className="w-96 pb-3">
               <Link href="">Contact Us</Link>
             </li>
             <li className="pb-3">

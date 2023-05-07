@@ -9,29 +9,28 @@ const Header = () => {
   return (
     <>
       <div className="cursor-pointer">
-        <div className="xl:pt-64 lg:pt-44 pt-14 px-8">
+        <div className=" xl:pt-64 lg:pt-40 md:pt-32 pt-14 px-8">
           <div className="flex justify-center items-center px-4 flex-col text-center w-full">
-            <h1 className="lg:text-5xl md:text-5xl text-4xl lg:tracking-wide tracking-wide leading-tight font-medium w-11/12 md:w-8/12 lg:w-8/12 text-white">
-              Build a reliable team of efficient tech talents
+            <h1 className="md:text-6xl text-4xl lg:max-w-4xl max-w-2xl leading-10 font-medium text-white">
+              Get qualified tech talents & tech business support
             </h1>
-            <p className=" lg:text-xl md:text-lg text-base px-4 lg:font-normal w-12/12 md:w-9/12 xl:w-7/12 py-8 text-headerGrey">
-              Innovotio helps to link efficient tech talents across all levels
-              of experience to organizations of all sizes to ensure smooth
-              operation.
+            <p className=" md:text-xl max-w-md md:max-w-2xl leading-7 text-sm px-4 lg:font-normal py-7 text-headerGrey">
+              We provide qualified tech talents to hiring organizations and
+              provide business support to tech organizations.
             </p>
             <div className="flex lg:flex-row flex-col lg:justify-center gap-4">
               <Link href="/jobapplication" legacyBehavior>
                 <a target="_blank">
-              <button className="lg:font-medium lg:text-lg h-12 w-56 font-medium rounded-md  bg-btnDefaultBlack text-white hover:bg-zinc-700 ">
-                Join Innovotio
-              </button>
+                  <button className="lg:font-medium lg:text-lg h-12 w-56 font-medium rounded-md  bg-btnDefaultBlack text-white hover:bg-zinc-700 ">
+                    Join Innovotio
+                  </button>
                 </a>
               </Link>
               <Link href="/business" legacyBehavior>
                 <a target="_blank">
-              <button className="lg:font-medium lg:text-lg text-base mt-4 lg:mt-0 rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
-                Hire Tech Talent
-              </button>
+                  <button className="lg:font-medium lg:text-lg text-base rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
+                    Hire Tech Talent
+                  </button>
                 </a>
               </Link>
             </div>
@@ -44,19 +43,34 @@ const Header = () => {
               </p>
               <div className="md:grid hidden md:grid-cols-5 gap-10 grid-cols-3 px-10 place-items-center items-center pt-6">
                 <div>
-                  <Image alt="akaneex" src={akraneex} width={140} height={140} />
+                  <Image
+                    alt="akaneex"
+                    src={akraneex}
+                    width={140}
+                    height={140}
+                  />
                 </div>
                 <div>
-                  <Image alt="task" src={traderx} width={160} height={160}/>
+                  <Image alt="task" src={traderx} width={160} height={160} />
                 </div>
                 <div>
                   <Image alt="GDG" src={gdg1} width={220} height={220} />
                 </div>
                 <div>
-                  <Image alt="bullion" src={bullion2} width={100} height={100}/>
+                  <Image
+                    alt="bullion"
+                    src={bullion2}
+                    width={100}
+                    height={100}
+                  />
                 </div>
                 <div>
-                  <Image alt="gdgajah" src={gdgajah2}width={220} height={220} />
+                  <Image
+                    alt="gdgajah"
+                    src={gdgajah2}
+                    width={220}
+                    height={220}
+                  />
                 </div>
               </div>
             </div>

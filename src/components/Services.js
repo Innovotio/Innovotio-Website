@@ -8,16 +8,16 @@ import vector7 from "../assets/services/Vector (7).svg";
 
 function Services() {
   return (
-    <section className=" mx-auto container lg:pt-44 pt-28 lg:px-0 px-8 font-font">
+    <section className=" mx-auto container lg:pt-40 md:pt-32 pt-14 lg:px-0 px-8 font-font">
       <div className="">
-        <h1 className="lg:text-4xl text-center text-3xl font-medium">Our Services</h1>
+        <h1 className="lg:text-5xl text-center text-3xl font-medium">Our Services</h1>
         <div className=" flex justify-center">
-          <p className="xl:w-5/12 md:w-8/12 text-center w-12/12 py-6 text-base lg:text-lg tracking-normal text-text">
+          <p className="text-center py-6 text-base lg:text-xl max-w-md lg:max-w-xl tracking-normal text-text">
             Innovotio provides more than just the plumbing for your revenue. As
             a merchant of record, we do it for you:
           </p>
         </div>
-        <div className="grid xl:grid-cols-2 grid-col gap-6 place-items-center pt-4 cursor-pointer">
+        <div className="grid md:grid-cols-2 grid-col xl:gap-7 gap-10 place-items-center pt-4 cursor-pointer">
         <Card
           image={vector5}
           heading="Recruitment"
