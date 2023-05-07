@@ -144,7 +144,7 @@ const ApplicationForm = () => {
           </div>
         </section>
       </section>
-      <section className="2xl:mx-auto 2xl:container overflow-hidden py-6 lg:mt-0 pt-6 h-24 px-6 bg-side">
+      <section className="2xl:mx-auto 2xl:container overflow-hidden py-6 lg:mt-0 pt-6 h-24 px-5 bg-side">
         <Copyright />
       </section>
     </>

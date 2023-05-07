@@ -10,7 +10,7 @@ import Link from "next/link";
 const Community = () => {
   return (
     <div>
-      <div className=" mx-auto container lg:pt-44 md:pt-32 pt-20 flex flex-col lg:justify-center items-start justify-start lg:items-center px-8 ">
+      <div className=" mx-auto container lg:pt-44 md:pt-32 pt-20 flex flex-col lg:justify-center items-start justify-start lg:items-center 5">
         <div className="flex flex-col lg:text-center">
           <p className="font-medium lg:text-5xl text-3xl  text-white">
             Join Our Community

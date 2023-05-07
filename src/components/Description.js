@@ -12,7 +12,7 @@ const Description = () => {
   return (
     <>
       <div>
-        <div className="mx-auto container lg:pt-40 md:pt-32 pt-20 flex px-8 xl:flex-row xl:justify-center xl:items-center flex-col">
+        <div className="mx-auto container lg:pt-40 md:pt-32 pt-20 flex px-5 xl:flex-row xl:justify-center xl:items-center flex-col">
           <div className="flex flex-col xl:w-5/12 lg:w-5/12">
             <p className="font-medium lg:text-5xl text-3xl lg:w-full  text-white">
               Why Choose Innovotio?
@@ -23,7 +23,7 @@ const Description = () => {
             </p>
             <div className=" flex flex-row lg:pt-0 py-3">
               <BlackBtn text="Join Innovotio" />
-              <div className="lg:ml-10 ml-6">
+              <div className="lg:ml-10 ml-2 ">
                 <YellowBtn text="Experience us" />
               </div>
             </div>

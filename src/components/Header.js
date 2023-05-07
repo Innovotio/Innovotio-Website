@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <div className="cursor-pointer">
-        <div className=" xl:pt-64 lg:pt-40 md:pt-32 pt-20 px-8">
+        <div className=" xl:pt-64 lg:pt-40 md:pt-32 pt-20 px-5">
           <div className="flex justify-center items-center px-4 flex-col text-center w-full">
             <h1 className="md:text-6xl text-4xl lg:max-w-4xl max-w-2xl leading-10 font-medium text-white">
               Get qualified tech talents & tech business support
@@ -13,7 +13,7 @@ const Header = () => {
               We provide qualified tech talents to hiring organizations and
               provide business support to tech organizations.
             </p>
-            <div className="flex lg:flex-row flex-col lg:justify-center gap-4">
+            <div className="flex lg:flex-row flex-col lg:justify-center lg:gap-4">
               <Link href="/jobapplication" legacyBehavior>
                 <a target="_blank">
                   <button className="lg:font-medium lg:text-lg h-12 w-56 font-medium rounded-md  bg-btnDefaultBlack text-white hover:bg-zinc-700 ">
@@ -23,7 +23,7 @@ const Header = () => {
               </Link>
               <Link href="/business" legacyBehavior>
                 <a target="_blank">
-                  <button className="lg:font-medium lg:text-lg text-base rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
+                  <button className="lg:font-medium lg:mt-0 mt-3 lg:text-lg text-base rounded-lg h-12 w-56 font-medium bg-primaryYellow text-black hover:bg-btnHoverYellow">
                     Hire Tech Talent
                   </button>
                 </a>
@@ -31,7 +31,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="lg:pt-40 md:pt-20 pt-10 flex flex-col justify-center items-center">
+          <div className="lg:pt-40 md:pt-16 pt-7 flex flex-col justify-center items-center">
             <div className="flex justify-center text-center items-center flex-col ">
               <p className="lg:font-normal font-light lg:text-3xl text-xl lg:leading-10 py-6 text-white ">
                 Trusted by fast-moving clients worldwide

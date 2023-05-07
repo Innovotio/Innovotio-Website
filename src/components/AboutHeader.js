@@ -8,7 +8,7 @@ import Client from "./Custom/Client";
 
 const AboutHeader = () => {
   return (
-    <section className="xl:pt-64 lg:pt-44 pt-20 px-8  mx-auto container">
+    <section className="xl:pt-64 lg:pt-44 pt-20 px-5  mx-auto container">
       <div className="text-white flex lg:flex-row flex-col lg:items-center lg:space-x-4 justify-between">
         <div className="">
           <h2 className="lg:text-4xl leading-7 w-12/12 md:max-w-md max-w-lg md:text-2xl text-xl font-medium">

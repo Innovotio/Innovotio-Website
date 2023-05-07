@@ -92,8 +92,8 @@ export const Abt = () => {
 
 export const Business = () => {
   return (
-    <nav className=" w-7/12 left-20 cursor-pointer h-96  bg-black items-center rounded-xl border-headerGrey absolute top-24 grid grid-cols-2 border border-opacity-30">
-      <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-6">
+    <nav className=" w-7/12 left-20 cursor-pointer h-96 bg-black items-center rounded-xl border-headerGrey absolute top-24 grid grid-cols-2 border border-opacity-30">
+      <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-5">
         <a href="/jobapplication">
           <>
             <h3 className="text-xl mb-2">Recruitment</h3>
@@ -171,7 +171,7 @@ function Navbar() {
 
   return (
     <nav className="container xl:mx-2 mx-auto">
-      <section className="cursor-pointer flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-8  px-0 items-center py-2">
+      <section className="cursor-pointer flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-5  px-0 items-center py-2">
         <Link href="/">
           <figure className="px-7 md:px-10 lg:px-0">
             <Image
@@ -219,7 +219,7 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between z-50 text-base tracking-wide lg:hidden top-16 absolute px-6 bg-black w-full cursor-pointer `}
+          } justify-between z-50 text-base tracking-wide lg:hidden top-16 absolute px-5 bg-black w-full cursor-pointer `}
         >
           <div className="mb-8 mt-4">
             <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
