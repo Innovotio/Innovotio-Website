@@ -128,8 +128,8 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="mb-5">
-                  <Link href="/programsTraining" legacyBehavior>
-                    <a target="_blank">Programs Training</a>
+                  <Link href="/programsTraining">
+                    Programs Training
                   </Link>
                 </li>
               </ul>
