@@ -13,7 +13,7 @@ const CatalogueCard = ({ icon, heading, service }) => {
         {service}
       </p>
       <Link href="/" legacyBehavior>
-        <a target="_blank" className="font-medium">Register Now</a>
+        <a target="_blank" className="font-medium flex items-center">Register Now <BsArrowRight className="font-medium w-8"/> </a>
       </Link>
       <style jsx>{`
         .hover\:text-black:hover p {
