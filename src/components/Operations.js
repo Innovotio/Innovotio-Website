@@ -3,11 +3,11 @@ import YellowBtn from "./Custom/YellowBtn";
 
 function Operations() {
   return (
-    <section className="flex-col lg:flex-row lg:items-center lg:justify-evenly border-t border-b mx-auto container text-white lg:mt-32 md:mt-24 mt-14 py-12 border-btnDefaultBlack leading-tight px-5 flex ">
+    <section className="flex-col lg:flex-row lg:items-center lg:justify-evenly border-t border-b mx-auto container text-white lg:mt-32 md:mt-24 mt-14 py-12 border-btnDefaultBlack leading-tight md:px-10 px-5 flex ">
       <div>
       <h1 className=" text-3xl font-medium max-w-lg lg:max-w-xl lg:text-5xl tracking-wide">
       Get swift and efficient career and business support      </h1>
-      <p className="text-base lg:text-lg max-w-md font-light w-full py-8 tracking-normal leading-7">
+      <p className="text-base text-gray lg:text-lg max-w-md md:max-w-xl lg:max-w-md font-light w-full py-8 tracking-normal leading-7">
         Why would you chase random freelancers if you could have your own
         creative dream team today?
       </p>

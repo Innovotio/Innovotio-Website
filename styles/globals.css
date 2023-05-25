@@ -2,3 +2,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(7%);
+    } 
+    50% {
+      transform: translateX(0%);
+    }
+    75% {
+      transform: translateX(-7%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-scroll {
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  
+  .animate-scroll--infinite {
+    animation-name: scroll;
+  }
+  

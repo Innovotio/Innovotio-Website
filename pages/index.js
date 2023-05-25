@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "@/src/components/Navbar";
+import Navbar from "@/src/components/Nav/Navbar";
 import Header from "@/src/components/Header";
 import Description from "@/src/components/Description";
 import Services from "@/src/components/Services";
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
         <meta
           property="og:url"
-          content="/https://innovotio-website.vercel.app/"
+          content="https://innovotio-website.vercel.app/"
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Innovotio" />
@@ -34,14 +34,14 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="/https://innovotio-website.vercel.app/logo.svg"
+          content="https://innovotio-website.vercel.app/logo.svg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="innovotio.vercel.app" />
         <meta
           property="twitter:url"
-          content="/https://innovotio-website.vercel.app/"
+          content="https://innovotio-website.vercel.app/"
         />
         <meta name="twitter:title" content="Innovotio" />
         <meta
@@ -52,7 +52,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="/https://innovotio-website.vercel.app/logo.svg"
+          content="https://innovotio-website.vercel.app/logo.svg"
         />
       </Head>
       <main className="overflow-hidden  text-white bg-black">
