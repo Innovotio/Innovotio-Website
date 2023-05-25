@@ -7,8 +7,8 @@ import Carbon from "./../assets/description/Carbon.png";
 
 const Testimonial = () => {
   return (
-    <div className=" mx-auto container lg:pt-40 md:pt-32 pt-20 flex text-center md:px-10 px-5 justify-center items-center flex-col">
-      <div className="lg:flex pb-8 ">
+    <div className=" mx-auto container  lg:pt-40 md:pt-32 pt-20 flex text-center md:px-10 px-5 justify-center items-center flex-col">
+      <div className="lg:flex pb-8  ">
         <Image alt="quotation mark" src={Quotation} width={60} />
       </div>
       <p className="font-light lg:text-2xl md:text-xl max-w-2xl text-base text-white">
