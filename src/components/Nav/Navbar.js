@@ -1,16 +1,16 @@
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Logo from "../assets/footer/Vector.svg";
-import mobileLogo from "../assets/Navbar/logo.svg";
-import cancel from "../assets/Navbar/Menu.svg";
-import arrow from "../assets/Navbar/arrow.png";
-import menu from "../assets/Navbar/Menu (1).svg";
-import BlackBtn from "./Custom/BlackBtn";
-import YellowBtn from "./Custom/YellowBtn";
-import Abt from "./Nav/Abt";
-import Tal from "./Nav/Tal";
-import Business from "./Nav/Business";
+import Logo from "../../assets/footer/Vector.svg";
+import mobileLogo from "../../assets/Navbar/logo.svg";
+import cancel from "../../assets/Navbar/Menu.svg";
+import arrow from "../../assets/Navbar/arrow.png";
+import menu from "../../assets/Navbar/Menu (1).svg";
+import BlackBtn from "../Custom/BlackBtn";
+import YellowBtn from "../Custom/YellowBtn";
+import Abt from "./Abt";
+import Tal from "./Tal";
+import Business from "./Business";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -39,14 +39,16 @@ function Navbar() {
     setNav(!nav);
   };
 
-
   const handleClickOutside = () => {
     setNav(!nav);
   };
 
   return (
     <nav className=" overflow-x-hidden bg-black ">
-      <section onClick={handleClickOutside} className="cursor-pointer 2xl:container 2xl:mx-auto flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full lg:px-10 px-5  items-center py-2">
+      <section
+        onClick={handleClickOutside}
+        className="cursor-pointer 2xl:container 2xl:mx-auto flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full  px-5 md:px-10  items-center py-2"
+      >
         <Link href="/">
           <figure className="">
             <Image
@@ -97,74 +99,68 @@ function Navbar() {
           } justify-between text-base overflow-x-hidden lg:hidden top-16 absolute left-0 w-full h-max z-50 bg-black cursor-pointer `}
         >
           <div className="px-5">
-          <div className="mb-8 mt-4">
-            <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
-            <ul className="text-lg">
-              <li className="mb-5">
-                <Link href="/jobapplication">Recuitment</Link>
-              </li>
-              <li className="mb-5">
-                <Link href="/business">Tech Event Organization</Link>
-              </li>
-              <li className="mb-5">
-                <Link href="/business">Merchandising</Link>
-              </li>
-              <li className="mb-5">
-                <Link href="/business">Consultancy</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="mb-8">
-            <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
-            <ul className="text-lg">
-              <li className="mb-5">
-                <Link href="/jobapplication">Join Innovotio</Link>
-              </li>
-              <li className="mb-5">
-                <Link
-                  href="/http://bit.ly/Innovotio"
-                  legacyBehavior
-                >
-                  <a target="_blank">Community</a>
-                </Link>
-              </li>
-              <li className="mb-5">
-                <Link
-                  href="/programsTraining"
-                  legacyBehavior
-                >
-                  <a target="_blank">Programs Training</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="mb-8">
-            <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
-            <ul className="text-lg">
-              <li className="mb-5">
-                <Link href="/aboutUs">Who We Are</Link>
-              </li>
-              <li className="mb-5">
-                <Link href="/jobapplication">Careers</Link>
-              </li>
-              <li className="mb-5">
-                <Link href="/aboutUs">Blog</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-wrap mb-5 lg:mb-0">
-            <div className="mb-3 ">
-              <Link href="/jobapplication" legacyBehavior>
-                <BlackBtn text="Join Innovotio" />
-              </Link>
+            <div className="mb-8 mt-4">
+              <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
+              <ul className="text-lg">
+                <li className="mb-5">
+                  <Link href="/jobapplication">Recuitment</Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="/business">Tech Event Organization</Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="/business">Merchandising</Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="/business">Consultancy</Link>
+                </li>
+              </ul>
             </div>
-            <div className="">
-              <Link href="/business" legacyBehavior>
-                <YellowBtn text="Hire a talent" />
-              </Link>
+            <div className="mb-8">
+              <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
+              <ul className="text-lg">
+                <li className="mb-5">
+                  <Link href="/jobapplication">Join Innovotio</Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="http://bit.ly/Innovotio" legacyBehavior>
+                    <a target="_blank">Community</a>
+                  </Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="/programsTraining" legacyBehavior>
+                    <a target="_blank">Programs Training</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="mb-8">
+              <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
+              <ul className="text-lg">
+                <li className="mb-5">
+                  <Link href="/aboutUs">Who We Are</Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="/jobapplication">Careers</Link>
+                </li>
+                <li className="mb-5">
+                  <Link href="/aboutUs">Blog</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap mb-5 lg:mb-0">
+              <div className="mb-3 ">
+                <Link href="/jobapplication" legacyBehavior>
+                  <BlackBtn text="Join Innovotio" />
+                </Link>
+              </div>
+              <div className="">
+                <Link href="/business" legacyBehavior>
+                  <YellowBtn text="Hire a talent" />
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <div className="lg:flex hidden justify-between">
@@ -174,10 +170,7 @@ function Navbar() {
           </div>
         </div>
 
-        <div
-          className="lg:hidden block cursor-pointer"
-          onClick={handleNav}
-        >
+        <div className="lg:hidden block cursor-pointer" onClick={handleNav}>
           {nav ? (
             <Image
               src={cancel}

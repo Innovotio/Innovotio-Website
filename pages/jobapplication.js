@@ -16,7 +16,7 @@ const jobApplication = () => {
         <link rel="icon" href="/logo.svg" />
         <meta
           property="og:url"
-          content="/https://innovotio-website.vercel.app/"
+          content="https://innovotio-website.vercel.app/"
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Innovotio" />
@@ -28,14 +28,14 @@ const jobApplication = () => {
         />
         <meta
           property="og:image"
-          content="/https://innovotio-website.vercel.app/logo.svg"
+          content="https://innovotio-website.vercel.app/logo.svg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="innovotio.vercel.app" />
         <meta
           property="twitter:url"
-          content="/https://innovotio-website.vercel.app/"
+          content="https://innovotio-website.vercel.app/"
         />
         <meta name="twitter:title" content="Innovotio" />
         <meta
@@ -46,7 +46,7 @@ const jobApplication = () => {
         />
         <meta
           name="twitter:image"
-          content="/https://innovotio-website.vercel.app/logo.svg"
+          content="https://innovotio-website.vercel.app/logo.svg"
         />
       </Head>
       <section>
