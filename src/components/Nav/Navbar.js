@@ -96,7 +96,7 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between text-base overflow-x-hidden lg:hidden top-16 absolute left-0 w-full h-max z-50 bg-black cursor-pointer `}
+          } justify-between text-base overflow-x-hidden lg:hidden top-16 absolute left-0 w-full min-h-[100vh] z-50 bg-black cursor-pointer `}
         >
           <div className="px-5">
             <div className="mb-8 mt-4">
@@ -154,7 +154,7 @@ function Navbar() {
                   <BlackBtn text="Join Innovotio" />
                 </Link>
               </div>
-              <div className="">
+              <div className="ml-2">
                 <Link href="/business" legacyBehavior>
                   <YellowBtn text="Hire a talent" />
                 </Link>
