@@ -1,9 +1,9 @@
 import Image from "next/image";
 const Talent = ({icon, text}) => {
   return (
-    <div className=" text-headerGrey lg:mb-7 max-w-sm md:max-w-sm  mb-5 lg:flex flex flex-row lg:flex-row">
+    <div className=" text-headerGrey lg:mb-7 max-w-sm  mb-5 lg:flex flex flex-row lg:flex-row">
       <div className="text-btnHoverYellow" >{icon}</div>
-      <p className=" flex items-start justify-start text-start md:text-lg text-base lg:text-base pl-3">{text}</p>
+      <p className=" flex items-start justify-start text-start max-w-xs md:text-lg text-base lg:text-base pl-3">{text}</p>
     </div>
   );
 };
