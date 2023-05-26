@@ -6,6 +6,10 @@ import Lawyer from "./../assets/description/Lawyer.png";
 import UserShield from "./../assets/description/UserShield.png";
 import Talent from "./Custom/Talent";
 import Link from "next/link";
+import { BsClipboardData, BsFillAwardFill, BsBookmarkCheck, BsPersonWorkspace, BsPeople } from "react-icons/bs";
+import { CiLinkedin } from "react-icons/ci";
+import { FaPeopleArrows, FaPeopleCarry } from "react-icons/fa";
+import {MdOutlineAssuredWorkload} from 'react-icons/md'
 
 const Community = () => {
   return (
@@ -28,31 +32,39 @@ const Community = () => {
           </Link>
         </div>
         <div className=" justify-between pt-14">
-          <div className="lg:font-normal grid lg:grid-cols-3 gap-4 grid-col-1 leading-10 lg:text-base lg:text-white lg:text-left ">
+          <div className="lg:font-normal grid lg:grid-cols-3 gap-10 md:grid-cols-2 grid-col-1 leading-10 lg:text-base lg:text-white lg:text-left ">
             <Talent
-              image={Resume}
-              text="Unrestricted access to a wide range of specific tech talents"
+                icon={<BsClipboardData className="w-5 h-6" />}
+                text="Unrestricted access to a wide range of specific tech talents"
             />
             <Talent
-              image={People}
-              text="Vast & Diverse range of world-class experienced recruiters."
+                icon={<BsPeople className="w-5 h-6" />}
+                text="Vast & Diverse range of world-class experienced recruiters."
             />
             <Talent
-              image={Innovation}
-              text="A  large network of tech organizations and founders."
+                icon={<FaPeopleArrows className="w-5 h-6" />}
+                text="A  large network of tech organizations and founders."
             />
             <Talent
-              image={Lawyer}
-              text="Regular staff monitoring and evaluation"
+                icon={<BsPersonWorkspace className="w-5 h-6" />}
+                text="Regular staff monitoring and evaluation"
             />
 
-            <Talent image={DollarCoin} text="Valuable soft skills training " />
-            <Talent image={UserShield} text="Resume & LinkedIn optimization" />
-            <Talent image={Lawyer} text="Mock interview sessions" />
-            <Talent image={UserShield} text="Talent Building and Maintenance" />
             <Talent
-              image={UserShield}
-              text="Access to a growing network of industry peers"
+                icon={<MdOutlineAssuredWorkload className="w-5 h-6" />}
+                text="Valuable soft skills training " />
+            <Talent 
+                icon={<CiLinkedin className="w-5 h-6" />}
+                text="Resume & LinkedIn optimization" />
+            <Talent 
+                icon={<BsFillAwardFill className="w-5 h-6" />}
+                text="Mock interview sessions" />
+            <Talent
+                icon={<BsPeople className="w-5 h-6" />}
+                text="Talent Building and Maintenance" />
+            <Talent
+                icon={<FaPeopleCarry className="w-5 h-6" />}
+                text="Access to a growing network of industry peers"
             />
           </div>
         </div>
