@@ -4,7 +4,7 @@ import {BsArrowRight} from 'react-icons/bs'
 
 const CatalogueCard = ({ icon, heading, service }) => {
   return (
-    <section className="hover:bg-primaryYellow hover:text-black lg:max-w-[410px] max-w-full h-[230px] px-5 justify-center border rounded-2xl border-btnDefaultBlack flex flex-col items-start">
+    <section className="hover:bg-primaryYellow hover:text-black lg:max-w-[425px] max-w-full h-[245px] px-5 justify-center border rounded-2xl border-btnDefaultBlack flex flex-col items-start">
       <div className="flex items-center">
         <div>{icon}</div>
         <h2 className="lg:text-lg font-medium ml-2 text-lg">{heading}</h2>

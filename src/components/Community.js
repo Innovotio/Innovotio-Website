@@ -54,7 +54,7 @@ const Community = () => {
                 icon={<MdOutlineAssuredWorkload className="w-5 h-6" />}
                 text="Valuable soft skills training " />
             <Talent 
-                icon={<CiLinkedin className="w-5 h-6" />}
+                icon={<CiLinkedin className="w-6 h-7" />}
                 text="Resume & LinkedIn optimization" />
             <Talent 
                 icon={<BsFillAwardFill className="w-5 h-6" />}
