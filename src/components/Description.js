@@ -45,7 +45,7 @@ const Description = () => {
                 text="Easy access world class tech talent for Full-Time, Remote or Hybrid Roles"
               />
               <Talent
-                icon={<CiDollar className="w-5 h-6" />}
+                icon={<CiDollar className="w-6 h-7" />}
                 text="Handle all billing-related support queries for you"
               />
               <Talent

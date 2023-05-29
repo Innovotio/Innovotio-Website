@@ -46,7 +46,6 @@ function Navbar() {
   return (
     <nav className=" overflow-x-hidden bg-black ">
       <section
-        onClick={handleClickOutside}
         className="cursor-pointer 2xl:container 2xl:mx-auto flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full  px-5 md:px-10  items-center py-2"
       >
         <Link href="/">
