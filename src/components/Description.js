@@ -1,8 +1,12 @@
-
 import BlackBtn from "./Custom/BlackBtn";
 import YellowBtn from "./Custom/YellowBtn";
 import Talent from "./Custom/Talent";
-import { BsClipboardData, BsBookmarkCheck, BsPersonWorkspace, BsPeople } from "react-icons/bs";
+import {
+  BsClipboardData,
+  BsBookmarkCheck,
+  BsPersonWorkspace,
+  BsPeople,
+} from "react-icons/bs";
 import { CiDollar } from "react-icons/ci";
 import { FaPeopleArrows } from "react-icons/fa";
 
@@ -11,7 +15,9 @@ const Description = () => {
     <>
       <div>
         <div className="mx-auto container lg:pt-40 md:pt-32 pt-20 flex md:px-10 px-5 lg:flex-row xl:justify-center md:items-center flex-col">
-          <div className="flex flex-col md:w-full xl:w-5/12 lg:w-5/12">
+          <div
+            className="flex flex-col md:w-full xl:w-5/12 lg:w-5/12"
+          >
             <p className="font-medium lg:text-5xl text-3xl lg:w-full  text-white">
               Why Choose Innovotio?
             </p>
@@ -26,7 +32,9 @@ const Description = () => {
               </div>
             </div>
           </div>
-          <div className=" xl:w-7/12 justify-between pl-5 lg:pt-0 pt-10">
+          <div
+            className=" xl:w-7/12 justify-between pl-5 lg:pt-0 pt-10"
+          >
             <div className="lg:font-normal grid md:grid-cols-2 gap-10 grid-col-1 lg:text-base lg:text-white lg:text-left ">
               <Talent
                 icon={<BsClipboardData className="w-5 h-6" />}
