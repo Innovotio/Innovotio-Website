@@ -1,11 +1,22 @@
+import {useEffect} from "react";
 import Link from "next/link";
 import Client from "./Custom/Client";
+import AOS from "aos";
+
 const Header = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2500 });
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <div className="cursor-pointer">
         <div className=" xl:pt-64 lg:pt-40 md:pt-16 pt-16 md:px-10 px-5">
-          <div className="flex justify-center items-center px-4 flex-col text-center w-full">
+          <div
+            className="flex justify-center items-center px-4 flex-col text-center w-full"
+          >
             <h1 className="md:text-6xl text-4xl lg:max-w-4xl max-w-2xl leading-10 font-medium text-white">
               Get qualified tech talents & tech business support
             </h1>
@@ -36,7 +47,7 @@ const Header = () => {
               {/* <p className="lg:font-normal font-light lg:text-2xl text-xl lg:leading-10 py-6 text-gray ">
                 Trusted by fast-moving clients worldwide
               </p> */}
-              <Client/>
+              <Client />
             </div>
           </div>
         </div>

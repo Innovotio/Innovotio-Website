@@ -25,25 +25,25 @@ const Talent = () => {
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 max-w-sm md:max-w-full lg:max-w-4xl pt-6">
         <button
           onClick={() => handleOptions(1)}
-          className="lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-black font-medium lg:h-[76px] rounded-full bg-primaryYellow text"
+          className={options.month === 1 ?"bg-primaryYellow lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-black font-medium lg:h-[76px] rounded-full text" : "lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-white font-medium lg:h-[76px] rounded-full bg-btnHoverBlack text"}
         >
           1 month
         </button>
         <button
           onClick={() => handleOptions(3)}
-          className="lg:w-[189px] w-[118px] h-[44px] lg:h-[76px] lg:text-2xl text-lg text-white font-medium lg: rounded-full bg-btnHoverBlack text"
+          className={options.month === 3 ?"bg-primaryYellow lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-black font-medium lg:h-[76px] rounded-full text" : "lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-white font-medium lg:h-[76px] rounded-full bg-btnHoverBlack text"}
         >
           3 months
         </button>
         <button
           onClick={() => handleOptions(6)}
-          className="lg:w-[189px] w-[118px] h-[44px] lg:h-[76px] lg:text-2xl text-lg text-white font-medium lg: rounded-full bg-btnHoverBlack text"
+          className={options.month === 6 ?"bg-primaryYellow lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-black font-medium lg:h-[76px] rounded-full text" : "lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-white font-medium lg:h-[76px] rounded-full bg-btnHoverBlack text"}
         >
           6 months
         </button>
         <button
           onClick={() => handleOptions(12)}
-          className="lg:w-[189px] w-[118px] h-[44px] lg:h-[76px] lg:text-2xl text-lg text-white font-medium lg: rounded-full bg-btnHoverBlack text"
+          className={options.month === 12 ?"bg-primaryYellow lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-black font-medium lg:h-[76px] rounded-full text" : "lg:w-[189px] w-[118px] h-[44px] text-lg lg:text-2xl text-white font-medium lg:h-[76px] rounded-full bg-btnHoverBlack text"}
         >
           1 year
         </button>
