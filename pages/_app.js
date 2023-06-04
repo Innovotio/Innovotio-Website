@@ -7,7 +7,7 @@ import React from 'react';
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 2700 });
     AOS.refresh();
   }, []);
   return(
