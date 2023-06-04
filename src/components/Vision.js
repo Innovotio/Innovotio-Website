@@ -18,7 +18,7 @@ const Vision = () => {
           </p>
         </div>
         <div>
-          <FaPeopleArrows className="h-7 w-7 text-primaryYellow" />
+          <FaPeopleArrows className="h-7 w-7 text-white" />
           <p className="md:w-56 py-2">
             A wide pool of highly skilled talents from around the world.
           </p>
