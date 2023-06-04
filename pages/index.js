@@ -55,7 +55,7 @@ export default function Home() {
           content="https://innovotio-website.vercel.app/logo.svg"
         />
       </Head>
-      <main className="overflow-hidden  text-white bg-black">
+      <main className="overflow-hidden text-white bg-black">
         <Navbar />
         <Header />
         <Description />

@@ -8,7 +8,8 @@ import vector7 from "../assets/services/Vector (7).svg";
 
 function Services() {
   return (
-    <section className=" mx-auto container lg:pt-40 md:pt-32 pt-20 md:px-10 px-5 font-font">
+    <section 
+    className="mx-auto container lg:pt-40 md:pt-32 pt-20 md:px-10 px-5 font-font">
       <div className="">
         <h1 className="lg:text-5xl text-center text-3xl font-medium">
           Our Services

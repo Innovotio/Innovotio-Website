@@ -9,7 +9,9 @@ import Copyright from "./Copyright";
 
 function Footer() {
   return (
-    <footer className=" mx-auto container font-font text-white md:px-10 px-5  lg:pt-40 md:pt-28 pt-20 cursor-pointer">
+    <footer
+      className=" mx-auto container font-font text-white md:px-10 px-5  lg:pt-40 md:pt-28 pt-20 cursor-pointer"
+    >
       <h1 className="lg:max-w-3xl md:max-w-xl max-w-md lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
         We built the complete <span className="text-yellow">talent</span> stack,
         so <span className="text-yellow">you</span> don‘t have to

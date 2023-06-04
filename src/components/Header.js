@@ -4,12 +4,6 @@ import Client from "./Custom/Client";
 import AOS from "aos";
 
 const Header = () => {
-
-  useEffect(() => {
-    AOS.init({ duration: 2500 });
-    AOS.refresh();
-  }, []);
-
   return (
     <>
       <div className="cursor-pointer">
