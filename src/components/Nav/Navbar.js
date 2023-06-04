@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "../../assets/footer/Vector.svg";
 import mobileLogo from "../../assets/Navbar/logo.svg";
@@ -39,16 +39,24 @@ function Navbar() {
     setNav(!nav);
   };
 
-  const handleClickOutside = () => {
-    setNav(!nav);
-  };
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (nav && !event.target.closest('.navbar')) {
+        setNav(false);
+      }
+    };
+    window.addEventListener('click', handleOutsideClick);
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [nav]);
 
   return (
-    <nav className=" overflow-x-hidden bg-black ">
+    <nav className=" overflow-x-hidden container z-50 mx-auto">
       <section
-        className="cursor-pointer 2xl:container 2xl:mx-auto flex 2xl:static w-12/12 xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between w-full  px-5 md:px-10  items-center py-2"
+        className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between min-w-full px-5 md:px-10  items-center py-2"
       >
-        <Link href="/">
+        <Link href="/" className="cursor-pointer">
           <figure className="">
             <Image
               src={Logo}
@@ -66,8 +74,9 @@ function Navbar() {
             />
           </figure>
         </Link>
-        <ul className=" justify-between w-5/12 text-base lg:flex hidden">
-          <li className="flex items-center" onClick={handleBusClick}>
+
+        <ul className="navbar z-50 justify-between w-5/12 text-base lg:flex hidden">
+          <li className="flex items-center cursor-pointer" onClick={handleBusClick}>
             For Business
             <span className="ml-2">
               <Image src={arrow} width={20} height={20} alt="arrow" />
@@ -84,7 +93,7 @@ function Navbar() {
             </span>
             {clickTal && <Tal />}
           </li>
-          <li className="flex items-center" onClick={handleAboutClick}>
+          <li className="flex items-center cursor-pointer" onClick={handleAboutClick}>
             About Us
             <span className="ml-2">
               <Image src={arrow} width={20} height={20} alt="arrow" />
@@ -95,9 +104,9 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between text-base overflow-x-hidden lg:hidden top-16 absolute left-0 w-full min-h-[100vh] z-50 bg-black cursor-pointer `}
+          } justify-between text-base overflow-x-hidden lg:hidden top-20 absolute left-0 w-full min-h-[100vh] z-50 bg-black cursor-pointer `}
         >
-          <div className="px-5">
+          <div className="px-5 md:px-10">
             <div className="mb-8 mt-4">
               <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
               <ul className="text-lg">

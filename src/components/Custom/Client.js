@@ -11,7 +11,7 @@ const Client = () => {
   return (
     <div className="overflow-hidden">
       <div className="inline-block whitespace-nowrap animate-scroll animate-scroll--infinite">
-        <div className="grid grid-cols-7 place-items-center justify-between">
+        <div className="grid grid-cols-7 gap-x-10 place-items-center justify-between">
           <div className="inline-block">
             <Image alt="akaneex" src={akraneex} width={137} height={40} />
           </div>

@@ -7,7 +7,9 @@ import star from "../assets/programs/star.svg";
 
 const ProgramsHero = () => {
   return (
-    <section className="container mx-auto md:px-10 px-5 text-white font-medium xl:pt-24 md:pt-16 pt-16">
+    <section 
+    data-aos="zoom-in-right"
+    className="container mx-auto md:px-10 px-5 text-white font-medium xl:pt-24 md:pt-16 pt-16">
       <div className="flex items-center">
         <div>
           <Image
