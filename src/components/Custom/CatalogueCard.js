@@ -13,11 +13,29 @@ const CatalogueCard = ({ icon, heading, service }) => {
         {service}
       </p>
       <Link href="/" legacyBehavior>
-        <a target="_blank" className="font-medium flex items-center">Register Now <BsArrowRight className="font-medium w-8"/> </a>
+        <a target="_blank" className="font-medium flex items-center underline-hover">Register Now <BsArrowRight className="font-medium w-8"/> </a>
       </Link>
       <style jsx>{`
         .hover\:text-black:hover p {
           color: black;
+        }
+        .underline-hover {
+          position: relative;
+        }
+        
+        .underline-hover:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 0;
+          height: 2px;
+          background-color: black;
+          transition: width 0.3s ease-in-out;
+        }
+        
+        .underline-hover:hover:after {
+          width: 100%;
         }
       `}</style>
     </section>

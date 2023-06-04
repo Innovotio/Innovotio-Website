@@ -54,7 +54,7 @@ const Catalogue = () => {
           />
           <CatalogueCard
             icon={<RiCustomerService2Fill />}
-            heading="Customer Success Management "
+            heading="Customer Success "
             service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
           />
           <CatalogueCard
