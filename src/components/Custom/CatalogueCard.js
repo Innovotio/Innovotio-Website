@@ -12,7 +12,7 @@ const CatalogueCard = ({ icon, heading, service }) => {
       <p className="leading-8 text-start font-medium text-base max-w-full lg:max-w-md md:max-w-lg md:text-sm py-5 text-gray">
         {service}
       </p>
-      <Link href="/" legacyBehavior>
+      <Link href="https://forms.gle/Ky3UX3oUabK3Xm6a7" legacyBehavior>
         <a target="_blank" className="font-medium flex items-center underline-hover">Register Now <BsArrowRight className="font-medium w-8"/> </a>
       </Link>
       <style jsx>{`
