@@ -103,7 +103,7 @@ function Footer() {
               <Link href="/aboutUs">Who we are</Link>
             </li>
             <li className="pb-3">
-              <Link href="http://bit.ly/Innovotio" legacyBehavior>
+              <Link href="/jobapplication" legacyBehavior>
                 <a target="_blank">Careers</a>
               </Link>
             </li>
