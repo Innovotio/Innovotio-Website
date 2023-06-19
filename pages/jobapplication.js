@@ -1,4 +1,4 @@
-import ApplicationForm from "@/src/form/ApplicationForm";
+import Job from "@/src/form/Job";
 import Head from "next/head";
 
 const jobApplication = () => {
@@ -50,7 +50,7 @@ const jobApplication = () => {
         />
       </Head>
       <section>
-        <ApplicationForm />
+        <Job />
       </section>
     </>
   );

@@ -111,7 +111,7 @@ function Navbar() {
               <p className="text-sm text-nav font-light mb-5">FOR BUSINESS</p>
               <ul className="text-lg">
                 <li className="mb-5">
-                  <Link href="/jobapplication">Recuitment</Link>
+                  <Link href="/business">Recuitment</Link>
                 </li>
                 <li className="mb-5">
                   <Link href="/business">Tech Event Organization</Link>

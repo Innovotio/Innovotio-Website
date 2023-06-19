@@ -1,4 +1,4 @@
-import ClientForm from "@/src/form/ClientForm";
+import Client from "@/src/form/Client";
 import Head from "next/head";
 
 const Business = () => {
@@ -50,7 +50,7 @@ const Business = () => {
         />
       </Head>
       <section>
-        <ClientForm />
+        <Client />
       </section>
     </>
   );
