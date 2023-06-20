@@ -14,7 +14,7 @@ const Abt = () => {
           </>
         </a>
       </div>
-      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
+      <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10 h-full py-10">
       <a target="_blank" href="http://bit.ly/Innovotio">
           <>
             <h3 className="text-xl mb-2">Careers</h3>
