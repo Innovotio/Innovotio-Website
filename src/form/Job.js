@@ -9,13 +9,12 @@ import Copyright from "../components/Copyright";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const Job = () => {
-
   const [isLoading, setIsLoading] = React.useState(false);
   const submit = React.useRef(null);
-  const router = useRouter()
+  const router = useRouter();
 
   const [mail, setMail] = React.useState({
     firstName: "",
@@ -29,9 +28,13 @@ const Job = () => {
     others: "",
   });
 
+  //regex for email
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
+      isValidEmail &&
       submit.current &&
       mail.firstName !== "" &&
       mail.lastName !== "" &&
@@ -78,6 +81,8 @@ const Job = () => {
           theme: "light",
         });
       }
+    } else {
+      toast.error("Invalid Email address");
     }
   };
 
@@ -215,7 +220,7 @@ const Job = () => {
                   onChange={(e) => setMail({ ...mail, fit: e.target.value })}
                   name="form_fit"
                   required
-                  className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-12"
+                  className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
                 <input
                   type="text"
@@ -226,7 +231,7 @@ const Job = () => {
                   }
                   name="form_portfolio"
                   required
-                  className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-12"
+                  className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
                 <input
                   type="text"
@@ -234,10 +239,10 @@ const Job = () => {
                   value={mail.others}
                   onChange={(e) => setMail({ ...mail, others: e.target.value })}
                   name="form_others"
-                  className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-12"
+                  className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
               </div>
-              <div className="lg:w-11/12 w-11/12 mt-5 mb-24 bg-gray h-12 rounded-md flex justify-center">
+              <div className="lg:w-11/12 w-11/12 mt-5 mb-24 bg-gray h-14 rounded-md flex justify-center">
                 <button className="">Submit</button>
               </div>
             </form>

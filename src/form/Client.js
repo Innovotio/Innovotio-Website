@@ -8,12 +8,12 @@ import Copyright from "../components/Copyright";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const Client = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const submit = React.useRef(null);
-  const router = useRouter()
+  const router = useRouter();
 
   const [mail, setMail] = React.useState({
     firstName: "",
@@ -27,10 +27,13 @@ const Client = () => {
     message: "",
   });
 
+  //regex for email
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("clicked");
     if (
+      isValidEmail &&
       submit.current &&
       mail.firstName !== "" &&
       mail.lastName !== "" &&
@@ -77,6 +80,8 @@ const Client = () => {
           theme: "light",
         });
       }
+    } else {
+      toast.error("Invalid Email address");
     }
   };
 
@@ -202,7 +207,6 @@ const Client = () => {
                     setMail({ ...mail, services: e.target.value })
                   }
                   className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
-                  defaultValue="default"
                 >
                   <option>Services Required</option>
                   <option>Talent Pool</option>
@@ -218,7 +222,6 @@ const Client = () => {
                   name="form_talent"
                   onChange={(e) => setMail({ ...mail, talent: e.target.value })}
                   className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
-                  defaultValue="default"
                 >
                   <option>Talent Pool Stack</option>
                   <option>Front-End Developer</option>
@@ -240,7 +243,6 @@ const Client = () => {
                   name="form_merch"
                   onChange={(e) => setMail({ ...mail, merch: e.target.value })}
                   className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
-                  defaultValue="default"
                 >
                   <option>Merchadise Needed</option>
                   <option>T-Shirts</option>
