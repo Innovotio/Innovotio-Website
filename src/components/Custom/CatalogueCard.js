@@ -67,7 +67,7 @@ export default CatalogueCard;
 const PopUp = ({ modal, handleModal, data, name }) => {
   return (
     <Modal open={modal} onClose={handleModal} className="bg-btnHoverBlack ">
-      <ModalContent className="bg-btnHoverBlack text-white md:w-[600px] max-w-sm md:max-w-full px-5 rounded-2xl h-[80vh] text-[10px] md:text-sm flex flex-col justify-between text-center">
+      <ModalContent className="bg-btnHoverBlack text-white md:w-[600px] max-w-sm md:max-w-full overflow-y-scroll px-5 rounded-2xl h-[80vh] text-[10px] md:text-sm flex flex-col justify-between text-center">
         <section>
           <div className="flex items-center justify-between">
             <h1 className="text-lg md:text-xl text-start py-7 font-medium">
