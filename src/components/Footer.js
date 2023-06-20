@@ -118,10 +118,7 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-3">
-              <Link href=""> talents@innovotio.com</Link>
-            </li>
-            <li className="pb-3">
-              <Link href="">+234 901 32456</Link>
+              <Link href="/jobapplication"> talents@innovotio.com</Link>
             </li>
             <li>
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdwnoNoc6hcbi_CfYO2xgtYj5BTrheSfUvDiO2ijQuxIFS4nA/viewform?usp=pp_url">
