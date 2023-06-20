@@ -2,7 +2,7 @@ import React from 'react'
 
 const Business = () => {
   return (
-    <nav className="2xl:mx-auto 2xl:right-20 2xl:container w-8/12 left-20 cursor-pointer h-[410px] bg-black items-center rounded-xl border-headerGrey absolute top-20 grid grid-cols-2 border border-opacity-30">
+    <nav className="2xl:mx-auto 2xl:right-20 2xl:container w-8/12 left-20 cursor-pointer h-[400px] bg-black items-center rounded-xl border-headerGrey absolute top-20 grid grid-cols-2 border border-opacity-30">
     <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-5">
     <a target='_blank' href="/business">
         <>
