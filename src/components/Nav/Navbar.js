@@ -52,9 +52,9 @@ function Navbar() {
   }, [nav]);
 
   return (
-    <nav className=" overflow-x-hidden container z-50 mx-auto">
+    <nav className="container z-50 mx-auto">
       <section
-        className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between min-w-full px-5 md:px-10  items-center py-2"
+        className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 bg-black text-white justify-between  px-5 xl:px-10 lg:min-w-[98%] items-center py-2"
       >
         <Link href="/" className="cursor-pointer">
           <figure className="">

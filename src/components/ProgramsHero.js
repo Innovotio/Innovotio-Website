@@ -9,7 +9,7 @@ const ProgramsHero = () => {
   return (
     <section 
     data-aos="zoom-in-right"
-    className="container mx-auto md:px-10 px-5 text-white font-medium xl:pt-24 md:pt-16 pt-16">
+    className="container mx-auto md:px-10 px-5 text-white font-medium xl:pt-24 md:pt-16 pt-12">
       <div className="flex items-center">
         <div>
           <Image
@@ -20,7 +20,7 @@ const ProgramsHero = () => {
             className="relative top-5 right-4 lg:top-32"
           />
 
-          <h1 className="pt-28 lg:block hidden lg:text-5xl leading-8 text-3xl max-w-4xl">
+          <h1 className="pt-20 lg:block hidden lg:text-5xl leading-8 text-3xl max-w-4xl">
             Skill Up with our talent building and management programs to stay
             ready for global employment.
           </h1>
