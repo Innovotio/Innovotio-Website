@@ -7,11 +7,12 @@ import React from 'react';
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {
-    AOS.init({ duration: 2700 });
+    AOS.init({ duration: 1100 });
     AOS.refresh();
   }, []);
+
   return(
-  <div className='font-font overflow-x-hidden overflow-y-hidden'>
+<div className="font-font overflow-x-hidden bg-black">
   <Component {...pageProps}/>
   </div>
   )

@@ -52,9 +52,9 @@ function Navbar() {
   }, [nav]);
 
   return (
-    <nav className=" overflow-x-hidden container z-50 mx-auto">
+    <nav className="2xl:container overflow-x-hidden z-50 mx-auto">
       <section
-        className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 bg-black  text-white justify-between min-w-full px-5 md:px-10  items-center py-2"
+        className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 md:px-10 px-5 bg-black text-white justify-between w-full items-center py-2"
       >
         <Link href="/" className="cursor-pointer">
           <figure className="">
@@ -104,7 +104,7 @@ function Navbar() {
         <div
           className={` ${
             nav ? "block" : "hidden"
-          } justify-between text-base overflow-x-hidden lg:hidden top-20 absolute left-0 w-full min-h-[100vh] z-50 bg-black cursor-pointer `}
+          } justify-between text-base overflow-x-hidden lg:hidden absolute top-16 left-0 min-w-full min-h-[100vh] z-50 bg-black cursor-pointer `}
         >
           <div className="px-5 md:px-10">
             <div className="mb-8 mt-4">

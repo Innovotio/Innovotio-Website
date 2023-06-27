@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { BsArrowRight, BsBoxArrowUpRight } from "react-icons/bs";
-import Modal, { ModalContent } from "../Micro/Modal";
+import Modal, { ModalContent } from "../Modal";
 import { AiOutlineClose } from "react-icons/ai";
 
 const CatalogueCard = ({ icon, heading, service, data, name }) => {
@@ -16,10 +16,12 @@ const CatalogueCard = ({ icon, heading, service, data, name }) => {
         {service}
       </p>
       <div
-        className="font-medium flex items-center py-4"
+        className="font-medium py-3"
         onClick={() => setModal(true)}
       >
-        View Curriculum <BsBoxArrowUpRight className="font-medium w-8" />
+        <div className="underline-hover flex items-center">
+          View Curriculum <BsBoxArrowUpRight className="font-medium w-8 " />
+        </div>
       </div>
       <Link href="https://forms.gle/Ky3UX3oUabK3Xm6a7" legacyBehavior>
         <a

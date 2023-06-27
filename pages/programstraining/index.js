@@ -8,7 +8,7 @@ import Talent from "@/src/components/Talent/Talent";
 import React from "react";
 import Catalogue from "@/src/components/Catalogue";
 
-const ProgramsTraining = () => {
+const index = () => {
   return (
     <main className="bg-black">
       <Navbar/>
@@ -23,4 +23,4 @@ const ProgramsTraining = () => {
   );
 };
 
-export default ProgramsTraining;
+export default index;
