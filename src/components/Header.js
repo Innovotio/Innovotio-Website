@@ -12,7 +12,7 @@ const Header = () => {
             >
               Get qualified tech talents & tech business support
             </h1>
-            <p className=" md:text-xl max-w-md md:max-w-3xl leading-7 text-sm px-4 lg:font-normal py-7 text-headerGrey">
+            <p className=" md:text-xl max-w-md md:max-w-3xl leading-7 text-base px-4 lg:font-normal py-7 text-headerGrey">
               We provide qualified tech talents to hiring organizations and
               provide business support to tech organizations.
             </p>
