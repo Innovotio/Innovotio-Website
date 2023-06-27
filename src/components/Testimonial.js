@@ -10,7 +10,7 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6000,
     infinite: true,
     pauseOnHover: true,
     arrows: false,
@@ -59,8 +59,8 @@ const Testimonial = () => {
         <div>
           <p className="lg:text-2xl">
             Innovotio matched me with Ivendigital. I am already enjoying my role
-            here as one of the graphic designers and the tasks push me to think
-            outside the box. I believe I have been perfectly matched
+            here as one of the graphic designers. The tasks keep pushing me to think
+            outside the box and deep down, I know have been perfectly matched
             thanks to Innovotio.
           </p>
 
