@@ -4,7 +4,7 @@ import task from "./../assets/header/task.svg";
 import GDG from "./../assets/header/GDG.svg";
 import gdgajah from "./../assets/header/gdgajah.svg";
 import bullion from "./../assets/header/bullion.svg";
-import Client from "./Custom/Client";
+import Client from "./Micro/Custom/Client";
 
 const AboutHeader = () => {
   return (
@@ -32,7 +32,7 @@ const AboutHeader = () => {
         </div>
       </div>
       <div className="lg:pt-32 pt-10 lg:block hidden">
-      <Client />
+        <Client />
       </div>
     </section>
   );

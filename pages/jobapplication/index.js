@@ -1,7 +1,7 @@
-import Client from "@/src/form/Client";
+import Job from "@/src/form/Job";
 import Head from "next/head";
 
-const Business = () => {
+const index = () => {
   return (
     <>
       <Head>
@@ -9,8 +9,8 @@ const Business = () => {
         <meta
           name="description"
           content="Innovotio is a tech business support organization that specializes in
-      connecting tech talent across all levels of experience to organizations
-      of all sizes to achieve their business goals."
+        connecting tech talent across all levels of experience to organizations
+        of all sizes to achieve their business goals."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
@@ -23,8 +23,8 @@ const Business = () => {
         <meta
           property="og:description"
           content="Innovotio is a tech business support organization that specializes in
-        connecting tech talent across all levels of experience to organizations
-        of all sizes to achieve their business goals."
+          connecting tech talent across all levels of experience to organizations
+          of all sizes to achieve their business goals."
         />
         <meta
           property="og:image"
@@ -41,8 +41,8 @@ const Business = () => {
         <meta
           name="twitter:description"
           content="Innovotio is a tech business support organization that specializes in
-        connecting tech talent across all levels of experience to organizations
-        of all sizes to achieve their business goals."
+          connecting tech talent across all levels of experience to organizations
+          of all sizes to achieve their business goals."
         />
         <meta
           name="twitter:image"
@@ -50,10 +50,10 @@ const Business = () => {
         />
       </Head>
       <section>
-        <Client />
+        <Job />
       </section>
     </>
   );
 };
 
-export default Business;
+export default index;

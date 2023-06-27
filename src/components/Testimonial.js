@@ -1,45 +1,78 @@
 import Image from "next/image";
 import Quotation from "./../assets/description/Quotation.png";
-import Client from "./../assets/description/ClientPicture.png";
-import Adiva from "./../assets/description/ADIVA.png";
-import Afit from "./../assets/description/AFIT.png";
-import Carbon from "./../assets/description/Carbon.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonial = () => {
+  const settings = {
+    dots: false,
+    speed: 500,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2800,
+    infinite: true,
+    pauseOnHover: true,
+    arrows: false,
+  };
+
   return (
     <div
-    data-aos="zoom-in"
-    className=" mx-auto container  lg:pt-40 md:pt-32 pt-20 flex text-center md:px-10 px-5 justify-center items-center flex-col">
+      // data-aos="zoom-in"
+      className=" mx-auto container lg:pt-40 md:pt-32 pt-20 flex text-center md:px-10 px-5 justify-center items-center flex-col"
+    >
       <div className="lg:flex pb-8  ">
         <Image alt="quotation mark" src={Quotation} width={60} />
       </div>
-      <p className="font-light lg:text-2xl md:text-xl max-w-2xl text-base text-white">
-        We partnered with Innovotio to build out our core engineering team and
-        we couldn't be more thrilled! Innovotio's pool of high-quality,
-        motivated and entrepreneurial engineers was a game-changer during the
-        critical phases of launching our startup. We are excited to work closely
-        with Innovotio to keep on expanding our team and growing together!
-      </p>
-      <div className=" flex lg:flex-row   items-center lg:items-start  lg:space-x-3 pt-12">
+      <Slider
+        {...settings}
+        className="text-white font-light md:text-xl max-w-2xl text-base"
+      >
         <div className="">
-          <Image alt="client" src={Client} />
-        </div>
-        <div className=" ml-6 flex items-start flex-col">
-          <p className="lg:font-normal lg:text-base lg:text-white">
-            Stella Damacus
+          <p className="lg:text-2xl">
+            Working with Innovotio was a seamless one and I love how they hold
+            your hand all through the process. The service was topnotch and even
+            after the end of our contract, they were still supportive.
           </p>
-          <div className="flex flex-row lg:max-w-md max-w-full justify-between lg:space-x-3 lg:font-normal lg:text-base text-sm text-headerGrey">
-            <p>Editor-in-chief</p>
-            <div className="font-light lg:mx-0 mx-2">|</div>
-            <p>Adiva networks</p>
+          <div className="py-4 flex flex-col max-w-full justify-center items-center">
+            <p className="text-sm">Destiny Usiomoifo</p>
+            <div className="text-sm flex justify-between text-text py-2">
+              <p>Editor-In-Chief/Founder of Vinc & Eliz</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="lg:flex md:flex-row flex-col  gap-10 lg:justify-center lg:pt-20 pt-12 flex justify-between">
-        <Image src={Adiva} alt="adiva" width={106} height={62} />
-        <Image src={Afit} alt="afit" width={119} height={24} />
-        <Image src={Carbon} alt="carbon" width={100} height={25} />
-      </div>
+        <div>
+          <p className="lg:text-2xl">
+            I currently intern as a content creator at PennyTree via Innovotio.
+            As a content writer at PennyTree, the experience has been valuable
+            in honing my skills and gaining practical knowledge in content
+            creation.
+          </p>
+
+          <div className="py-4 flex flex-col max-w-full justify-center items-center">
+            <p className="text-sm">Cynthia Udoh</p>
+            <div className="text-sm flex justify-between text-text py-2">
+              <p> Content Creator at PennyTree</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p className="lg:text-2xl">
+            Innovotio matched me with Ivendigital. I am already enjoying my role
+            here as one of the graphic designers. Although, the tasks were
+            challenging, I still pulled through and the tasks pushed me to think
+            outside the box. I believe I have been perfectly matched
+            thanks to Innovotio.
+          </p>
+
+          <div className="py-4 flex flex-col max-w-full justify-center items-center">
+            <p className="text-sm">Precious Ogiemwonyi</p>
+            <div className="text-sm flex justify-between text-text py-2">
+              <p> Graphic Designer at Ivendigital</p>
+            </div>
+          </div>
+        </div>
+      </Slider>
     </div>
   );
 };

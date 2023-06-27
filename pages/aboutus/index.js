@@ -1,7 +1,12 @@
-import Job from "@/src/form/Job";
+import AboutHeader from "@/src/components/AboutHeader";
+import AboutHero from "@/src/components/AboutHero";
+import Community from "@/src/components/Community";
+import Footer from "@/src/components/Footer";
+import Navbar from "@/src/components/Nav/Navbar";
+import Operations from "@/src/components/Operations";
 import Head from "next/head";
 
-const jobApplication = () => {
+const index = () => {
   return (
     <>
       <Head>
@@ -49,11 +54,16 @@ const jobApplication = () => {
           content="https://innovotio-website.vercel.app/logo.svg"
         />
       </Head>
-      <section>
-        <Job />
+      <section className=" bg-black overflow-x-hidden">
+        <Navbar />
+        <AboutHero />
+        <AboutHeader />
+        <Community />
+        <Operations />
+        <Footer />
       </section>
     </>
   );
 };
 
-export default jobApplication;
+export default index;

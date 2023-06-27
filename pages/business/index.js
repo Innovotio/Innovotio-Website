@@ -1,12 +1,7 @@
-import AboutHeader from "@/src/components/AboutHeader";
-import AboutHero from "@/src/components/AboutHero";
-import Community from "@/src/components/Community";
-import Footer from "@/src/components/Footer";
-import Navbar from "@/src/components/Nav/Navbar";
-import Operations from "@/src/components/Operations";
+import Client from "@/src/form/Client";
 import Head from "next/head";
 
-const about = () => {
+const index = () => {
   return (
     <>
       <Head>
@@ -14,8 +9,8 @@ const about = () => {
         <meta
           name="description"
           content="Innovotio is a tech business support organization that specializes in
-        connecting tech talent across all levels of experience to organizations
-        of all sizes to achieve their business goals."
+      connecting tech talent across all levels of experience to organizations
+      of all sizes to achieve their business goals."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
@@ -28,8 +23,8 @@ const about = () => {
         <meta
           property="og:description"
           content="Innovotio is a tech business support organization that specializes in
-          connecting tech talent across all levels of experience to organizations
-          of all sizes to achieve their business goals."
+        connecting tech talent across all levels of experience to organizations
+        of all sizes to achieve their business goals."
         />
         <meta
           property="og:image"
@@ -46,24 +41,19 @@ const about = () => {
         <meta
           name="twitter:description"
           content="Innovotio is a tech business support organization that specializes in
-          connecting tech talent across all levels of experience to organizations
-          of all sizes to achieve their business goals."
+        connecting tech talent across all levels of experience to organizations
+        of all sizes to achieve their business goals."
         />
         <meta
           name="twitter:image"
           content="https://innovotio-website.vercel.app/logo.svg"
         />
       </Head>
-      <section className=" bg-black overflow-x-hidden">
-        <Navbar />
-        <AboutHero />
-        <AboutHeader />
-        <Community />
-        <Operations />
-        <Footer />
+      <section>
+        <Client />
       </section>
     </>
   );
 };
 
-export default about;
+export default index;
