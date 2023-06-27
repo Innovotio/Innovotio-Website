@@ -207,7 +207,7 @@ const Job = () => {
                   placeholder="resume link *"
                   onChange={(e) => setMail({ ...mail, resume: e.target.value })}
                   name="form_resume"
-                  className="md:w-12/12 lg:w-11/12  bg-white xl:w-10/12 h-14 mb-4 lg:h-12 py-2 px-4 rounded-md cursor-pointer"
+                  className="md:w-12/12 lg:w-11/12  bg-white xl:w-96 h-14 mb-4 lg:h-12 py-2 px-4 rounded-md cursor-pointer"
                   required
                 />
               </div>
@@ -242,7 +242,7 @@ const Job = () => {
                   className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
               </div>
-              <div className="lg:w-11/12 w-11/12 mt-5 mb-24 bg-gray h-14 rounded-md flex justify-center">
+              <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-gray h-14 rounded-md flex justify-center">
                 <button className="">Submit</button>
               </div>
             </form>
