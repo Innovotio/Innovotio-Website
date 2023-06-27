@@ -158,7 +158,7 @@ const Job = () => {
                   }
                   name="form_firstName"
                   required
-                  className="w-12/12 md:w-12/12 lg:w-11/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
+                  className="w-12/12 md:w-12/12 lg:w-11/12 rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
                 <input
                   type="text"
