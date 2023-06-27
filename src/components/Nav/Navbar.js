@@ -136,7 +136,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="mb-5">
-                  <Link href="/programsTraining">
+                  <Link href="/programstraining">
                     Programs Training
                   </Link>
                 </li>
@@ -146,13 +146,13 @@ function Navbar() {
               <p className="text-sm text-nav font-light mb-5">ABOUT US</p>
               <ul className="text-lg">
                 <li className="mb-5">
-                  <Link href="/aboutUs">Who We Are</Link>
+                  <Link href="/aboutus">Who We Are</Link>
                 </li>
                 <li className="mb-5">
                   <Link href="/jobapplication">Careers</Link>
                 </li>
                 <li className="mb-5">
-                  <Link href="/aboutUs">Blog</Link>
+                  <Link href="/">Blog</Link>
                 </li>
               </ul>
             </div>
