@@ -41,21 +41,19 @@ function Navbar() {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (nav && !event.target.closest('.navbar')) {
+      if (nav && !event.target.closest(".navbar")) {
         setNav(false);
       }
     };
-    window.addEventListener('click', handleOutsideClick);
+    window.addEventListener("click", handleOutsideClick);
     return () => {
-      window.removeEventListener('click', handleOutsideClick);
+      window.removeEventListener("click", handleOutsideClick);
     };
   }, [nav]);
 
   return (
     <nav className="2xl:container overflow-x-hidden z-50 mx-auto">
-      <section
-        className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 md:px-10 px-5 bg-black text-white justify-between w-full items-center py-2"
-      >
+      <section className="navbar flex 2xl:static xl:fixed lg:h-20 h-16 z-50 md:px-10 px-5 bg-black text-white justify-between w-full items-center py-2">
         <Link href="/" className="cursor-pointer">
           <figure className="">
             <Image
@@ -76,7 +74,12 @@ function Navbar() {
         </Link>
 
         <ul className="navbar z-50 justify-between w-5/12 text-base lg:flex hidden">
-          <li className="flex items-center cursor-pointer" onClick={handleBusClick}>
+          <li
+            className={`flex items-center cursor-pointer ${
+              clickBus ? "text-primaryYellow" : "text-white"
+            }`}
+            onClick={handleBusClick}
+          >
             For Business
             <span className="ml-2">
               <Image src={arrow} width={20} height={20} alt="arrow" />
@@ -85,7 +88,9 @@ function Navbar() {
           </li>
           <li
             onClick={handleTalClick}
-            className="flex items-center cursor-pointer"
+            className={`flex items-center cursor-pointer ${
+              clickTal ? "text-primaryYellow" : "text-white"
+            }`}
           >
             For Talents
             <span className="ml-2">
@@ -93,7 +98,12 @@ function Navbar() {
             </span>
             {clickTal && <Tal />}
           </li>
-          <li className="flex items-center cursor-pointer" onClick={handleAboutClick}>
+          <li
+            className={`flex items-center cursor-pointer ${
+              clickAbout ? "text-primaryYellow" : "text-white"
+            }`}
+            onClick={handleAboutClick}
+          >
             About Us
             <span className="ml-2">
               <Image src={arrow} width={20} height={20} alt="arrow" />
@@ -136,9 +146,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="mb-5">
-                  <Link href="/programstraining">
-                    Programs Training
-                  </Link>
+                  <Link href="/programstraining">Programs Training</Link>
                 </li>
               </ul>
             </div>
