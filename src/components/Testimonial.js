@@ -26,7 +26,7 @@ const Testimonial = () => {
       </div>
       <Slider
         {...settings}
-        className="text-white font-light md:text-xl max-w-2xl text-base"
+        className="text-white font-light md:text-xl md:max-w-2xl max-w-sm text-base"
       >
         <div className="">
           <p className="lg:text-2xl">
@@ -59,8 +59,7 @@ const Testimonial = () => {
         <div>
           <p className="lg:text-2xl">
             Innovotio matched me with Ivendigital. I am already enjoying my role
-            here as one of the graphic designers. Although, the tasks were
-            challenging, I still pulled through and the tasks pushed me to think
+            here as one of the graphic designers and the tasks push me to think
             outside the box. I believe I have been perfectly matched
             thanks to Innovotio.
           </p>
