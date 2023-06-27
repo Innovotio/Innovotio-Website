@@ -95,10 +95,10 @@ function Footer() {
           </ul>
           <ul className="leading-10">
             <li className=" pb-3">
-              <Link href="/aboutUs">Company</Link>
+              <Link href="/aboutus">Company</Link>
             </li>
             <li className="pb-3">
-              <Link href="/aboutUs">Who we are</Link>
+              <Link href="/aboutus">Who we are</Link>
             </li>
             <li className="pb-3">
               <Link href="/jobapplication" legacyBehavior>
