@@ -156,7 +156,7 @@ const Client = () => {
                   }
                   placeholder="First Name *"
                   required
-                  className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
+                  className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
                 <input
                   type="text"
@@ -167,7 +167,7 @@ const Client = () => {
                   }
                   placeholder="Last Name *"
                   required
-                  className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
+                  className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
                 <input
                   type="text"
@@ -176,10 +176,10 @@ const Client = () => {
                   onChange={(e) => setMail({ ...mail, email: e.target.value })}
                   placeholder="Email Address *"
                   required
-                  className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
+                  className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
                 <input
-                  type="text"
+                  type="number"
                   value={mail.phoneNumber}
                   name="form_phoneNumber"
                   onChange={(e) =>
@@ -187,7 +187,7 @@ const Client = () => {
                   }
                   placeholder="Phone Number *"
                   required
-                  className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
+                  className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
                 <input
                   type="text"
@@ -196,7 +196,7 @@ const Client = () => {
                   onChange={(e) => setMail({ ...mail, role: e.target.value })}
                   placeholder="Current Job Role *"
                   required
-                  className="w-10/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
+                  className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
 
                 <select
@@ -206,7 +206,7 @@ const Client = () => {
                   onChange={(e) =>
                     setMail({ ...mail, services: e.target.value })
                   }
-                  className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
+                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
                 >
                   <option>Services Required</option>
                   <option>Talent Pool</option>
@@ -221,7 +221,7 @@ const Client = () => {
                   value={mail.talent}
                   name="form_talent"
                   onChange={(e) => setMail({ ...mail, talent: e.target.value })}
-                  className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
+                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
                 >
                   <option>Talent Pool Stack</option>
                   <option>Front-End Developer</option>
@@ -242,7 +242,7 @@ const Client = () => {
                   value={mail.merch}
                   name="form_merch"
                   onChange={(e) => setMail({ ...mail, merch: e.target.value })}
-                  className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
+                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
                 >
                   <option>Merchadise Needed</option>
                   <option>T-Shirts</option>
@@ -264,11 +264,11 @@ const Client = () => {
                   }
                   placeholder="drop a message*"
                   required
-                  className="w-11/12 h-36 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-40 lg:w-11/12"
+                  className="w-12/12 h-36 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-40 lg:w-11/12"
                 />
               </div>
 
-              <div className="lg:w-11/12 w-11/12 mt-5 mb-24 bg-gray h-12 rounded-md flex justify-center">
+              <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-gray h-12 rounded-md flex justify-center">
                 <button className="">Submit</button>
               </div>
             </form>

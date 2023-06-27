@@ -9,7 +9,7 @@ const ProgramsHero = () => {
   return (
     <section
       data-aos="zoom-in-right"
-      className="container mx-auto md:px-10 px-5 text-white font-medium xl:pt-20 pt-14"
+      className="container mx-auto md:px-10 px-5 text-white font-medium xl:pt-20 pt-10"
     >
       <div className="flex items-center">
         <div>
