@@ -11,7 +11,7 @@ const AboutHeader = () => {
     <section className="lg:pt-28 pt-14 md:px-10 px-5 container mx-auto ">
       <div className="text-white w-12/12 flex lg:flex-row flex-col lg:items-center lg:space-x-4 justify-between">
         <div className="lg:w-5/12 w-full">
-          <h2 className="lg:text-4xl leading-7 md:max-w-xl  lg:max-w-md max-w-lg md:text-2xl text-xl font-medium">
+          <h2 className="lg:text-3xl leading-7 md:max-w-xl  lg:max-w-md max-w-lg md:text-2xl text-xl font-medium">
             Our mission is to connect competent tech talents to hiring
             organizations.
           </h2>
