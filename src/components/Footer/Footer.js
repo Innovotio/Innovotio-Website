@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../assets/footer/Vector.svg";
-import Facebook from "../assets/footer/Facebook.svg";
-import Instagram from "../assets/footer/Instagram.svg";
-import LinkedIn from "../assets/footer/LinkedIn.svg";
-import Twitter from "../assets/footer/Twitter.svg";
-import Copyright from "./Copyright";
+import Logo from "../../assets/footer/Vector.svg";
+import Facebook from "../../assets/footer/Facebook.svg";
+import Instagram from "../../assets/footer/Instagram.svg";
+import LinkedIn from "../../assets/footer/LinkedIn.svg";
+import Twitter from "../../assets/footer/Twitter.svg";
+import Copyright from "../Copyright/Copyright";
 
 function Footer() {
   return (

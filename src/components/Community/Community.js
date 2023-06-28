@@ -1,10 +1,10 @@
-import Resume from "./../assets/description/Resume.png";
-import Innovation from "./../assets/description/Innovation.png";
-import DollarCoin from "./../assets/description/DollarCoin.png";
-import People from "./../assets/description/People.png";
-import Lawyer from "./../assets/description/Lawyer.png";
-import UserShield from "./../assets/description/UserShield.png";
-import Talent from "./Micro/Custom/Talent";
+import Resume from "../../assets/description/Resume.png";
+import Innovation from "../../assets/description/Innovation.png";
+import DollarCoin from "../../assets/description/DollarCoin.png";
+import People from "../../assets/description/People.png";
+import Lawyer from "../../assets/description/Lawyer.png";
+import UserShield from "../../assets/description/UserShield.png";
+import Talent from "../Micro/Custom/Talent";
 import Link from "next/link";
 import {
   BsClipboardData,
@@ -29,7 +29,7 @@ const Community = () => {
             Innovotio has an active community to provide support for recruiters,
             organizations and provide tech talent management.
           </p>{" "}
-          <Link href="https://forms.gle/WPHUWJbAEGuT5KBA9" legacyBehavior>
+          <Link href="http://bit.ly/Innovotio" legacyBehavior>
             <a target="_blank">
               <button className="bg-primaryYellow h-11 text-black font-medium w-56 rounded-md text-lg">
                 Join innovotio family

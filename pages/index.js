@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Navbar from "@/src/components/Nav/Navbar";
-import Header from "@/src/components/Header";
-import Description from "@/src/components/Description";
-import Services from "@/src/components/Services";
-import Operations from "@/src/components/Operations";
-import Footer from "@/src/components/Footer";
-import Testimonial from "@/src/components/Testimonial";
+import Header from "@/src/components/Home/Header";
+import Description from "@/src/components/Description/Description";
+import Services from "@/src/components/Services/Services";
+import Operations from "@/src/components/Operations/Operations";
+import Footer from "@/src/components/Footer/Footer";
+import Testimonial from "@/src/components/Testimonial/Testimonial";
 
 export default function Home() {
   return (

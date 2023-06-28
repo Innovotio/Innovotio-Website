@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import microphone from "../assets/programs/microphone.svg";
-import buzz from "../assets/programs/buzz.svg";
-import light from "../assets/programs/light.svg";
-import star from "../assets/programs/star.svg";
+import microphone from "../../assets/programs/microphone.svg";
+import buzz from "../../assets/programs/buzz.svg";
+import light from "../../assets/programs/light.svg";
+import star from "../../assets/programs/star.svg";
 
 const ProgramsHero = () => {
   return (
@@ -18,7 +18,7 @@ const ProgramsHero = () => {
             alt=""
             width={34}
             height={56}
-            className="relative top-5 right-4 lg:top-32"
+            className="relative top-5 right-4 lg:top-28"
           />
 
           <h1 className="pt-20 lg:block hidden lg:text-5xl leading-8 text-3xl max-w-4xl">

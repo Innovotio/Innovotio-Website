@@ -1,4 +1,4 @@
-import Client from "@/src/form/Client";
+import Client from "@/src/components/form/Client";
 import Head from "next/head";
 
 const index = () => {

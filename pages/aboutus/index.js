@@ -1,9 +1,9 @@
-import AboutHeader from "@/src/components/AboutHeader";
-import AboutHero from "@/src/components/AboutHero";
-import Community from "@/src/components/Community";
-import Footer from "@/src/components/Footer";
+import AboutHeader from "@/src/components/About/AboutHeader";
+import AboutHero from "@/src/components/About/AboutHero";
+import Community from "@/src/components/Community/Community";
+import Footer from "@/src/components/Footer/Footer";
 import Navbar from "@/src/components/Nav/Navbar";
-import Operations from "@/src/components/Operations";
+import Operations from "@/src/components/Operations/Operations";
 import Head from "next/head";
 
 const index = () => {

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import program from "../assets/programs/dev.svg";
-import peer from "../assets/programs/peer.svg";
-import privateImg from "../assets/programs/private.svg";
+import program from "../../assets/programs/dev.svg";
+import peer from "../../assets/programs/peer.svg";
+import privateImg from "../../assets/programs/private.svg";
 
 const Styles = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Quotation from "./../assets/description/Quotation.png";
+import Quotation from "../../assets/description/Quotation.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +10,7 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 5000,
     infinite: true,
     pauseOnHover: true,
     arrows: false,

@@ -1,9 +1,7 @@
 import '@/styles/globals.css'
-// animate on scroll
 import 'aos/dist/aos.css';
 import AOS from "aos";
 import React from 'react';
-
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {

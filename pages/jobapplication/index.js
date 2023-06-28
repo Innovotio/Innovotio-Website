@@ -1,4 +1,4 @@
-import Job from "@/src/form/Job";
+import Job from "@/src/components/form/Job";
 import Head from "next/head";
 
 const index = () => {

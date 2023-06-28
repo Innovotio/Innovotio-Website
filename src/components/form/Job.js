@@ -1,11 +1,11 @@
 import React, { useReducer } from "react";
-import Logo from "../assets/footer/Vector.svg";
-import Arrow from "../assets/form/arrow.svg";
-import formImage from "../assets/form/Account.svg";
-import Add from "../assets/form/Add File.svg";
+import Logo from "../../assets/footer/Vector.svg";
+import Arrow from "../../assets/form/arrow.svg";
+import formImage from "../../assets/form/Account.svg";
+import Add from "../../assets/form/Add File.svg";
 import Link from "next/link";
 import Image from "next/image";
-import Copyright from "../components/Copyright";
+import Copyright from "../Copyright/Copyright";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

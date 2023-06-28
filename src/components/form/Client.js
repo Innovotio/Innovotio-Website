@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "../assets/footer/Vector.svg";
-import Arrow from "../assets/form/arrow.svg";
-import formImage from "../assets/form/Account.svg";
+import Logo from "../../assets/footer/Vector.svg";
+import Arrow from "../../assets/form/arrow.svg";
+import formImage from "../../assets/form/Account.svg";
 import Image from "next/image";
 import Link from "next/link";
-import Copyright from "../components/Copyright";
+import Copyright from "../Copyright/Copyright";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

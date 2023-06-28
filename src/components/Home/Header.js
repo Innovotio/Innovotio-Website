@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Brand from "./Micro/Custom/Brand";
+import Brand from "../Micro/Custom/Brand";
 
 const Header = () => {
   return (

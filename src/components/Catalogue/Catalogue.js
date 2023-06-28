@@ -1,5 +1,5 @@
 import React from "react";
-import CatalogueCard from "./Micro/Custom/CatalogueCard";
+import CatalogueCard from "../Micro/Custom/CatalogueCard";
 import { FaLaptopCode, FaProductHunt } from "react-icons/fa";
 import { GiCyberEye } from "react-icons/gi";
 import { RiCustomerService2Fill } from "react-icons/ri";

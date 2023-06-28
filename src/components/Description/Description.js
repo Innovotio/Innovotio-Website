@@ -1,6 +1,6 @@
-import BlackBtn from "./Micro/Button/BlackBtn";
-import YellowBtn from "./Micro/Button/YellowBtn";
-import Talent from "./Micro/Custom/Talent";
+import BlackBtn from "../Micro/Button/BlackBtn";
+import YellowBtn from "../Micro/Button/YellowBtn";
+import Talent from "../Micro/Custom/Talent";
 import {
   BsClipboardData,
   BsBookmarkCheck,

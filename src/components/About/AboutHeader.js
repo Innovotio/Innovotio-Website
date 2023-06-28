@@ -1,10 +1,10 @@
 import Image from "next/image";
-import akaneex from "./../assets/header/akaneex.svg";
-import task from "./../assets/header/task.svg";
-import GDG from "./../assets/header/GDG.svg";
-import gdgajah from "./../assets/header/gdgajah.svg";
-import bullion from "./../assets/header/bullion.svg";
-import Client from "./Micro/Custom/Client";
+import akaneex from "../../assets/header/akaneex.svg";
+import task from "../../assets/header/task.svg";
+import GDG from "../../assets/header/GDG.svg";
+import gdgajah from "../../assets/header/gdgajah.svg";
+import bullion from "../../assets/header/bullion.svg";
+import Client from "../Micro/Custom/Client";
 
 const AboutHeader = () => {
   return (
