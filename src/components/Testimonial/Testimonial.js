@@ -58,7 +58,7 @@ const Testimonial = () => {
         </div>
         <div>
           <p className="lg:text-2xl">
-            Innovotio matched me with Ivendigital. I am already enjoying my role
+            Innovotio matched me with Startup Launchcode. I am already enjoying my role
             here as one of the graphic designers. The tasks keep pushing me to think
             outside the box and deep down, I know have been perfectly matched
             thanks to Innovotio.
