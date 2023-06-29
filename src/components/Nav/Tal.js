@@ -17,7 +17,7 @@ const Tal = () => {
       </div>
 
       <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a a target="_blank" href="/aboutus/#community">
+        <a  href="/aboutus/#community">
           <>
             <h3 className="text-xl mb-2">Community</h3>
             <p className="text-sm w-11/12 text-headerGrey">
