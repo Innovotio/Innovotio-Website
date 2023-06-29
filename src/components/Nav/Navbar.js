@@ -141,7 +141,7 @@ function Navbar() {
                   <Link href="/jobapplication">Join Innovotio</Link>
                 </li>
                 <li className="mb-5">
-                  <Link href="http://bit.ly/Innovotio" legacyBehavior>
+                  <Link href="/aboutus/#community" legacyBehavior>
                     <a target="_blank">Community</a>
                   </Link>
                 </li>

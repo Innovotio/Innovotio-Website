@@ -10,9 +10,9 @@ import Copyright from "../Copyright/Copyright";
 function Footer() {
   return (
     <footer className=" mx-auto container font-font text-white md:px-10 px-5  lg:pt-40 md:pt-28 pt-20 cursor-pointer">
-      <h1 className="lg:max-w-3xl md:max-w-xl max-w-md lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
-        We built the complete <span className="text-yellow">talent</span> stack,
-        so <span className="text-yellow">you</span> don‘t have to
+      <h1 className="lg:max-w-xl md:max-w-xl max-w-md lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
+        One stop for <span className="text-yellow">talent,</span> event{" "}
+        <span className="text-yellow">and</span> merchandise
       </h1>
       <section className="w-12/12 flex lg:flex-row flex-col-reverse lg:py-14 py-14 border-b border-headerGrey border-opacity-20">
         <div className="lg:w-5/12 lg:mt-0 mt-10 w-12/12 flex flex-col">

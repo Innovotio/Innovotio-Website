@@ -19,11 +19,11 @@ import { MdOutlineAssuredWorkload } from "react-icons/md";
 
 const Community = () => {
   return (
-    <div>
+    <div id="community">
       <div className=" mx-auto container lg:pt-44 md:pt-32 pt-20 flex flex-col lg:justify-center items-start justify-start lg:items-center md:px-10 px-5">
         <div className="flex flex-col lg:text-center" data-aos="zoom-in-left">
           <p className="font-medium lg:text-5xl text-3xl  text-white">
-            Join Our Community
+            Our Community
           </p>
           <p className="lg:text-xl max-w-2xl text-base font-light text-headerGrey py-8">
             Innovotio has an active community to provide support for recruiters,
@@ -32,7 +32,7 @@ const Community = () => {
           <Link href="http://bit.ly/Innovotio" legacyBehavior>
             <a target="_blank">
               <button className="bg-primaryYellow h-11 text-black font-medium w-56 rounded-md text-lg">
-                Join innovotio family
+                Join innovotio
               </button>
             </a>
           </Link>
@@ -49,7 +49,7 @@ const Community = () => {
             />
             <Talent
               icon={<FaPeopleArrows className="w-5 h-6" />}
-              text="A  large network of tech organizations and founders."
+              text="A network of tech organizations and founders."
             />
             <Talent
               icon={<BsPersonWorkspace className="w-5 h-6" />}

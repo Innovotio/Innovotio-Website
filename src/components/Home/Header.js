@@ -10,11 +10,10 @@ const Header = () => {
             <h1
               className="md:text-6xl text-4xl lg:max-w-4xl max-w-2xl leading-10 font-medium text-white"
             >
-              Get qualified tech talents & tech business support
+              Get qualified tech talents & event support
             </h1>
-            <p className=" md:text-xl max-w-md md:max-w-3xl leading-7 text-base px-4 lg:font-normal py-7 text-headerGrey">
-              We provide qualified tech talents to hiring organizations and
-              provide business support to tech organizations.
+            <p className=" md:text-xl max-w-md md:max-w-2xl leading-7 text-base px-4 lg:font-normal py-7 text-headerGrey">
+              We provide qualified tech talents to hiring organizations, organize tech events and curate branded merchandise.
             </p>
             <div className="flex lg:flex-row flex-col lg:justify-center lg:gap-4">
               <Link href="/jobapplication" legacyBehavior>

@@ -11,13 +11,13 @@ const Client = () => {
   return (
     <div className="overflow-hidden brand">
       <div className="inline-block logos whitespace-nowrap animate-scroll animate-scroll--infinite">
-        <div className="logos-slide grid grid-cols-7 gap-x-10 place-items-center justify-between">
+        <div className="logos-slide grid grid-cols-6 gap-x-14 place-items-center justify-between">
           <div className="inline-block">
             <Image alt="akaneex" src={akraneex} width={137} height={40} />
           </div>
-          <div className="inline-block">
+          {/* <div className="inline-block">
             <Image alt="penny Tree" src={pennyTree} width={150} height={40} />
-          </div>
+          </div> */}
           <div className="inline-block">
             <Image alt="task" src={traderx} width={124} height={40} />
           </div>

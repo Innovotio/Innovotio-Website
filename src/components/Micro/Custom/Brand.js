@@ -9,17 +9,16 @@ import Logo from "../../../assets/header/Logo.svg";
 
 const Brand = () => {
   return (
-    <div className="overflow-hidden "
-    >
+    <div className="overflow-hidden">
       <div className="inline-block whitespace-nowrap ">
         <div className="gap-y-9 items-center justify-center flex flex-col">
-          <div className="space-x-8">
+          <div className="space-x-10">
             <div className="inline-block">
               <Image alt="akaneex" src={akraneex} width={137} height={40} />
             </div>
-            <div className="inline-block">
+            {/* <div className="inline-block">
               <Image alt="penny Tree" src={pennyTree} width={150} height={40} />
-            </div>
+            </div> */}
             <div className="inline-block">
               <Image alt="task" src={traderx} width={124} height={40} />
             </div>

@@ -26,7 +26,7 @@ const Abt = () => {
         </a>
       </div>
       <div className="w-3/6 hover:bg-btnHoverBlack overflow-hidden px-10 h-full py-10">
-        <a href="/aboutUs">
+        <a href="/">
           <>
             <h3 className="text-xl mb-2">Blogs</h3>
             <p className="text-sm w-11/12 text-headerGrey">

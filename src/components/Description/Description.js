@@ -7,8 +7,8 @@ import {
   BsPersonWorkspace,
   BsPeople,
 } from "react-icons/bs";
-import { CiDollar } from "react-icons/ci";
-import { FaPeopleArrows } from "react-icons/fa";
+import { IoIosContacts } from "react-icons/io";
+import {AiOutlineGift} from "react-icons/ai"
 
 const Description = () => {
   return (
@@ -41,20 +41,20 @@ const Description = () => {
               text="We find, manage & keep training only the best talents"
             />
             <Talent
-              icon={<FaPeopleArrows className="w-5 h-6" />}
-              text="A wide range of experienced talents available & within reach"
+              icon={<AiOutlineGift className="w-5 h-6" />}
+              text="Get your branded merchandise at an affordable rate"
             />
             <Talent
               icon={<BsPersonWorkspace className="w-5 h-6" />}
-              text="Easy access world class tech talent for Full-Time, Remote or Hybrid Roles"
+              text="Organize tech events for companies and communities"
             />
             <Talent
-              icon={<CiDollar className="w-6 h-7" />}
-              text="Handle all billing-related support queries for you"
+              icon={<IoIosContacts className="w-6 h-7" />}
+              text="Get 24/7 community support"
             />
             <Talent
               icon={<BsBookmarkCheck className="w-5 h-6" />}
-              text="Proper vetting of numerous applications to find the finest talent for our clients"
+              text="Get affordable business registration and consultation"
             />
           </div>
         </div>

@@ -1,4 +1,3 @@
-import AboutHeader from "@/src/components/About/AboutHeader";
 import AboutHero from "@/src/components/About/AboutHero";
 import Community from "@/src/components/Community/Community";
 import Footer from "@/src/components/Footer/Footer";
@@ -57,7 +56,6 @@ const index = () => {
       <section className=" bg-black overflow-x-hidden">
         <Navbar />
         <AboutHero />
-        <AboutHeader />
         <Community />
         <Operations />
         <Footer />
