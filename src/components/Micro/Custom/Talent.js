@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 const Talent = ({ icon, text }) => {
   return (
     <div className=" text-white lg:mb-7 max-w-sm  mb-5 lg:flex flex flex-row lg:flex-row">
