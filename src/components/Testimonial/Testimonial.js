@@ -37,7 +37,7 @@ const Testimonial = () => {
           <div className="py-4 flex flex-col max-w-full justify-center items-center">
             <p className="text-sm">Destiny Usiomoifo</p>
             <div className="text-sm flex justify-between text-text py-2">
-              <p>Editor-In-Chief/Founder of Vinc & Eliz</p>
+              <p>CEO/Founder of Vinc & Eliz</p>
             </div>
           </div>
         </div>
