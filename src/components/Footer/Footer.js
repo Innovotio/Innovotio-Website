@@ -71,11 +71,6 @@ function Footer() {
             </li>
             <li className="pb-3">
               <Link href="/business" legacyBehavior>
-                <a target="_blank">Outsourcing</a>
-              </Link>
-            </li>
-            <li className="pb-3">
-              <Link href="/business" legacyBehavior>
                 <a target="_blank">Events Organizations</a>
               </Link>
             </li>
