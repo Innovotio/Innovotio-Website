@@ -242,7 +242,7 @@ const Job = () => {
                   className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
               </div>
-              <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-gray h-14 rounded-md flex justify-center">
+              <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-Darkgray h-14 rounded-md flex justify-center">
                 <button className="">Submit</button>
               </div>
             </form>

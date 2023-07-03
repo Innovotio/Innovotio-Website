@@ -1,5 +1,3 @@
-import BlackBtn from "../Micro/Button/BlackBtn";
-import YellowBtn from "../Micro/Button/YellowBtn";
 import Talent from "../Micro/Custom/Talent";
 import {
   BsClipboardData,
@@ -8,25 +6,26 @@ import {
   BsPeople,
 } from "react-icons/bs";
 import { IoIosContacts } from "react-icons/io";
-import {AiOutlineGift} from "react-icons/ai"
+import { AiOutlineGift } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
+import Button from "../Micro/Button/Button";
 
 const Description = () => {
   return (
     <div data-aos="zoom-out-left">
       <div className="mx-auto container lg:pt-40 md:pt-32 pt-20 flex md:px-10 px-5 lg:flex-row xl:justify-center md:items-center flex-col">
         <div className="flex flex-col md:w-full xl:w-5/12 lg:w-5/12">
-          <p className="font-medium lg:text-5xl text-3xl lg:w-full  text-white">
+          <p className="font-medium lg:text-5xl text-3xl lg:w-full text-gray-100">
             Why Choose Innovotio?
           </p>
-          <p className=" lg:text-xl md:text-base text-base max-w-md font-light lg:font-medium lg:text-headerGrey lg:pb-6 py-4">
+          <p className=" xl:text-xl text-base max-w-md font-light lg:font-medium lg:text-headerGrey lg:pb-6 py-4">
             Innovotio goes beyond connecting qualified tech talents and
             organizations.
           </p>
-          <div className=" flex flex-row lg:pt-0 py-3">
-            <BlackBtn text="Join Innovotio" />
-            <div className="lg:ml-10 ml-2 ">
-              <YellowBtn text="Experience us" />
-            </div>
+          <div className="py-3">
+            <Button className="bg-gray-100 flex items-center justify-center  text-black text-lg">
+              Experience Us <BsArrowRight className="ml-2 text-lg"/>
+            </Button>
           </div>
         </div>
 

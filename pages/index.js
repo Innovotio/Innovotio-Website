@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "@/src/components/Nav/Navbar";
-import Header from "@/src/components/Home/Header";
+import Header from "@/src/components/Header/Header";
 import Description from "@/src/components/Description/Description";
 import Services from "@/src/components/Services/Services";
 import Operations from "@/src/components/Operations/Operations";

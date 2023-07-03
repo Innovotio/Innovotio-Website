@@ -21,7 +21,7 @@ const ProgramsHero = () => {
             className="relative top-5 right-4 lg:top-28"
           />
 
-          <h1 className="pt-20 lg:block hidden lg:text-5xl leading-8 text-3xl max-w-4xl">
+          <h1 className="pt-20 lg:block hidden lg:text-4xl xl:text-5xl leading-8 text-3xl max-w-4xl">
             Skill Up with our talent building and management programs to stay
             ready for global employment.
           </h1>

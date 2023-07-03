@@ -268,7 +268,7 @@ const Client = () => {
                 />
               </div>
 
-              <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-gray h-12 rounded-md flex justify-center">
+              <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-Darkgray h-12 rounded-md flex justify-center">
                 <button className="">Submit</button>
               </div>
             </form>

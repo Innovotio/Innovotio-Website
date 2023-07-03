@@ -12,12 +12,13 @@ module.exports = {
     extend: {
       colors: {
         background: "#444444",
+        backgroundBlack: "#020002",
         primaryYellow: "#FFCC00",
         text: "#A3A3A3",
         plain: "#0000000F",
         nav: "#AAAAAA",
         side: "#182222",
-        gray: "#DDDDDD",
+        Darkgray: "#DDDDDD",
         form: "#F5F5F5",
         yellow: "#FFCC00",
         btnDefaultBlack: "#2E2E2E",

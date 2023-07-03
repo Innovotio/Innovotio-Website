@@ -11,6 +11,7 @@ import YellowBtn from "../Micro/Button/YellowBtn";
 import Abt from "./Abt";
 import Tal from "./Tal";
 import Business from "./Business";
+import Button from "../Micro/Button/Button";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -165,25 +166,39 @@ function Navbar() {
               </ul>
             </div>
             <div className="flex mb-20 flex-wrap lg:mb-0">
-              <div className="mb-3 ">
-                <Link href="/jobapplication" legacyBehavior>
-                  <BlackBtn text="Join Innovotio" />
-                </Link>
-              </div>
-              <div className="ml-2">
-                <Link href="/business" legacyBehavior>
-                  <YellowBtn text="Hire a talent" />
-                </Link>
-              </div>
+            <Link href="/business" legacyBehavior>
+                <a target="_blank">
+                  <Button className="mb-3 lg:mb-0 bg-btnDefaultBlack text-white text-lg">
+                    Order a Merch 
+                  </Button>
+                </a>
+              </Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank">
+                  <Button className="mb-3 bg-gray-100 text-black text-lg ml-5 lg:ml-0">
+                    Hire Tech Talents
+                  </Button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="lg:flex hidden justify-between">
-          <BlackBtn text="Join Innovotio" />
-          <div className="md:ml-4">
-            <YellowBtn text="Hire a talent" />
-          </div>
+          <Link href="/business" legacyBehavior>
+            <a target="_blank">
+              <Button className="bg-btnDefaultBlack text-white lg:hidden xl:block text-lg">
+              Order a Merch 
+              </Button>
+            </a>
+          </Link>
+          <Link href="/business" legacyBehavior>
+            <a target="_blank">
+              <Button className="bg-gray-100 text-black text-lg ml-5">
+                Hire Tech Talents
+              </Button>
+            </a>
+          </Link>
         </div>
 
         <div className="lg:hidden block cursor-pointer" onClick={handleNav}>

@@ -16,11 +16,12 @@ import {
 import { CiLinkedin } from "react-icons/ci";
 import { FaPeopleArrows, FaPeopleCarry } from "react-icons/fa";
 import { MdOutlineAssuredWorkload } from "react-icons/md";
+import Button from "../Micro/Button/Button";
 
 const Community = () => {
   return (
     <div id="community">
-      <div className=" mx-auto container lg:pt-44 md:pt-32 pt-20 flex flex-col lg:justify-center items-start justify-start lg:items-center md:px-10 px-5">
+      <div className=" mx-auto container lg:pt-36 md:pt-28 pt-16 flex flex-col lg:justify-center items-start justify-start lg:items-center md:px-10 px-5">
         <div className="flex flex-col lg:text-center" data-aos="zoom-in-left">
           <p className="font-medium lg:text-5xl text-3xl  text-white">
             Our Community
@@ -28,12 +29,13 @@ const Community = () => {
           <p className="lg:text-xl max-w-2xl text-base font-light text-headerGrey py-8">
             Innovotio has an active community to provide support for recruiters,
             organizations and provide tech talent management.
-          </p>{" "}
+          </p>
+
           <Link href="http://bit.ly/Innovotio" legacyBehavior>
             <a target="_blank">
-              <button className="bg-primaryYellow h-11 text-black font-medium w-56 rounded-md text-lg">
+              <Button className="mb-3 bg-gray-100 text-black text-lg lg:ml-5">
                 Join innovotio
-              </button>
+              </Button>
             </a>
           </Link>
         </div>

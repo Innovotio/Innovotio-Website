@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return(
-<div className="font-font overflow-x-hidden bg-black">
+<div className="font-font overflow-x-hidden bg-backgroundBlack">
   <Component {...pageProps}/>
   </div>
   )

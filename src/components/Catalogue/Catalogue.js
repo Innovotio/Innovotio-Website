@@ -371,7 +371,7 @@ const Catalogue = () => {
         <h1 className="lg:text-5xl text-3xl md:text-4xl font-semibold">
           Explore Our Course Catalogue
         </h1>
-        <p className="text-lg text-gray py-4">
+        <p className="text-lg text-Darkgray py-4">
           Discover talent training programs to help grow your career.
         </p>
 

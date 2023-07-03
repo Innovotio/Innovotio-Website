@@ -3,7 +3,7 @@ import Navbar from "@/src/components/Nav/Navbar";
 import Operations from "@/src/components/Operations/Operations";
 import ProgramsHero from "@/src/components/Programs/ProgramsHero";
 import Styles from "@/src/components/Programs/Styles";
-import Vision from "@/src/components/About/Vision";
+import Vision from "@/src/components/Programs/Vision";
 import Talent from "@/src/components/Talent/Talent";
 import React from "react";
 import Catalogue from "@/src/components/Catalogue/Catalogue";

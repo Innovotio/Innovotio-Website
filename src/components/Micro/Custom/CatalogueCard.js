@@ -12,7 +12,7 @@ const CatalogueCard = ({ icon, heading, service, data, name }) => {
         <div>{icon}</div>
         <h2 className="lg:text-lg font-medium ml-2 text-lg">{heading}</h2>
       </div>
-      <p className="leading-8 text-start font-medium text-base max-w-full lg:max-w-md md:max-w-lg md:text-sm py-5 text-gray">
+      <p className="leading-8 text-start font-medium text-base max-w-full lg:max-w-md md:max-w-lg md:text-sm py-5 text-Darkgray">
         {service}
       </p>
       <div
