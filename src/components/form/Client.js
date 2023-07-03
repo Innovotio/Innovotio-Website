@@ -9,11 +9,17 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
+import { AiOutlineDown } from "react-icons/ai";
 
 const Client = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
   const submit = React.useRef(null);
+  const [isloading, setIsLoading] = React.useState(false);
   const router = useRouter();
+  const [modal, setModal] = React.useState({
+    services: false,
+    merchandise: false,
+    talents: false,
+  });
 
   const [mail, setMail] = React.useState({
     firstName: "",
@@ -21,14 +27,39 @@ const Client = () => {
     email: "",
     phoneNumber: "",
     role: "",
-    services: "",
-    talent: "",
-    merch: "",
-    message: "",
+    services: {
+      merchandise: false,
+      talent: false,
+      eventPlanning: false,
+      pitchDesk: false,
+      consultancy: false,
+    },
+    talents: {
+      frontendDeveloper: false,
+      backendDeveloper: false,
+      digitalMarketer: false,
+      productManager: false,
+      communityManager: false,
+      uxResearcher: false,
+      contentCreator: false,
+      graphicsDesginer: false,
+      operationsManager: false,
+      Blockchain: false,
+      qaTester: false,
+    },
+
+    merchandise: {
+      tee: false,
+      waterBottle: false,
+      hoodies: false,
+      stickers: false,
+      jotters: false,
+      redCarpetBanner: false,
+      tags: false,
+    },
   });
 
-  let isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
-
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
@@ -41,7 +72,8 @@ const Client = () => {
       mail.role !== "" &&
       mail.services !== "" &&
       mail.talent !== "" &&
-      mail.merch !== ""
+      mail.merch !== "" &&
+      mail.message !== ""
     ) {
       try {
         setIsLoading(true);
@@ -58,7 +90,16 @@ const Client = () => {
         }, 4000);
       } catch (error) {
         setIsLoading(false);
-        toast.error("Network error, please try again.", {});
+        toast.error("Network error, please try again.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
       }
     } else {
       toast.error("An unexpecetd error occured, please try again later");
@@ -84,7 +125,7 @@ const Client = () => {
               </p>
             </figcaption>
           </div>
-          <figure className="">
+          <figure>
             <Image
               src={formImage}
               alt="chart"
@@ -174,7 +215,7 @@ const Client = () => {
                   value={mail.role}
                   name="form_role"
                   onChange={(e) => setMail({ ...mail, role: e.target.value })}
-                  placeholder="Current Job Role *"
+                  placeholder="Company/Job Role *"
                   required
                   className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />

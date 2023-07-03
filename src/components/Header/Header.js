@@ -19,24 +19,11 @@ const Header = () => {
               organize tech events and curate branded merchandise.
             </p>
             <div className="flex lg:flex-row flex-col lg:justify-center lg:gap-4">
-              <Link href="/business" legacyBehavior>
-                <a target="_blank">
-                  <Button className="bg-gray-100 text-black text-lg">
-                    Hire Tech Talents
-                  </Button>
-                </a>
-              </Link>
-              <Link href="/business" legacyBehavior>
+              <Link href="/aboutus/#community" legacyBehavior>
                 <a target="_blank">
                   <Button className="bg-btnDefaultBlack text-white mt-4 lg:mt-0 text-lg">
-                    Order a Merch
-                  </Button>
-                </a>
-              </Link>
-
-              <Link href="/aboutus/#community" legacyBehavior>
-                <a target="_blank" className="underline flex items-center mt-4 lg:mt-0 justify-center text-gray-300">
                     Join Innovotio
+                  </Button>
                 </a>
               </Link>
             </div>
