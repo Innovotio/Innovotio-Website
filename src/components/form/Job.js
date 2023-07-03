@@ -215,7 +215,7 @@ const Job = () => {
               <div className="flex flex-col w-12/12">
                 <input
                   type="text"
-                  placeholder="What makes you a good fit for this role?"
+                  placeholder="What makes you a good fit for this role? *"
                   value={mail.fit}
                   onChange={(e) => setMail({ ...mail, fit: e.target.value })}
                   name="form_fit"
@@ -235,12 +235,13 @@ const Job = () => {
                 />
                 <input
                   type="text"
-                  placeholder="Is there anything else you would like to let us know? *"
+                  placeholder="Is there anything else you would like to let us know? "
                   value={mail.others}
                   onChange={(e) => setMail({ ...mail, others: e.target.value })}
                   name="form_others"
                   className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
+
               </div>
               <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-Darkgray h-14 rounded-md flex justify-center">
                 <button className="">Submit</button>

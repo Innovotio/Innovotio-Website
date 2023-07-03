@@ -9,11 +9,17 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
+import { AiOutlineDown } from "react-icons/ai";
 
 const Client = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
   const submit = React.useRef(null);
+  const [isloading, setIsLoading] = React.useState(false);
   const router = useRouter();
+  const [modal, setModal] = React.useState({
+    services: false,
+    merchandise: false,
+    talents: false,
+  });
 
   const [mail, setMail] = React.useState({
     firstName: "",
@@ -21,15 +27,39 @@ const Client = () => {
     email: "",
     phoneNumber: "",
     role: "",
-    services: "",
-    talent: "",
-    merch: "",
-    message: "",
+    services: {
+      merchandise: false,
+      talent: false,
+      eventPlanning: false,
+      pitchDesk: false,
+      consultancy: false,
+    },
+    talents: {
+      frontendDeveloper: false,
+      backendDeveloper: false,
+      digitalMarketer: false,
+      productManager: false,
+      communityManager: false,
+      uxResearcher: false,
+      contentCreator: false,
+      graphicsDesginer: false,
+      operationsManager: false,
+      Blockchain: false,
+      qaTester: false,
+    },
+
+    merchandise: {
+      tee: false,
+      waterBottle: false,
+      hoodies: false,
+      stickers: false,
+      jotters: false,
+      redCarpetBanner: false,
+      tags: false,
+    },
   });
 
-  //regex for email
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
@@ -39,11 +69,7 @@ const Client = () => {
       mail.lastName !== "" &&
       mail.email !== "" &&
       mail.phoneNumber !== "" &&
-      mail.role !== "" &&
-      mail.services !== "" &&
-      mail.talent !== "" &&
-      mail.merch !== "" &&
-      mail.message !== ""
+      mail.role !== ""
     ) {
       try {
         setIsLoading(true);
@@ -53,32 +79,13 @@ const Client = () => {
           submit.current,
           "q93MfdC_cYz7OHwTw"
         );
-        toast.success("Your request has been sent successfully", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-        setIsLoading(false);
+        toast.success("Your request has been sent successfully");
         setTimeout(() => {
-          router.reload(); // This will refresh the page after the form is submitted
+          router.reload();
         }, 3000);
       } catch (error) {
         setIsLoading(false);
-        toast.error("Network error, please try again.", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+        toast.error("Network error, please try again.", {});
       }
     } else {
       toast.error("Invalid Email address");
@@ -104,7 +111,7 @@ const Client = () => {
               </p>
             </figcaption>
           </div>
-          <figure className="">
+          <figure>
             <Image
               src={formImage}
               alt="chart"
@@ -194,88 +201,465 @@ const Client = () => {
                   value={mail.role}
                   name="form_role"
                   onChange={(e) => setMail({ ...mail, role: e.target.value })}
-                  placeholder="Current Job Role *"
+                  placeholder="Company/Job Role *"
                   required
                   className="w-11/12 md:w-10/12  rounded-md mb-8 px-2 py-2 h-12 lg:h-12 xl:w-96"
                 />
 
-                <select
-                  required
-                  value={mail.services}
-                  name="form_services"
-                  onChange={(e) =>
-                    setMail({ ...mail, services: e.target.value })
-                  }
-                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
-                >
-                  <option>Services Required</option>
-                  <option>Talent Pool</option>
-                  <option>Tech Event Planning</option>
-                  <option>Pitch Deck Designs</option>
-                  <option>Consultancy</option>
-                  <option>Merchandise </option>
-                </select>
+                {/* dropdown services form */}
+                <div className=" bg-white lg:w-96 w-11/12  z-10  h-12 rounded-md mb-7">
+                  <div
+                    className="text-slate-400  flex items-center cursor-pointer rounded-md p-3 justify-between"
+                    onClick={() =>
+                      setModal({ ...modal, services: !modal.services })
+                    }
+                  >
+                    Services Required
+                    <AiOutlineDown />
+                  </div>
+
+                  {modal.services ? (
+                    <div className="flex flex-col rounded-b-md relative bottom-1 h-fit px-5 bg-white ">
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.services.merchandise}
+                          checked={mail.services.merchandise}
+                          name="form_merchandise"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              services: {
+                                ...mail.services,
+                                merchandise: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Merchandise
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.services.talent}
+                          checked={mail.services.talent}
+                          name="form_services_talent"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              services: {
+                                ...mail.services,
+                                talent: e.target.checked,
+                              },
+                            })
+                          }
+                          className=" w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Talent Pool
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.services.eventPlanning}
+                          checked={mail.services.eventPlanning}
+                          name="form_eventPlanning"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              services: {
+                                ...mail.services,
+                                eventPlanning: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Tech Event Planning
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.services.pitchDesk}
+                          checked={mail.services.pitchDesk}
+                          name="form_pitchDesk"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              services: {
+                                ...mail.services,
+                                pitchDesk: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Pitch Deck Designs
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.services.consultancy}
+                          checked={mail.services.consultancy}
+                          name="form_consultancy"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              services: {
+                                ...mail.services,
+                                consultancy: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Consultancy
+                      </label>
+                    </div>
+                  ) : null}
+                </div>
               </div>
-              
+
+              {/* dropdown merchandise form */}
               <div className="flex flex-col">
-                <select
-                  value={mail.talent}
-                  name="form_talent"
-                  onChange={(e) => setMail({ ...mail, talent: e.target.value })}
-                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
-                >
-                  <option>Talent Pool Stack</option>
-                  <option>Front-End Developer</option>
-                  <option>Digital Marketer</option>
-                  <option>Product Manager</option>
-                  <option>Community Manager</option>
-                  <option>Back-End Developer</option>
-                  <option>UX Researcher</option>
-                  <option>Content Creator</option>
-                  <option>Grpahics Designer</option>
-                  <option>Operations Manager</option>
-                  <option>Blockchain Developer</option>
-                  <option>Quality Assurance Tester</option>
-                  <option>Others</option>
-                </select>
+                <div className=" bg-white md:w-11/12 w-12/12 h-14 rounded-md mb-7">
+                  <div
+                    className="w-12/12 h-14 text-slate-400 flex justify-between p-3  items-center"
+                    onClick={() =>
+                      setModal({ ...modal, merchandise: !modal.merchandise })
+                    }
+                  >
+                    Merchadise Needed <AiOutlineDown />
+                  </div>
 
-                <select
-                  value={mail.merch}
-                  name="form_merch"
-                  onChange={(e) => setMail({ ...mail, merch: e.target.value })}
-                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 lg:w-11/12"
-                >
-                  <option>Merchadise Needed</option>
-                  <option>T-Shirts</option>
-                  <option>Water Bottle</option>
-                  <option>Hoodies</option>
-                  <option>Stickers</option>
-                  <option>Jotters</option>
-                  <option>Boxes</option>
-                  <option>Red Carpet Banner</option>
-                  <option>Tags</option>
-                  <option>Lot more</option>
-                </select>
+                  {modal.merchandise ? (
+                    <div className="flex flex-col rounded-b-md relative bottom-1 h-fit px-5 bg-white ">
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.tee}
+                          checked={mail.merchandise.tee}
+                          name="form_tee"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                tee: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        T-Shirts{" "}
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.waterBottle}
+                          checked={mail.merchandise.waterBottle}
+                          name="form_waterBottle"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                waterBottle: e.target.checked,
+                              },
+                            })
+                          }
+                          className=" w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Water Bottle
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.hoodies}
+                          checked={mail.merchandise.hoodies}
+                          name="form_hoodies"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                hoodies: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Hoodies
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.stickers}
+                          checked={mail.merchandise.stickers}
+                          name="form_stickers"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                stickers: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Stickers{" "}
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.jotters}
+                          checked={mail.merchandise.jotters}
+                          name="form_jotters"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                jotters: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Jotters
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.redCarpetBanner}
+                          checked={mail.merchandise.redCarpetBanner}
+                          name="form_redCarpetBanner"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                redCarpetBanner: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Red Carpet Banner
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.merchandise.tags}
+                          checked={mail.merchandise.tags}
+                          name="form_tags"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              merchandise: {
+                                ...mail.merchandise,
+                                tags: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Tags
+                      </label>
+                    </div>
+                  ) : null}
+                </div>
 
-                <textarea
-                  value={mail.message}
-                  name="form_message"
-                  onChange={(e) =>
-                    setMail({ ...mail, message: e.target.value })
-                  }
-                  placeholder="drop a message*"
-                  required
-                  className="w-12/12 h-36 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-40 lg:w-11/12"
-                />
+                {/* dropdown talent form */}
+                <div className=" bg-white md:w-11/12 w-12/12 h-14 rounded-md mb-7">
+                  <div
+                    className="w-12/12 h-14 text-slate-400 flex justify-between p-3  items-center"
+                    onClick={() =>
+                      setModal({ ...modal, talents: !modal.talents })
+                    }
+                  >
+                    Talent Pool
+                    <AiOutlineDown />
+                  </div>
+
+                  {modal.talents ? (
+                    <div className="flex flex-col rounded-b-md relative bottom-1 h-fit px-5 bg-white ">
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.frontendDeveloper}
+                          checked={mail.talents.frontendDeveloper}
+                          name="form_frontendDeveloper"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                frontendDeveloper: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2"
+                        />
+                        Frontend Developer
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.backendDeveloper}
+                          checked={mail.talents.backendDeveloper}
+                          name="form_backendDeveloper"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                backendDeveloper: e.target.checked,
+                              },
+                            })
+                          }
+                          className=" w-6 h-6 mr-2"
+                        />
+                        Backend Developer
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.digitalMarketer}
+                          checked={mail.talents.digitalMarketer}
+                          name="form_digitalMarketer"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                digitalMarketer: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2"
+                        />
+                        Digital Marketer
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.productManager}
+                          checked={mail.talents.productManager}
+                          name="form_productManager"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                productManager: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2"
+                        />
+                        Product Marketer
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.communityManager}
+                          checked={mail.talents.communityManager}
+                          name="form_communityManager"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                communityManager: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2"
+                        />
+                        Community Manager
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.uxResearcher}
+                          checked={mail.talents.uxResearcher}
+                          name="form_uxResearcher"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                uxResearcher: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2"
+                        />
+                        UX Researcher
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.graphicsDesginer}
+                          checked={mail.talents.graphicsDesginer}
+                          name="form_graphicsDesigner"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                graphicsDesginer: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2"
+                        />
+                        Graphics Designer
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.operationsManager}
+                          checked={mail.talents.operationsManager}
+                          name="form_operationsManager"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                operationsManager: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Operations Manager
+                      </label>
+                      <label className="items-center flex py-2">
+                        <input
+                          type="checkbox"
+                          value={mail.talents.qaTester}
+                          checked={mail.talents.qaTester}
+                          name="form_qaTester"
+                          onChange={(e) =>
+                            setMail({
+                              ...mail,
+                              talents: {
+                                ...mail.talents,
+                                qaTester: e.target.checked,
+                              },
+                            })
+                          }
+                          className="w-6 h-6 mr-2 text-black bg-black"
+                        />
+                        Quality Assurance Tester
+                      </label>
+                    </div>
+                  ) : null}
+                </div>
               </div>
-
-              <input type="checkbox" name="item" value="item1" id="item1" />
-
-              <input type="checkbox" name="item" value="item2" id="item2" />
-
-              <input type="checkbox" name="item" value="item3" id="item3" />
-
-              <input type="submit" value="Submit" />
 
               <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-Darkgray h-12 rounded-md flex justify-center">
                 <button className="">Submit</button>
