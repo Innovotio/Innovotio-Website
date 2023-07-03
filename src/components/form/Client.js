@@ -27,8 +27,7 @@ const Client = () => {
     message: "",
   });
 
-  //regex for email
-  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
+  let isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -42,8 +41,7 @@ const Client = () => {
       mail.role !== "" &&
       mail.services !== "" &&
       mail.talent !== "" &&
-      mail.merch !== "" &&
-      mail.message !== ""
+      mail.merch !== ""
     ) {
       try {
         setIsLoading(true);
@@ -53,35 +51,17 @@ const Client = () => {
           submit.current,
           "q93MfdC_cYz7OHwTw"
         );
-        toast.success("Your request has been sent successfully", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+        toast.success("Your request has been sent successfully", {});
         setIsLoading(false);
         setTimeout(() => {
-          router.reload(); // This will refresh the page after the form is submitted
-        }, 3000);
+          router.reload();
+        }, 4000);
       } catch (error) {
         setIsLoading(false);
-        toast.error("Network error, please try again.", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+        toast.error("Network error, please try again.", {});
       }
     } else {
-      toast.error("Invalid Email address");
+      toast.error("An unexpecetd error occured, please try again later");
     }
   };
 
@@ -206,7 +186,7 @@ const Client = () => {
                   onChange={(e) =>
                     setMail({ ...mail, services: e.target.value })
                   }
-                  className="w-12/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
+                  className="w-11/12 h-14 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-12 xl:w-96"
                 >
                   <option>Services Required</option>
                   <option>Talent Pool</option>
@@ -263,8 +243,7 @@ const Client = () => {
                   onChange={(e) =>
                     setMail({ ...mail, message: e.target.value })
                   }
-                  placeholder="drop a message*"
-                  required
+                  placeholder="drop a message"
                   className="w-12/12 h-36 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-40 lg:w-11/12"
                 />
               </div>
