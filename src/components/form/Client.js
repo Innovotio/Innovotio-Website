@@ -216,7 +216,7 @@ const Client = () => {
                   <option>Merchandise </option>
                 </select>
               </div>
-              
+
               <div className="flex flex-col">
                 <select
                   value={mail.talent}
@@ -268,14 +268,6 @@ const Client = () => {
                   className="w-12/12 h-36 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-40 lg:w-11/12"
                 />
               </div>
-
-              <input type="checkbox" name="item" value="item1" id="item1" />
-
-              <input type="checkbox" name="item" value="item2" id="item2" />
-
-              <input type="checkbox" name="item" value="item3" id="item3" />
-
-              <input type="submit" value="Submit" />
 
               <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-Darkgray h-12 rounded-md flex justify-center">
                 <button className="">Submit</button>
