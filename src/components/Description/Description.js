@@ -9,6 +9,7 @@ import { IoIosContacts } from "react-icons/io";
 import { AiOutlineGift } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import Button from "../Micro/Button/Button";
+import Link from "next/link";
 
 const Description = () => {
   return (
@@ -23,9 +24,13 @@ const Description = () => {
             organizations.
           </p>
           <div className="py-3">
-            <Button className="bg-gray-100 flex items-center justify-center  text-black text-lg">
-              Experience Us <BsArrowRight className="ml-2 text-lg"/>
-            </Button>
+            <Link href="/business" legacyBehavior>
+              <a target="_blank">
+                <Button className=" animate-bounce bg-gray-100 flex items-center justify-center  text-black text-lg">
+                  Experience Us <BsArrowRight className="ml-2 text-lg" />
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
 

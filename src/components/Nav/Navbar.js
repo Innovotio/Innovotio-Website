@@ -6,8 +6,6 @@ import mobileLogo from "../../assets/Navbar/logo.svg";
 import cancel from "../../assets/Navbar/Menu.svg";
 import arrow from "../../assets/Navbar/arrow.png";
 import menu from "../../assets/Navbar/Menu (1).svg";
-import BlackBtn from "../Micro/Button/BlackBtn";
-import YellowBtn from "../Micro/Button/YellowBtn";
 import Abt from "./Abt";
 import Tal from "./Tal";
 import Business from "./Business";
@@ -166,10 +164,10 @@ function Navbar() {
               </ul>
             </div>
             <div className="flex mb-20 flex-wrap lg:mb-0">
-            <Link href="/business" legacyBehavior>
+              <Link href="/business" legacyBehavior>
                 <a target="_blank">
                   <Button className="mb-3 lg:mb-0 bg-btnDefaultBlack text-white text-lg">
-                    Order a Merch 
+                    Order a Merch
                   </Button>
                 </a>
               </Link>
@@ -188,7 +186,7 @@ function Navbar() {
           <Link href="/business" legacyBehavior>
             <a target="_blank">
               <Button className="bg-btnDefaultBlack text-white lg:hidden xl:block text-lg">
-              Order a Merch 
+                Order a Merch
               </Button>
             </a>
           </Link>

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import BlackBtn from "../Micro/Button/BlackBtn";
-import YellowBtn from "../Micro/Button/YellowBtn";
 import Button from "../Micro/Button/Button";
 
 function Operations() {

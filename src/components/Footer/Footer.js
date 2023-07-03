@@ -10,7 +10,9 @@ import Copyright from "../Copyright/Copyright";
 function Footer() {
   return (
     <footer className=" mx-auto container font-font text-white md:px-10 px-5  lg:pt-40 md:pt-28 pt-20 cursor-pointer">
-      <h1 className="lg:max-w-xl md:max-w-xl max-w-md lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
+      <h1 
+      data-aos="fade-up"
+      className="lg:max-w-xl md:max-w-xl max-w-md lg:text-5xl text-3xl tracking-wide font-medium pb-0 lg:pb-10">
         One stop for <span className="text-yellow">talent,</span> event{" "}
         <span className="text-yellow">and</span> merchandise
       </h1>
