@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <div className="cursor-pointer">
-        <div className=" xl:pt-56 lg:pt-40 md:pt-16 pt-16 md:px-10 px-5">
+        <div className=" xl:pt-56 lg:pt-36 pt-14 md:px-10 px-5">
           <div
             className="flex justify-center items-center px-4 flex-col text-center w-full"
             data-aos="fade-up"
