@@ -11,7 +11,7 @@ const Header = () => {
             className="flex justify-center items-center px-4 flex-col text-center w-full"
             data-aos="fade-up"
           >
-            <h1 className="md:text-6xl text-4xl lg:max-w-4xl max-w-2xl leading-10 font-medium text-white">
+            <h1 className="md:text-6xl lg:text-7xl text-4xl lg:max-w-4xl max-w-2xl leading-10 font-medium text-white">
               Get qualified tech talents & event support
             </h1>
             <p className=" md:text-xl max-w-md md:max-w-2xl leading-7 text-base px-4 lg:font-normal py-7 text-headerGrey">
