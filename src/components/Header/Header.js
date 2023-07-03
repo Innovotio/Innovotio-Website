@@ -21,17 +21,35 @@ const Header = () => {
             <div className="flex lg:flex-row flex-col lg:justify-center lg:gap-4">
               <Link href="/aboutus/#community" legacyBehavior>
                 <a target="_blank">
-                  <Button className="bg-btnDefaultBlack text-white mt-4 lg:mt-0 text-lg">
-                    Join Innovotio
+                  <Button className="bg-gray-100 block lg:hidden text-black mt-4 lg:mt-0 text-lg">
+                    Hire a Talant
                   </Button>
                 </a>
               </Link>
+              <Link href="/aboutus/#community" legacyBehavior>
+                <a target="_blank">
+                  <Button className="bg-btnDefaultBlack block lg:hidden text-white mt-4 lg:mt-0 text-lg">
+                    Order a Merch
+                  </Button>
+                </a>
+              </Link>
+              <Link href="/business" legacyBehavior>
+                <a target="_blank" className="">
+                <Button className="bg-gray-100 lg:block hidden  text-black mt-4 lg:mt-0 text-lg">
+                    Contact Us
+                  </Button>
+                </a>
+              </Link>
+
+              <a target="_blank" className="underline flex justify-center items-center lg:hidden mt-4">
+                    Join Innovotio
+                </a>
             </div>
           </div>
 
-          <div className="lg:pt-28  flex-col lg:flex hidden justify-center items-center">
+          <div className="lg:pt-32  flex-col lg:flex hidden justify-center items-center">
             <div className="flex justify-center text-center items-center flex-col ">
-              <p className="lg:font-normal font-light lg:text-2xl text-xl lg:leading-10 py-5 text-text ">
+              <p className="lg:font-normal font-light lg:text-2xl text-xl lg:leading-10 py-6 text-text ">
                 Trusted by fast-moving clients worldwide
               </p>
               <Brand />
