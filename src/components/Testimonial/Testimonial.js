@@ -26,9 +26,9 @@ const Testimonial = () => {
       </div>
       <Slider
         {...settings}
-        className="text-white font-light md:text-xl md:max-w-2xl max-w-[355px] text-base"
+        className="text-white font-light md:text-xl md:max-w-2xl max-w-[300px] sm:max-w-[355px] text-sm"
       >
-        <div className="">
+        <div>
           <p className="lg:text-2xl">
             Working with Innovotio was a seamless one and I love how they hold
             your hand all through the process. The service was topnotch and even

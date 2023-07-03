@@ -7,7 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const CatalogueCard = ({ icon, heading, service, data, name }) => {
   const [modal, setModal] = React.useState(false);
   return (
-    <section className="cursor-pointer hover:bg-primaryYellow hover:text-black lg:max-w-[425px] max-w-full p-5 justify-center border rounded-2xl border-btnDefaultBlack flex flex-col items-start">
+    <section className="cursor-pointer hover:bg-btnHoverYellow hover:text-black lg:max-w-[425px] max-w-full p-5 justify-center border rounded-2xl border-btnDefaultBlack flex flex-col items-start">
       <div className="flex items-center">
         <div>{icon}</div>
         <h2 className="lg:text-lg font-medium ml-2 text-lg">{heading}</h2>

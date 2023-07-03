@@ -137,7 +137,7 @@ function Navbar() {
               <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
               <ul className="text-lg">
                 <li className="mb-5">
-                  <Link href="/jobapplication">Join Innovotio</Link>
+                  <Link href="/aboutus/#community">Join Innovotio</Link>
                 </li>
                 <li className="mb-5">
                   <Link href="/aboutus/#community" legacyBehavior>
@@ -166,14 +166,14 @@ function Navbar() {
             <div className="flex mb-20 flex-wrap lg:mb-0">
               <Link href="/business" legacyBehavior>
                 <a target="_blank">
-                  <Button className="mb-3 lg:mb-0 bg-btnDefaultBlack text-white text-lg">
+                  <Button className="mb-3 lg:mb-0 bg-btnDefaultBlack sm:block hidden  text-white text-lg">
                     Order a Merch
                   </Button>
                 </a>
               </Link>
               <Link href="/business" legacyBehavior>
                 <a target="_blank">
-                  <Button className="mb-3 bg-gray-100 text-black text-lg ml-5 lg:ml-0">
+                  <Button className="mb-3 bg-gray-100 text-black text-lg md:ml-5 ml-0">
                     Hire Tech Talents
                   </Button>
                 </a>

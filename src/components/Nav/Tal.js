@@ -5,7 +5,7 @@ const Tal = () => {
   return (
     <nav className="w-5/6 2xl:mx-auto 2xl:left-28 2xl:container 2xl:max-w-5xl  text-white 2xl:w-full right-28 z-50 cursor-pointer h-52 bg-black items-center rounded-xl border-headerGrey absolute top-20 justify-between flex border border-opacity-30">
       <div className="w-3/6  hover:bg-btnHoverBlack overflow-hidden px-10  h-full py-10">
-        <a target="_blank" href="/jobapplication">
+      <a  href="/aboutus/#community">
           <>
             <h3 className="text-xl mb-2">Join Innovotio</h3>
             <p className="text-sm w-11/12 text-headerGrey">
