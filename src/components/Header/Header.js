@@ -36,14 +36,14 @@ const Header = () => {
             </div>
           </div>
 
-          {/* <div className="lg:pt-28 flex-col lg:flex hidden justify-center items-center">
+          <div className="lg:pt-28 flex-col lg:flex hidden justify-center items-center">
             <div className="flex justify-center text-center items-center flex-col ">
               <p className="lg:font-normal font-light lg:text-2xl text-xl lg:leading-10 py-3 text-Darkgray ">
                 Trusted by fast-moving clients worldwide
               </p>
               <Brand />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
