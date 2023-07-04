@@ -28,11 +28,10 @@ const Job = () => {
     others: "",
   });
 
-  //regex for email
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+    localStorage.setItem("talent", JSON.stringify(mail));
     if (
       isValidEmail &&
       submit.current &&
@@ -43,8 +42,7 @@ const Job = () => {
       mail.yearsOfExperience !== "" &&
       mail.resume !== "" &&
       mail.portfolio !== "" &&
-      mail.fit !== "" &&
-      mail.others !== ""
+      mail.fit !== "" 
     ) {
       try {
         setIsLoading(true);
@@ -54,37 +52,33 @@ const Job = () => {
           submit.current,
           "vRsFzOQ-qsC5CB4KI"
         );
-        toast.success("Your request has been sent successfully", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+        toast.success(
+          "Thank you! Your request has been successfully submitted."
+        );
         setIsLoading(false);
         setTimeout(() => {
-          router.reload(); // This will refresh the page after the form is submitted
+          router.reload();
+          localStorage.removeItem("talent");
         }, 3000);
       } catch (error) {
         setIsLoading(false);
-        toast.error("Network error, please try again.", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+        toast.error(
+          "Oops! An unexpected error occurred. Please try again later."
+        );
       }
     } else {
-      toast.error("Invalid Email address");
+      toast.error(
+        "Oops! An unexpected error occurred. Please try again later."
+      );
     }
   };
+
+  React.useEffect(() => {
+    const formObject = JSON.parse(localStorage.getItem("talent"));
+    if (formObject) {
+      setMail(formObject);
+    }
+  }, []);
 
   return (
     <>

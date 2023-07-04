@@ -11,7 +11,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
 
 const Client = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
   const submit = React.useRef(null);
   const router = useRouter();
 
@@ -28,9 +27,10 @@ const Client = () => {
   });
 
   let isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail?.email);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+    localStorage.setItem("client", JSON.stringify(mail));
+
     if (
       isValidEmail &&
       submit.current &&
@@ -39,31 +39,41 @@ const Client = () => {
       mail.email !== "" &&
       mail.phoneNumber !== "" &&
       mail.role !== "" &&
-      mail.services !== "" &&
-      mail.talent !== "" &&
-      mail.merch !== ""
+      mail.services !== ""
+
     ) {
       try {
-        setIsLoading(true);
         await emailjs.sendForm(
           "service_x0315xp",
           "template_8i4268f",
           submit.current,
           "q93MfdC_cYz7OHwTw"
         );
-        toast.success("Your request has been sent successfully", {});
-        setIsLoading(false);
+        toast.success(
+          "Thank you! Your request has been successfully submitted."
+        );
         setTimeout(() => {
           router.reload();
-        }, 4000);
+          localStorage.removeItem("client");
+        }, 3000);
       } catch (error) {
-        setIsLoading(false);
-        toast.error("Network error, please try again.", {});
+        toast.error(
+          "Oops! An unexpected error occurred. Please try again later."
+        );
       }
     } else {
-      toast.error("An unexpecetd error occured, please try again later");
+      toast.error(
+        "Oops! An unexpected error occurred. Please try again later."
+      );
     }
   };
+
+  React.useEffect(() => {
+    const formObject = JSON.parse(localStorage.getItem("client"));
+    if (formObject) {
+      setMail(formObject);
+    }
+  }, []);
 
   return (
     <>
