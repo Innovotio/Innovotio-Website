@@ -137,7 +137,7 @@ function Navbar() {
               <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
               <ul className="text-lg">
                 <li className="mb-5">
-                  <Link href="/aboutus/#community">Join Innovotio</Link>
+                  <Link href="/jobapplication">Join Innovotio</Link>
                 </li>
                 <li className="mb-5">
                   <Link href="/aboutus/#community" legacyBehavior>

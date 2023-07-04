@@ -70,13 +70,16 @@ const Client = () => {
       <section className="flex bg-form w-12/12 2xl:mx-auto 2xl:container">
         <section className="w-3/12 hidden bg-side pt-10 py-8 px-10 md:px-4 md:flex flex-col justify-between">
           <div className="">
-            <Image
-              src={Logo}
-              alt="Logo"
-              width={140}
-              height={120}
-              className=""
-            />
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={140}
+                height={120}
+                className=""
+              />
+            </Link>
+
             <figcaption>
               <p className="pt-8 leading-8 text-white text-base font-medium italic">
                 Your super-stop for the tech talents, tech events and swag
@@ -85,13 +88,15 @@ const Client = () => {
             </figcaption>
           </div>
           <figure className="">
-            <Image
-              src={formImage}
-              alt="chart"
-              width={500}
-              height={500}
-              className=""
-            />
+            <Link href="/">
+              <Image
+                src={formImage}
+                alt="chart"
+                width={500}
+                height={500}
+                className=""
+              />
+            </Link>
           </figure>
         </section>
         <section className="md:w-9/12 w-full overflow-x-hidden bg-form">

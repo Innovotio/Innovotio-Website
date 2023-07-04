@@ -120,13 +120,15 @@ const Job = () => {
 
         <section className="md:w-9/12 w-full overflow-x-hidden bg-form">
           <nav className="md:hidden bg-side h-20 flex items-center px-4">
-            <Image
-              src={Logo}
-              alt="Logo"
-              width={140}
-              height={120}
-              className=""
-            />
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={140}
+                height={120}
+                className=""
+              />
+            </Link>
           </nav>
           <div className=" py-2 lg:px-10 px-4 md:px-4">
             <div className="flex  items-center pt-8 ">
@@ -241,7 +243,6 @@ const Job = () => {
                   name="form_others"
                   className="lg:w-11/12 w-full h-14 rounded-md  mb-8 px-2 py-2 lg:h-14"
                 />
-
               </div>
               <div className="lg:w-11/12 w-12/12 mt-5 mb-24 bg-Darkgray h-14 rounded-md flex justify-center">
                 <button className="">Submit</button>
