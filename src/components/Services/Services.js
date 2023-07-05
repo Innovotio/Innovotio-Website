@@ -9,8 +9,8 @@ import vector7 from "../../assets/services/Vector (7).svg";
 function Services() {
   return (
     <section className="mx-auto container lg:pt-40 md:pt-32 pt-20 md:px-10 px-5 font-font">
-      <div className="">
-        <div data-aos="zoom-in-right">
+      <div >
+        <div>
           <h1 className="lg:text-5xl text-center text-3xl font-medium">
             Our Services
           </h1>
@@ -22,7 +22,7 @@ function Services() {
           </div>
         </div>
 
-        <section className="flex justify-center items-center" >
+        <section className="flex justify-center items-center">
           <div className="grid md:grid-cols-2 grid-col gap-8 space-x-0 place-comtent-center place-items-center pt-4 cursor-pointer">
             <Card
               link="/business"
