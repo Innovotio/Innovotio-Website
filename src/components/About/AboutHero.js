@@ -5,7 +5,7 @@ const AboutHero = () => {
   return (
     <section
       data-aos="zoom-in-right"
-      className="text-white md:px-10 px-5 xl:pt-48 lg:pt-28 md:pt-16 pt-14 mx-auto container"
+      className="text-white md:px-10 px-5 xl:pt-40 lg:pt-24 md:pt-16 pt-14 mx-auto container"
     >
       <h1 className="md:text-5xl text-4xl font-medium  mb-7">Who We Are</h1>
       <div className="text-headerGrey lg:text-xl text-base text-justify  max-w-xl md:max-w-3xl font-light">
@@ -21,7 +21,7 @@ const AboutHero = () => {
           & branded merchandise.
         </p>
       </div>
-      <div className="lg:pt-32 pt-10 lg:block hidden">
+      <div className="lg:pt-28 pt-5 lg:block hidden">
         <Client />
       </div>
     </section>
