@@ -9,7 +9,7 @@ const Header = () => {
         <div className="xl:pt-56 lg:pt-24 pt-14 px-5">
           <div
             className="flex justify-center items-center px-4 flex-col text-center w-full"
-            data-aos="fade-right"
+            data-aos="zoom-in-right"
           >
             <h1 className="md:text-6xl lg:text-6xl text-4xl lg:max-w-4xl max-w-xl leading-10 font-medium text-white">
               Get qualified tech talents & event support
