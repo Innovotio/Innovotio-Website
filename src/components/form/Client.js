@@ -258,7 +258,7 @@ const Client = () => {
                   onChange={(e) =>
                     setMail({ ...mail, message: e.target.value })
                   }
-                  placeholder="drop a message"
+                  placeholder="Looking to get more services from us? Kindly drop a message"
                   className="w-12/12 h-36 text-slate-400 rounded-md  mb-8 px-2 py-2 lg:h-40 lg:w-11/12"
                 />
               </div>
