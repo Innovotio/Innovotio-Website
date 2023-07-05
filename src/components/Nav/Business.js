@@ -1,10 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Business = () => {
   return (
     <nav className="2xl:mx-auto 2xl:right-20 2xl:container 2xl:max-w-3xl w-8/12 text-white left-20 cursor-pointer h-[400px] bg-black items-center rounded-xl border-headerGrey absolute top-20 grid grid-cols-2 border border-opacity-30">
-    <div className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-5">
-    <a target='_blank' href="/business">
+      <a
+        target="_blank"
+        href="/business"
+        className="w-11/12 hover:bg-btnHoverBlack h-full py-6 px-5"
+      >
         <>
           <h3 className="text-xl mb-2">Recruitment</h3>
           <p className="text-sm max-w-sm text-headerGrey">
@@ -13,9 +16,11 @@ const Business = () => {
           </p>
         </>
       </a>
-    </div>
-    <div className=" hover:bg-btnHoverBlack h-full py-10 w-full px-10">
-    <a target='_blank' href="/business">
+      <a
+        target="_blank"
+        href="/business"
+        className=" hover:bg-btnHoverBlack h-full py-10 w-full px-10"
+      >
         <>
           <h3 className="text-xl mb-2">Tech Event Organization</h3>
           <p className="text-sm max-w-sm text-headerGrey">
@@ -24,21 +29,25 @@ const Business = () => {
           </p>
         </>
       </a>
-    </div>
-    <div className=" hover:bg-btnHoverBlack h-full overflow-hidden py-10 w-11/12 px-10">
-    <a target='_blank' href="/business">
+      <a
+        target="_blank"
+        href="/business"
+        className=" hover:bg-btnHoverBlack h-full overflow-hidden py-10 w-11/12 px-10"
+      >
         <>
           <h3 className="text-xl mb-2">Consultancy</h3>
           <p className="text-sm max-w-sm text-headerGrey">
-            We offer one month of free business consultancy to small
-            businesses and startups. We assist in the launch process & early
-            stages of the business to establish business structure.
+            We offer one month of free business consultancy to small businesses
+            and startups. We assist in the launch process & early stages of the
+            business to establish business structure.
           </p>
         </>
       </a>
-    </div>
-    <div className=" hover:bg-btnHoverBlack overflow-hidden h-full py-10 w-full px-10">
-      <a target='_blank' href="/business">
+      <a
+        target="_blank"
+        href="/business"
+        className=" hover:bg-btnHoverBlack overflow-hidden h-full py-10 w-full px-10"
+      >
         <>
           <h3 className="text-xl mb-2">Merchandising</h3>
           <p className="text-sm max-w-sm text-headerGrey">
@@ -47,8 +56,8 @@ const Business = () => {
           </p>
         </>
       </a>
-    </div>
-  </nav>  )
-}
+    </nav>
+  );
+};
 
-export default Business
+export default Business;
