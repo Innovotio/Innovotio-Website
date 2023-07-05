@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Description = () => {
   return (
-    <div data-aos="zoom-out">
+    <div data-aos="fade-up">
       <div className="mx-auto container lg:pt-40 md:pt-32 pt-20 flex md:px-10 px-5 lg:flex-row xl:justify-center md:items-center flex-col">
         <div className="flex flex-col md:w-full xl:w-5/12 lg:w-5/12">
           <p className="font-medium lg:text-5xl text-3xl lg:w-full text-gray-100">
