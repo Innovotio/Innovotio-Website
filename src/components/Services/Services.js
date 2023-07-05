@@ -10,7 +10,7 @@ function Services() {
   return (
     <section className="mx-auto container lg:pt-40 md:pt-32 pt-20 md:px-10 px-5 font-font">
       <div className="">
-        <div>
+        <div data-aos="zoom-in-right">
           <h1 className="lg:text-5xl text-center text-3xl font-medium">
             Our Services
           </h1>
@@ -22,7 +22,7 @@ function Services() {
           </div>
         </div>
 
-        <section className="flex justify-center items-center">
+        <section className="flex justify-center items-center" >
           <div className="grid md:grid-cols-2 grid-col gap-8 space-x-0 place-comtent-center place-items-center pt-4 cursor-pointer">
             <Card
               link="/business"

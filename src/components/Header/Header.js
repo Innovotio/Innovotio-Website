@@ -9,7 +9,7 @@ const Header = () => {
         <div className="xl:pt-56 lg:pt-24 pt-14 px-5">
           <div
             className="flex justify-center items-center px-4 flex-col text-center w-full"
-            data-aos="fade-up"
+            data-aos="fade-right"
           >
             <h1 className="md:text-6xl lg:text-6xl text-4xl lg:max-w-4xl max-w-xl leading-10 font-medium text-white">
               Get qualified tech talents & event support
@@ -35,24 +35,27 @@ const Header = () => {
               </Link>
               <Link href="/business" legacyBehavior>
                 <a target="_blank" className="">
-                <Button className="bg-gray-100 lg:block hidden  text-black mt-4 lg:mt-0 text-lg">
+                  <Button className="bg-gray-100 lg:block hidden  text-black mt-4 lg:mt-0 text-lg">
                     Contact Us
                   </Button>
                 </a>
               </Link>
 
-              <Link href="/aboutus/#community" className="underline flex justify-center items-center lg:hidden mt-4">
-                    Join Innovotio
-                </Link>
+              <Link
+                href="/aboutus/#community"
+                className="underline flex justify-center items-center lg:hidden mt-4"
+              >
+                Join Innovotio
+              </Link>
             </div>
           </div>
 
-          <div className="lg:pt-32  flex-col lg:flex hidden justify-center items-center">
+          <div className="lg:pt-28 flex-col lg:flex hidden justify-center items-center">
             <div className="flex justify-center text-center items-center flex-col ">
-              <p className="lg:font-normal font-light lg:text-2xl text-xl lg:leading-10 py-6 text-text ">
+              <p className="lg:font-normal font-light lg:text-2xl text-xl lg:leading-10 py-5 text-text ">
                 Trusted by fast-moving clients worldwide
               </p>
-              <Brand />
+                <Brand />
             </div>
           </div>
         </div>
