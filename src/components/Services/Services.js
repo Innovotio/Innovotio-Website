@@ -56,7 +56,7 @@ function Services() {
               service="Create merchandise for your tech events and brand promotion with our team."
             />
             <Card
-              link="http://bit.ly/Innovotio"
+              link="/aboutus/#community"
               image={vector6}
               heading="Community"
               service="Get easy support to meet all your recruitment needs on our slack community."

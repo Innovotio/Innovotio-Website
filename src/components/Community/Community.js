@@ -34,7 +34,7 @@ const Community = () => {
           <Link href="http://bit.ly/Innovotio" legacyBehavior>
             <a target="_blank">
               <Button className="mb-3 bg-gray-100 text-black text-lg lg:ml-5">
-                Join innovotio
+                Join Innovotio
               </Button>
             </a>
           </Link>
