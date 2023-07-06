@@ -477,6 +477,38 @@ const Catalogue = () => {
         "Final Capstone Project: Create a brand storytelling campaign for a real or fictional brand, including content creation, social media integration, and performance measurement.",
     },
   ];
+
+  const frontend = [
+    {
+      module: "Module 1",
+      topics: "HTML and CSS Fundamentals<br>Introduction to HTML and CSS concepts<br>Structure and semantic HTML<br>CSS styling and positioning<br><br>Mini Project: Creating a personal portfolio website using HTML and CSS",
+    },
+    {
+      module: "Module 2",
+      topics: "Responsive Design and Media Queries<br>Understanding responsive design principles<br>Media queries for different device sizes<br>Setting up a responsive layout using CSS Grid or Flexbox<br><br>Mini Project: Develop a responsive landing page for a fictional product",
+    },
+    {
+      module: "Module 3",
+      topics: "JavaScript Basics<br>Introduction to JavaScript syntax and variables<br>Conditional statements and loops<br>Functions and event handling<br><br>Mini Project: Building a simple interactive calculator using JavaScript",
+    },
+    {
+      module: "Module 4",
+      topics: "DOM Manipulation and Advanced JavaScript<br>Exploring the Document Object Model (DOM)<br>Manipulating elements using JavaScript<br>Working with forms and input validation<br><br>Mini Project: Creating a todo list application with dynamic content manipulation",
+    },
+    {
+      module: "Module 5",
+      topics: "Front-end Frameworks (e.g., React or Vue)<br>Understanding the basics of a front-end framework<br>Setting up and configuring a React or Vue project<br>Component-based development and state management<br><br>Mini Project: Building a simple web application using React or Vue",
+    },
+    {
+      module: "Module 6",
+      topics: "API Integration and Final Capstone Project<br>Retrieving data from APIs using JavaScript<br>Working with JSON data and API endpoints",
+    },
+    {
+      module: "Final Assessment",
+      topics: "Final assessment: Develop a fully functional web application incorporating previous learning, such as responsive design, DOM manipulation, and API integration.",
+    },
+  ];
+  
   const digitalMarketing = [
     {
       module: "Module 1",
@@ -530,8 +562,8 @@ const Catalogue = () => {
             icon={<FaLaptopCode />}
             heading="Frontend Web Development"
             service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
-            data={fullstack}
-            name="Full-Stack Web Development"
+            data={frontend}
+            name="Frontend Web Development"
           />
 
           <CatalogueCard

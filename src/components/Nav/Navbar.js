@@ -137,9 +137,9 @@ function Navbar() {
               <p className="text-sm text-nav font-light mb-5">FOR TALENTS</p>
               <ul className="text-lg">
                 <li className="mb-5">
-                  <li className="mb-5">
-                    <Link href="/programstraining">Programs Training</Link>
-                  </li>
+                  <Link href="/programstraining">Programs Training</Link>
+                </li>
+                <li className="mb-5">
                   <Link href="/jobapplication">Join Innovotio</Link>
                 </li>
                 <li className="mb-5">
