@@ -18,7 +18,7 @@ const Testimonial = () => {
 
   return (
     <div
-      data-aos="fade-left"
+      data-aos="zoom-in"
       className=" mx-auto container lg:pt-40 md:pt-32 pt-20 flex text-center md:px-10 px-5 justify-center items-center flex-col"
     >
       <div className="lg:flex pb-8  ">
