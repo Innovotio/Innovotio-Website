@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {
-    AOS.init({ duration: 700, delay:0});
+    AOS.init({ duration: 800});
     AOS.refresh();
   }, []);
 
