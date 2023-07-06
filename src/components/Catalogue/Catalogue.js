@@ -364,7 +364,150 @@ const Catalogue = () => {
         "Conclusion and Future of No-Code Application Development:\nKey takeaways and lessons learned\nFuture trends in no-code application development\nCareer paths and opportunities in no-code application development.",
     },
   ];
+  const backendWebDevelopment = [
+    {
+      module: "Module 1",
+      topics:
+        "Introduction to Backend Web Development<br>Introduction to backend programming languages (Python, Java, PHP, etc.)<br>Introduction to backend frameworks (Django, Spring, Laravel, etc.)<br>Setting up a local development environment<br>Building a simple backend API using a chosen framework<br><br>Mini Project: Create an API for a simple to-do list application",
+    },
+    {
+      module: "Module 2",
+      topics:
+        "Working with Databases<br>Introduction to databases (SQL and NoSQL)<br>SQL queries and database design principles<br>ORM (Object-Relational Mapping) frameworks (e.g., Django ORM, Hibernate)<br>Connecting the backend API to a database<br><br>Mini Project: Design and implement a backend API to manage users and their information",
+    },
+    {
+      module: "Module 3",
+      topics:
+        "User Authentication and Authorization<br>Introduction to Authentication and authorization concepts<br>Building a secure login system<br>Working with password hashing and encryption<br>Implementing access control and permissions<br><br>Mini Project: Add authentication and authorization to the previous user management API",
+    },
+    {
+      module: "Module 4",
+      topics:
+        "RESTful APIs and Web Services<br>Understanding RESTful architecture principles<br>Working with HTTP methods (GET, POST, PUT, DELETE)<br>Consuming external APIs using HTTP libraries (e.g., requests in Python)<br>Handling and validating API requests and responses<br><br>Mini Project: Build a RESTful API backend for a simple online store application",
+    },
+    {
+      module: "Module 5",
+      topics:
+        "Testing and Deployment<br>Introduction to testing (unit tests, integration tests, etc.)<br>Writing test cases for backend APIs<br>Continuous Integration and Continuous Deployment (CI/CD)<br>Deploying a backend API to a cloud platform (e.g., Heroku, AWS)<br><br>Mini Project: Deploy the online store API on a cloud platform and implement test cases",
+    },
+    {
+      module: "Module 6",
+      topics:
+        "Mini Project: Develop a final capstone project demonstrating advanced backend web development skills. This could be a blog platform, social media application, or an e-commerce website.",
+    },
+    {
+      module: "Final Assessment",
+      topics:
+        "Final assessment: Capstone Project<br>Design and implement a full-stack web application from scratch<br>Use all the concepts and technologies learned throughout the course<br>Develop a user-friendly frontend interface using modern frontend frameworks (e.g., React, Angular)<br>Implement the backend API with proper authentication, authorization, and database integration",
+    },
+  ];
 
+  const communityManagement = [
+    {
+      module: "Module 1",
+      topics:
+        "Introduction to Intermediate Community Management<br>Understand the role and responsibilities of a community manager in various settings<br>Explore advanced community management strategies and techniques<br><br>Mini Project: Analyze and evaluate an existing online community, identify areas for improvement, and propose solutions.",
+    },
+    {
+      module: "Module 2",
+      topics:
+        "Engagement Strategies and Techniques<br>Learn effective ways to build and foster relationships within the community<br>Understand the importance of communication and active listening<br><br>Mini Project: Develop a plan to engage and motivate community members, including discussion topics, contests, and rewards.",
+    },
+    {
+      module: "Module 3",
+      topics:
+        "Crisis Management and Conflict Resolution<br>Identify potential crises and develop a crisis management plan<br>Learn techniques to handle conflicts and difficult community members<br><br>Mini Project: Simulate a crisis scenario and create a step-by-step action plan to handle it, including communication strategies and escalation processes.",
+    },
+    {
+      module: "Module 4",
+      topics:
+        "Analytics and Metrics for Community Management<br>Explore different analytics tools and platforms to measure community growth and engagement<br>Understand key metrics and how to use them to improve community performance<br><br>Mini Project: Analyze the community's metrics, identify trends and patterns, and propose strategies for improvement based on the data.",
+    },
+    {
+      module: "Module 5",
+      topics:
+        "Community Health and Moderation<br>Understand the importance of maintaining a healthy and inclusive community environment<br>Learn moderation techniques and tools to enforce community guidelines<br><br>Mini Project: Create a comprehensive moderation policy and set up a moderation workflow to ensure a safe and welcoming community.",
+    },
+    {
+      module: "Module 6",
+      topics:
+        "Capstone Project - Strategic Community Management Plan<br>Apply all the knowledge and skills acquired during the course to develop a comprehensive community management plan<br>Address challenges, set goals, and implement strategies to enhance the community's growth and engagement",
+    },
+    {
+      module: "Final Assessment",
+      topics:
+        "Final Capstone Project: Develop a strategic community management plan for a real or hypothetical community, including a detailed timeline, objectives, and metrics to evaluate success.",
+    },
+  ];
+
+  const brandStorytelling = [
+    {
+      module: "Module 1",
+      topics:
+        "Introduction to Brand Storytelling & Content<br>Overview of brand storytelling and its importance in marketing<br>Understanding the different elements of a brand story<br>Analyzing successful brand storytelling examples<br><br>Mini project: Analyze and discuss a brand story of your choice",
+    },
+    {
+      module: "Module 2",
+      topics:
+        "Crafting a Brand Narrative<br>Identifying key brand characteristics and values<br>Defining a target audience for your brand<br>Creating a compelling brand narrative<br><br>Mini project: Develop a brand narrative for a fictional or existing brand",
+    },
+    {
+      module: "Module 3",
+      topics:
+        "Creating Engaging Content<br>Identifying different types of content suitable for brand storytelling<br>Techniques for creating emotional connections through content<br>Incorporating storytelling principles into content creation<br><br>Mini project: Produce a piece of content (blog post, video, social media post) that tells a brand story",
+    },
+    {
+      module: "Module 4",
+      topics:
+        "Amplifying Brand Stories through Social Media<br>Understanding the role of social media in brand storytelling<br>Strategies for creating shareable and engaging social media content<br>Utilizing various social media platforms to reach target audiences<br><br>Mini project: Design a social media campaign that tells a brand story effectively",
+    },
+    {
+      module: "Module 5",
+      topics:
+        "Measuring and Analyzing Brand Storytelling Success<br>Metrics and tools for measuring the impact of brand storytelling<br>Analyzing data to make informed decisions for future campaigns<br>A/B testing and optimizing brand stories for better performance<br><br>Mini project: Analyze the success of a brand storytelling campaign using available data",
+    },
+    {
+      module: "Module 6",
+      topics:
+        "Creating a Brand Storytelling Campaign<br>Students will apply the knowledge gained throughout the course to develop a comprehensive brand storytelling campaign<br>Planning and implementing a multi-channel brand storytelling strategy<br>Incorporating feedback and iteration into the campaign",
+    },
+    {
+      module: "Final Assessment",
+      topics:
+        "Final Capstone Project: Create a brand storytelling campaign for a real or fictional brand, including content creation, social media integration, and performance measurement.",
+    },
+  ];
+  const digitalMarketing = [
+    {
+      module: "Module 1",
+      topics: "Introduction to Digital Marketing<br> Introduction to digital marketing concepts and terminology<br>Overview of digital marketing channels (search engine marketing, social media marketing, email marketing, etc.)<br><br>Mini Project: Create a digital marketing strategy for a fictional business of your choice",
+    },
+    {
+      module: "Module 2",
+      topics: "Search Engine Optimization (SEO)<br>Understanding the importance of SEO in digital marketing<br>Keyword research and analysis<br>On-page and off-page optimization techniques<br><br>Mini Project: Optimize a website for better search engine visibility",
+    },
+    {
+      module: "Module 3",
+      topics: "Social Media Marketing<br>Exploring major social media platforms for marketing<br>Creating engaging social media content<br>Understanding social media analytics and insights<br><br>Mini Project: Develop a social media content calendar for a fictional brand",
+    },
+    {
+      module: "Module 4",
+      topics: "Pay-Per-Click (PPC) Advertising<br>Introduction to PPC advertising and its benefits<br>Setting up and managing Google/Facebook/Instagram Ads campaigns<br>Keyword targeting, ad creation, and budgeting<br><br>Mini Project: Create and manage a simple Google & Facebook Ads campaign for a fictional business",
+    },
+    {
+      module: "Module 5",
+      topics: "Email Marketing and Automation<br>Designing effective email marketing campaigns<br>Building and growing subscriber lists<br>Implementing email automation workflows<br><br>Mini Project: Create an email marketing campaign for a specific customer segment",
+    },
+    {
+      module: "Module 6",
+      topics: "Analytics and Reporting<br>Introduction to digital marketing analytics tools<br>Analyzing campaign performance and optimizing strategies<br>Reporting on key performance indicators (KPIs)<br><br>Mini Project: Analyze a set of digital marketing data and present actionable insights",
+    },
+    {
+      module: "Final Assessment",
+      topics: "Final Capstone Project: Apply all the knowledge gained throughout the course to develop a comprehensive digital marketing strategy for a real-world business. This project should include elements of SEO, PPC advertising, social media marketing, email marketing, and analytics. Students will present their strategies and insights to the class.",
+    },
+  ];
+  
   return (
     <section className="text-white container mx-auto md:px-10 px-5 lg:pt-40 pt-16">
       <div className="text-center flex flex-col">
@@ -382,6 +525,21 @@ const Catalogue = () => {
             service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
             data={fullstack}
             name="Full-Stack Web Development"
+          />
+          <CatalogueCard
+            icon={<FaLaptopCode />}
+            heading="Frontend Web Development"
+            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
+            data={fullstack}
+            name="Full-Stack Web Development"
+          />
+
+          <CatalogueCard
+            icon={<FaLaptopCode />}
+            heading="Backend Web Development"
+            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
+            data={backendWebDevelopment}
+            name="Backend Web Development"
           />
           <CatalogueCard
             icon={<MdDesignServices />}
@@ -405,18 +563,33 @@ const Catalogue = () => {
             name="Product Management"
           />
           <CatalogueCard
+            icon={<RiCustomerService2Fill />}
+            heading="Community Management "
+            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
+            data={communityManagement}
+            name="Community Management "
+          />
+
+          <CatalogueCard
+            icon={<MdDesignServices />}
+            heading="Brand Storytelling"
+            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
+            data={brandStorytelling}
+            name="Brand Storytelling and content Writing "
+          />
+          <CatalogueCard
+            icon={<MdBusiness />}
+            heading="Digital Marketing"
+            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
+            data={digitalMarketing}
+            name="Digital Marketing"
+          />
+          <CatalogueCard
             icon={<MdOutlineDataThresholding />}
             heading="Data Analytics"
             service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
             data={dataAnalytics}
             name="Data Analytics"
-          />
-          <CatalogueCard
-            icon={<GiCyberEye />}
-            heading="Cyber Security"
-            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
-            data={cyberSecurity}
-            name="Cyber Security"
           />
           <CatalogueCard
             icon={<MdBusiness />}
@@ -432,6 +605,15 @@ const Catalogue = () => {
             data={customerService}
             name="Customer Success"
           />
+
+          <CatalogueCard
+            icon={<GiCyberEye />}
+            heading="Cyber Security"
+            service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
+            data={cyberSecurity}
+            name="Cyber Security"
+          />
+
           <CatalogueCard
             icon={<FaLaptopCode />}
             heading="No-code development"
