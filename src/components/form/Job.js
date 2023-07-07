@@ -42,7 +42,7 @@ const Job = () => {
       mail.yearsOfExperience !== "" &&
       mail.resume !== "" &&
       mail.portfolio !== "" &&
-      mail.fit !== "" 
+      mail.fit !== ""
     ) {
       try {
         setIsLoading(true);
@@ -57,7 +57,7 @@ const Job = () => {
         );
         setIsLoading(false);
         setTimeout(() => {
-          router.reload();
+          router.push("/");
           localStorage.removeItem("talent");
         }, 3000);
       } catch (error) {

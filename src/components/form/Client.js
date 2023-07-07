@@ -53,7 +53,7 @@ const Client = () => {
           "Thank you! Your request has been successfully submitted."
         );
         setTimeout(() => {
-          router.reload();
+          router.push("/");
           localStorage.removeItem("client");
         }, 3000);
       } catch (error) {
