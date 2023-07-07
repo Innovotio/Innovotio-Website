@@ -40,7 +40,6 @@ const Client = () => {
       mail.phoneNumber !== "" &&
       mail.role !== "" &&
       mail.services !== ""
-
     ) {
       try {
         await emailjs.sendForm(
@@ -63,7 +62,7 @@ const Client = () => {
       }
     } else {
       toast.error(
-        "Oops! An unexpected error occurred. Please try again later."
+        "Oops! Please select the services you would like us to offer."
       );
     }
   };
@@ -214,6 +213,7 @@ const Client = () => {
 
               <div className="flex flex-col">
                 <select
+                  required
                   value={mail.talent}
                   name="form_talent"
                   onChange={(e) => setMail({ ...mail, talent: e.target.value })}
