@@ -607,7 +607,7 @@ const Catalogue = () => {
             heading="Brand Storytelling"
             service="Ease your recruitment process with our human resource team designed to vet and provide the best fit from our tech talents."
             data={brandStorytelling}
-            name="Brand Storytelling and content Writing "
+            name="Brand Storytelling and Content Writing "
           />
           <CatalogueCard
             icon={<MdBusiness />}
